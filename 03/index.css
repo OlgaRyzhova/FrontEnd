@@ -1,8 +1,15 @@
 body{
     color: blue;
-    background-color: rgb(245, 241, 241);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+/* .screen{
+    background-image: url(./img/2223.jpg);
+    background-color: rgba(red, green, rgba(0, 0, 255, 0.1), alpha);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
 h1{
     color: rgb(21, 21, 119);
     font-size: 40;
