@@ -14,3 +14,10 @@ h1{
 .filter {
     font-weight: bolder;
 }
+.gender{
+    margin-left: 700px;
+    word-spacing: 40px;
+    color: blue;
+    text-transform: uppercase;
+    font-size: large;
+}
