@@ -81,20 +81,23 @@ body{
     font-size: 48px;
     color: #070707;
     padding-top: 12px;
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 
 .portrait{
     max-width: 100%;
     height: 387px;
-    padding-top: 50px;
+    margin: 0 auto;
+    display: inline-block;
 }
 
 /* About */
 
 #container_about{
-    max-width: 100%;
     background: #F6F6F6;
+    margin: 0 auto;
+    max-height: 500px;
 }
 
 .experience{
@@ -106,21 +109,18 @@ body{
 }
 
 .experience_design{
-    width: 100%;
     max-width: 450px;
     margin: 0 auto;
     padding-bottom: 30px;
 }
 
 .experience_study{
-    width: 100%;
     max-width: 400px;
     margin: 0 auto;
     padding-bottom: 30px;
 }
 
 .experience_projects{
-    width: 100%;
     max-width: 310px;
     margin: 0 auto;
     padding-bottom: 30px;
@@ -128,110 +128,136 @@ body{
 
 /* Skills */
 
+.skills .title{
+    margin-bottom: 20px;
+}
+
 .skills_info{
     text-align: center;
-    padding-top: 20px;
+    margin-bottom: 50px;
 }
 
-.product_block{
-    letter-spacing: 0.02em;
+.skills_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills_block{
+    width: 100%;
+    max-width: 170px;
+}
+
+.skills_block .icon{
+    width: 100%;
+    display: block;
+}
+
+.skills_icon{
+    width: 80px;
+    margin: 0 auto 25px;
+}
+
+.skills_text{
     color: #828282;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 97px;
-    margin: 50px auto 101px;
-    justify-items: center;
-}
-
-.text_skills{
     font-size: 14px;
     font-weight: 700;
     line-height: 1.35;
     text-align: center;
-}
-
-.text_skills{
-    padding-top: 25px;
     width: 88px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
 }
 
+.skills_block:last-child .skills_text{
+    margin-bottom: 80px;
+}
 .star{
-    padding-top: 60px;
+    display: block;
+    font-size: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 #star_figma{
-    padding-top: 80px;
+    padding-bottom: 65px;
 }
 .star_active{
-    justify-items: center;
     color: #070707;
-    padding-top: 60px;
-    text-replace: ;
 }
 
 .star_inactive {
-    justify-items: center;
     color: #E5E5E5;
-    padding-top: 60px;
-    text-replace: ;
 }
 
+.skills_block:last-child .skills_icon{
+    width: 54px;
+}
 /* Portfolio */
 
 .container_portfolio{
+    display: inline-block;
+    width: 100%;
     align-items: center;
-    gap: 50px;
-    padding-bottom: 100px;
+    margin: 0 auto;
     background: #F6F6F6;
 }
 
 #img_fashion{
-    padding-top: 50px
+    padding-top: 50px auto 40px;
 }
 
 .text_portfolio{
     max-width: 260px;
-    height: 50px;
-    margin: 0 auto;
-    padding-top: 40px;
+    margin: 0 auto 70px;
     text-align: center;
     text-decoration-line: underline;
+}
+
+.text_portfolio:last-child {
+    margin-bottom: 100px;
 }
 
 .img_portfolio{
     display: block;
     max-width: 100%;
     align-items: center;
-    padding-top: 70px;
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 /* Contacts */
 
 .text_contacts{
     width: 280px;
-    height: 46px;
     margin: 0 auto;
     text-align: center;
     padding-top: 20px;
+    padding-bottom: 60px;
 }
 
 .button{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: #070707;
+    color: #F6F6F6;
+    border-radius: 22px;
+    height: 44px;
     width: 180px;
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    display: block;
 }
 
 .social_links{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     max-width: 100%;
     width: 310px;
-    gap: 50px;
-    margin: 0 auto;
+    margin: 0 auto 60px;
+    align-items: center;
 }
 
 .text_links{
@@ -241,7 +267,6 @@ body{
     line-height: 1.36;
     width: 200px;
     text-align: center;
-    padding-top: 60px;
     padding-bottom: 100px;
     margin: 0 auto;
 }
