@@ -76,13 +76,12 @@ body{
 
 /* Name */
 
-.name{
+.hero_name{
     font-weight: 700;
     font-size: 48px;
     color: #070707;
     padding-top: 12px;
-    padding-bottom: 50px;
-    margin: 0 auto;
+    margin: 0 auto 50px;
 }
 
 .hero_portrait{
