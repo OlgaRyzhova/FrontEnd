@@ -27,7 +27,7 @@ ul{
 /* Core style */
 
 body{
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 1.36;
     letter-spacing: normal;
@@ -101,7 +101,7 @@ body{
     max-width: 480px;
     width: 100%;
     text-align: center;
-    padding: 50px 480px 100px;
+    padding: 50px 0px 100px;
     margin: 0 auto;
 }
 
