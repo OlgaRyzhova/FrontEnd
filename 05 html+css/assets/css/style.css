@@ -101,7 +101,7 @@ body{
     max-width: 480px;
     width: 100%;
     text-align: center;
-    padding: 50px 0px 100px;
+    padding: 50px 1px 100px;
     margin: 0 auto;
 }
 
@@ -274,4 +274,3 @@ body{
     text-align: center;
     margin: 0 auto;
 }
-
