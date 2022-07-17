@@ -1,0 +1,277 @@
+/* Normalize */
+
+body, html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Core style */
+
+body{
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 1.36;
+    letter-spacing: normal;
+    background-color: #FFFFFF;
+    color: #070707;
+}
+
+.container{
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+.title{
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+.nav_list{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    padding: 25px 0;
+    border-bottom: 1px solid #828282;
+}
+
+.nav_item_link{
+    font-size: 18px;
+    color: #828282;
+}
+
+.nav_item_link.active{
+    color: #070707;
+}
+
+.nav_item_link:hover{
+    color: #070707;
+}
+
+/* Name */
+
+.hero_name{
+    font-weight: 700;
+    font-size: 48px;
+    color: #070707;
+    padding-top: 12px;
+    margin: 0 auto 50px;
+}
+
+.hero_portrait{
+    width: 100%;
+    display: block;
+}
+
+/* About */
+
+#container_about{
+    background: #F6F6F6;
+    margin: 0 auto;
+    max-height: 500px;
+}
+
+.experience{
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+    padding: 50px 480px 100px;
+    margin: 0 auto;
+}
+
+.experience_design{
+    max-width: 450px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.experience_study{
+    max-width: 400px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.experience_projects{
+    max-width: 310px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* Skills */
+
+.skills .title{
+    margin-bottom: 20px;
+}
+
+.skills_info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skills_content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills_block{
+    width: 100%;
+    max-width: 170px;
+}
+
+.skills_block .icon{
+    width: 100%;
+    display: block;
+}
+
+.skills_icon{
+    width: 80px;
+    margin: 0 auto 25px;
+}
+
+.skills_text{
+    color: #828282;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.35;
+    text-align: center;
+    width: 88px;
+    margin: 0 auto 60px;
+}
+
+.skills_block:last-child .skills_text{
+    margin-bottom: 80px;
+}
+.star{
+    display: block;
+    font-size: 0;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#star_figma{
+    padding-bottom: 65px;
+}
+.star_active{
+    color: #070707;
+}
+
+.star_inactive {
+    color: #E5E5E5;
+}
+
+.skills_block:last-child .skills_icon{
+    width: 54px;
+}
+/* Portfolio */
+
+.container_portfolio{
+    display: inline-block;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    background: #F6F6F6;
+}
+
+#img_fashion{
+    padding-top: 50px auto 40px;
+}
+
+.text_portfolio{
+    max-width: 260px;
+    margin: 0 auto 70px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.text_portfolio:last-child {
+    margin-bottom: 100px;
+}
+
+.img_portfolio{
+    display: block;
+    max-width: 100%;
+    align-items: center;
+    margin: 40px auto;
+}
+
+/* Contacts */
+
+.text_contacts{
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.button{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: #070707;
+    color: #F6F6F6;
+    border-radius: 22px;
+    height: 44px;
+    width: 180px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.social_links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 100%;
+    width: 310px;
+    margin: 0 auto 60px;
+    align-items: center;
+}
+
+.text_links{
+    font-size: 14px;
+    font-weight: 400;
+    color: #828282;
+    line-height: 1.36;
+    width: 200px;
+    text-align: center;
+    padding-bottom: 100px;
+    margin: 0 auto;
+}
+
+.text_like{
+    display: block;
+    width: 90px;
+    text-align: center;
+    margin: 0 auto;
+}
+
