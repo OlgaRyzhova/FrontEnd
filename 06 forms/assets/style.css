@@ -99,7 +99,6 @@ body{
     border-radius: 2px;
     border: 1px solid #E4E4E4;
 }
-/* Account info*/
 
 .block_forms_account, .block_forms_address{
     display: flex;
