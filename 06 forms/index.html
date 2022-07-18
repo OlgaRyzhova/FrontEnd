@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="container_block">
+            <div class="title">Create an Account</div>
+
+            <div class="block_forms_account">
+                <div class="name">
+                    <label for="account_first_name" class="label">First Name
+                        <input class="input" type="text" name="name" id="account_first_name" required>
+                    </label>
+                    <label for="account_last_name" class="label">Last Name
+                        <input class="input" type="text" name="name" id="account_last_name">
+                    </label>
+                </div>
+            </div>
+
+            <div class="email">
+                <label for="email" class="label">E-mail
+                    <input class="input" type="email" name="name" id="email">
+                    <p class="email_text">We'll never share your email with anyone else.</p>
+                </label>
+            </div>
+
+            <div class="male_female">
+                <label class="radio_input_label">
+                    <input class="radio_input" type="radio" name="radio">
+                    <span class="fake_radio"></span> 
+                    Male
+                </label>
+                <label class="radio_input_label">
+                    <input class="radio_input" type="radio" name="radio">
+                    <span class="empty_radio"></span>
+                    Female
+                </label>
+            </div>
+
+            <div class="block_forms_address">
+                <div class="country">
+                    <label for="country" class="label">Country
+                        <select class="country_select" name="country">
+                            <option value="">Select</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="PL">Poland</option>
+                        </select>
+                        <div class="arrow_account">
+                            <div class="triangle-left"></div>
+                            <div class="triangle-right"></div>
+                        </div>
+                    </label>
+                    <label for="city" class="label">City
+                        <input class="input" type="text" name="name" id="city">
+                    </label>
+                </div>
+            </div>
+
+                <button type="button" class="button">Sing up</button>
+                <p class="terms_policy"> By clicking the 'Sign Up' button, you confirm that you accept our
+                    <a href="#" class="policy">Terms of Use</a>
+                    and
+                    <a href="#" class="policy">Privacy Policy</a>
+                </p>
+                <footer>
+                    <a href="#" class="footer_new_account">Have an account?</a>
+                    <a href="#" class="footer_log_in">Log in</a>
+                </footer>
+        </section>
+        <section class="container_block">
+            <div class="title">Profile</div>
+            <div class="block_forms_account">
+                <div class="block_avatar">
+                    <div class="avatar">
+                        <img slot="profile_avatar" src="https://www.disneyplusinformer.com/wp-content/uploads/2022/03/Turning-Red-Profile-Avatar.png" alt="Profile avatar">
+                    </div>
+                    <div class="download">
+                        <label for="download_avatar" class="label_file">
+                            <input class="download_avatar" type="file" name="name" id="download_avatar">
+                                <img class="img_camera" src="https://icones.pro/wp-content/uploads/2021/02/icono-de-camara-gris.png"  alt="Download photo">
+                        </label>
+                        <p class="download_file">Up to 1 MB (300x300 px)</p>
+                    </div>
+                    <div class="delete">
+                            <img class="img_trash" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJON5kQikfq-lCep2OKKOOY8afvkWXiH3SvRKa8U1qsKw4LmkADXu3tISxD0EAQHoaBKA&usqp=CAU" width="18px" alt="Download photo">
+                    </div>
+                </div>
+                <div class="block_forms_account">
+                    <div class="name">
+                        <label for="profile_name" class="label">Name
+                            <input class="input" type="text" name="name" id="profile_name" required>
+                        </label>
+                        <label for="profile_email" class="label">E-mail
+                            <input class="input" type="email" name="name" id="profile_email">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="block_forms_address">
+                    <div class="country">
+                        <label for="country" class="label">Country
+                            <select class="country_select" name="country">
+                                <option value="">Select</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="PL">Poland</option>
+                            </select>
+                            <div class="arrow_profile">
+                                <div class="triangle-left"></div>
+                                <div class="triangle-right"></div>
+                            </div>
+                        </label>
+                        <label for="city" class="label">City
+                            <input class="input" type="text" name="name" id="city">
+                        </label>
+                    </div>
+                </div>
+
+                <div class="block_forms_contacts">
+                    <div class="zip_code"09977>
+                        <label for="zip_code" class="label">Zip Code
+                            <input class="input" type="text" name="name" id="zip_code" maxlength="5">
+                        </label>
+                        <label for="phone_number" class="label">Phone Number
+                            <input class="input" type="text" name="name" id="phone_number">
+                        </label>
+                    </div>
+                <button class="button_update">Update</button>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
