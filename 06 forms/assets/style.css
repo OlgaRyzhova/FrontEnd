@@ -282,8 +282,8 @@ footer{
     display: flex;
     cursor: pointer;
     border: 1px solid #E4E4E4;
-    margin-right: 9px;
-    margin-bottom: 9px;
+    margin: 10px 9px 9px 0;
+
 }
 
 .download_avatar{
@@ -299,7 +299,6 @@ footer{
     padding-top: 7px;
     padding-left: 113px;
     color: #E5E5E5;
-    
 }
 
 .delete{
@@ -307,6 +306,7 @@ footer{
     height: 30px;
     border-radius: 5px; 
     border: 1px solid #E4E4E4;
+    margin-top: 10px;
 }
 
 .delete:hover{
