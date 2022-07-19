@@ -4,74 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shoes store</title>
-    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
-<body class="screen">
-    <h1>Walking around the world</h1>
-    <form action="#" method="get"></form>
-    <div class="account">Account
-    <label for="name">Your name
-        <input type="name">
-    </label>
-    <br>
-    <br>
-    <label for="password">Your password
-        <input type="password" name="Password" id="">
-    </label>
-    <br>
-    <br>
-    <button>Confirm</button>
+<body>
+
+    <header class="main">
+        <div class="main_header">
+            <h1 class="main_text">CSS Dinner Shopping List</h1>
+            <h3 class="main_context">Let's go to the mall!</h3>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="container_points">
+            <label class="point_1">
+                <input type="button" class="point_check">A lot of pickles
+                <span>(for more CSS manipulations)</span>
+                </input>
+            </label>
+            <label class="point_2">
+                <input type="button" class="point_check">10 apples
+                <span>(for more CSS manipulations)</span>
+                </input>
+            </label>
+
+            <label class="point_3">
+                <input type="button" class="point_check">20 oranges</input>
+                <span>(because they are awesome)</span>
+            </label>
+
+            <label class="point_4">
+                <input type="button" class="point_check">13 plates</input>
+                <span>(hm... they always dissapear)</span>
+            </label>
+
+            <label class="point_5">
+                <input type="button" class="point_check">15 bentos</input>
+            </label>
+            
+            <label class="point_6">
+                <input type="button" class="point_check">1 bottle of Sake</input>
+                <span>(for my friends)</span>
+            </label>
+        </section>
+
+        
+        <footer class="button">
+            <button class="button_cative">Bon appetit :)</button>
+        </footer>
     </div>
-    <br>
-    <br>
-    <hr>
-    <span class="gender">Women Men Kids Accessories Clearance</span>
-    <hr>
-    <br>
-    <fieldset>
-        <legend class="filter">Choose your shoes</legend>
-        <br>
-        <label for="shoes">Choose season:</label>
-        <br>
-        <select name="Season" id="season">
-            <option>Season</option>
-            <optgroup label="Сезони">
-                <option value="Winter">Зима</option>
-                <option value="Spring">Весна</option>
-                <option value="Summer">Літо</option>
-                <option value="Autumn">Осінь</option>
-            </optgroup>
-            <optgroup label="Міжсезонне"> 
-                <option value="autumn/winter">Autumn/Winter</option>
-                <option value="spring/summer">Spring/Summer</option>
-            </optgroup>
-        </select>
-        <br>
-        <br>
-        <label for="Winter">Choose product type:</label>
-        <br>
-        <select name="type">Choose product type
-            <option>Product type</option>
-            <option value="Boots">Boots</option>
-            <option value="Sandals">Sandals</option>
-            <option value="Sneakers">Sneakers</option>
-        </select>
-        <br>
-        <br>
-        <label for="Style">Choose style:</label>
-        <br>
-        <select name="style">Choose style
-            <option>
-                Style
-            </option>
-            <option value="Court">Court</option>
-            <option value="Flat">Flat</option>
-            <option value="High Top">High Top</option>
-        </select>
-        <br>
-        <br>
-        <button type="button">Submit</button>
-    </fieldset>
+
 </body>
 </html>
