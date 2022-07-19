@@ -1,0 +1,106 @@
+body, html{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.17;
+    color: #FFFFFF;
+    background: #3B3F45;
+}
+
+.main_header{
+    width: 100%;
+    color: #FF8984;
+    background-color: #4A4F56;
+    padding-top: 19px;
+    padding-bottom: 12px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 auto 4px;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+.container{
+    width: 100%;
+    max-width: 534px;
+    align-items: center;
+    margin: 20px auto 45px;
+}
+.container_points{
+    margin-bottom: 45px;
+}
+
+.point_1, .point_3, .point_5{
+    background: #88839E;
+    width: 534px;
+    height: 45px;
+    font-size: 18px;
+    display: inline-block;
+    border: 0px solid ;
+    /* padding: 12px auto 12px 16px; */
+}
+
+.point_2, .point_4, .point_6{
+    background: #7A7593;
+    width: 534px;
+    height: 45px;
+    font-size: 18px;
+    display: inline-block;
+    border: 0px solid;
+}
+input:{
+    display: inline-block;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+span{
+    font-size: 11px;
+}
+
+ label .point_1 + .point_3{
+    background: #88839E;
+}
+
+button{
+    margin: 0 auto;
+    width: 100%;
+    height: 45px;
+    background-color: #4A4F56;
+    color: #FF8984;
+    text-align: center;
+    border: 0 solid;
+    font-size: 18px;
+}
+
+.point_check{
+    width: 20px;
+    align-items: center;
+}
+
+.point_2, .point_6{
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+
+label:hover{
+    border: 1px solid rgb(40, 40, 215);
+}
