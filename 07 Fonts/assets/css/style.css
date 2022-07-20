@@ -51,9 +51,11 @@ p {
 .navbar span{
     margin-right: 10px;
 }
+
 .logo{
     align-self: center;
 }
+
 .container_block{
     width: 100%;
     max-width: 1200px;
@@ -61,17 +63,23 @@ p {
     margin: 0 auto;
 }
 
+.block{
+    margin-bottom: 70px;
+}
 .title{
+    font-size: 30px;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.title_text{
     max-height: 48px;
     font-family: 'Francois One';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.33;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    margin-top: 70px;
-    display: flex;
+        text-transform: uppercase;
 }
 
 .chapter{
@@ -79,7 +87,7 @@ p {
     font-style: normal;
     font-weight: 300;
     font-size: 30px;
-    font-size: 50%; // 30px 
+    font-size: 50%; 
     line-height: 1;
     letter-spacing: 0.04em;
     text-transform: capitalize;
