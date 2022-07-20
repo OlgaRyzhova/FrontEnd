@@ -50,11 +50,11 @@ body{
 }
 
 .container_block:first-child:hover{
-    outline: 2px solid #7620de;
+    outline: 2px solid #007BFF;
     border-radius: 0px;
 }
 
-.container_block:hover {
+.container_block:hover{
     outline: 2px solid #007BFF;
     border-radius: 0px;
 }
@@ -79,13 +79,14 @@ body{
     margin: 0px auto;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
-select:hover{
+select:focus{
     border-radius: 0px;
     outline: 2px solid #007BFF;
 }
-.input:hover{
+.input:focus{
     border-radius: 0px;
     outline: 2px solid #007BFF;
 }
@@ -137,14 +138,20 @@ p, .download_file{
 }
 
 .male_female{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
     margin-bottom: 20px;
 }
-.radio_input{
+
+.male_female input{
     opacity: 0;
     width: 0;
     height: 0;
+    margin: 0;
 }
-.fake_radio{
+
+.male_female input:checked + .fake_radio{
     display: inline-block;
     width: 6px;
     height: 6px;
@@ -153,15 +160,14 @@ p, .download_file{
     margin-right: 4px;
 }
 
-
-/* .empty_radio{
+.fake_radio{
     display: inline-block;
-    width: 12px;
-    height: 12px;
-    border: 1px solid #969696;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #007BFF;
     border-radius: 50%;
-    margin-right: 1px;
-} */
+    margin-right: 4px;
+}
 
 .male_female input:checked + fake_radio{
     display: inline-block;
@@ -192,24 +198,24 @@ select{
 .arrow_account{
     display: inline-block;
     position: absolute;
-    top: 420px;
-    right: 1250px;
+    top: 40px;
+    right: 10px;
     margin: 0 auto;
 }
 
 .arrow_profile{
     display: inline-block;
     position: absolute;
-    top: 370px;
-    right: 675px;
+    top: 40px;
+    right: 10px;
     margin: 0 auto;
 }
 
 .triangle-right {
     width: 0;
     height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     border-top: 7px solid #969696;
     margin-top: 3px;
 }
@@ -217,8 +223,8 @@ select{
 .triangle-left {
     width: 0;
     height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
     border-bottom: 7px solid #969696;
 }
 
@@ -311,10 +317,10 @@ footer{
 }
 
 .img_camera{
-    width: 18px;
-    height: 19px;
+    width: 20px;
+    height: 20px;
     display: flex;
-    padding-top: 7px;
+    padding-top: 5px;
     padding-left: 113px;
     color: #E5E5E5;
 }
@@ -325,9 +331,10 @@ footer{
     border-radius: 5px; 
     border: 1px solid #E4E4E4;
     margin-top: 10px;
+    background-color: #FFFFFF;
 }
 
-.delete:hover{
+.delete:focus{
     border-radius: 0px;
     outline: 2px solid #007BFF;
 }
@@ -339,6 +346,5 @@ footer{
 
 .img_trash{
     display: block;
-    padding-top: 7px;
     margin: 0 auto;
 }
