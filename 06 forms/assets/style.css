@@ -145,10 +145,12 @@ p, .download_file{
 }
 
 .male_female input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     opacity: 0;
     width: 0;
     height: 0;
-    margin: 0;
 }
 
 .male_female input:checked + .fake_radio{
@@ -167,16 +169,6 @@ p, .download_file{
     border: 1px solid #007BFF;
     border-radius: 50%;
     margin-right: 4px;
-}
-
-.male_female input:checked + fake_radio{
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    border: 4px solid #007BFF;
-    border-radius: 50%;
-    margin-right: 4px;
-    margin-bottom: 20px;
 }
 
 .country_select{
