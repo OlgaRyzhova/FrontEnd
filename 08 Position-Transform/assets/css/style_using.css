@@ -1,0 +1,156 @@
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    background-color: #FFFFFF;
+    background: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.container_header {
+    background-color: #FFFFFF;
+    max-width: 1200px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.language {
+    width: 100%;
+    max-width: 50px;
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 0.8;
+    margin-top: 29px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar {
+    width: 100%;
+    font-family: 'Staatliches';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.27;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 26px;
+}
+
+.navbar span {
+    max-width: 1200px;
+    margin-right: 10px;
+}
+
+.logo {
+    align-self: center;
+}
+
+.container_title{
+    max-width: 1200px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 70px auto 0;
+    padding-top: 110px;
+}
+
+.block_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.33;
+    width: 100%;
+    max-height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.title_border {
+    width: 100%;
+    border-top: 8px solid #000000;
+    max-width: 100px;
+    margin-right: 20px;
+}
+.container_cards{
+    width: 1200px;
+    height: 390px;
+    padding: 20px;
+    border-top: 1px solid #C9C9C9;
+    border-bottom: 1px solid #C9C9C9;
+    margin: 0 auto;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.flip_cards_container{
+    /* max-width: 1200px;
+    max-height: 390px; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* perspective: 1000px; */
+    position: relative;
+}
+
+.flip_cards{
+    /* position: relative; */
+    width: 270px;
+    height: 180px;
+    margin-bottom: 30px;
+    transition: 0.8s ease;
+    transform-style: preserve-3d;
+}
+
+.flip_cards_container:hover .flip_cards{
+    transform: rotateX(180deg);
+}
+
+.card_logo_front, .card_logo_back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card_logo_front{
+    z-index: 1;
+}
+
+.card_logo_back {
+    transform: rotateX(180deg);
+    z-index: 0;
+}

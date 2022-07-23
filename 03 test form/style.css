@@ -58,37 +58,44 @@ label{
     font-size: 18px;
     display: inline-block;
     border: 0px solid ;
-    /* padding: 12px auto 12px 16px; */
+    padding: 13px auto 12px 16px;
 }
 
-/* .point_2, .point_4, .point_6{
+.point_2, .point_4, .point_6{
     background: #7A7593;
-} */
-/* .container_points:active{
-    background: #FF8984;
-} */
-
-input{
-    display: inline-block;
-    font-size: 18px;
-    color: #FFFFFF;
 }
 
-.point:hover{
-    background: #09051a;
-    /* outline: 0.5px solid rgb(40, 40, 215); */
+.point label:hover{
+    position: relative;
+    background: #625E77;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0px rgba(32, 31, 31, 0.71);
+    transition: all .1s ease-in;
+}
+
+.point label:active{
+    position: relative;
+    background: #FF8984;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0px rgba(32, 31, 31, 0.71);
+    transition: all .1s ease-in;
+}
+
+.point label:checked{
+    position: relative;
+    background: #FF8984;
+    text-decoration: line-through;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    box-shadow: 5px 5px 5px 0px rgba(32, 31, 31, 0.71);
+    transition: all .1s ease-in;
 }
 
 span{
     font-size: 11px;
     margin-top: 10px;
-
-}
-
-label .point_1 + .point_3{
-    background: #88839E;
 }
 
 button{
@@ -102,27 +109,19 @@ button{
     font-size: 18px;
 }
 
-button:focus{
-    outline: 0.5px solid rgb(40, 40, 215);
-}
-
-button:checked{
-    outline: 0.5px solid rgb(40, 40, 215);
-}
-
-.container input{
+.point input{
     opacity: 0;
     width: 0;
     height: 0;
 }
 
-.container input:focus + .fake_checkbox{
+/* .container input:focus + .fake_checkbox{
     display: inline-block;
     background-color: #fff;
     margin-right: 16px;
     outline: 0.5px solid rgb(40, 40, 215);
     
-}
+} */
 
 .fake_checkbox{
     display: inline-block;
@@ -132,8 +131,11 @@ button:checked{
     margin-right: 16px;
 }
 
-/* .point_2, .point_6 label{
-    color: #9B96AC;
-    /* box-shadow: 1px 12px 18px 0px rgba(0, 0, 0, 0.71); */
+/* .fake_checkbox:checked{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-color: rgb(204, 27, 27);
+    margin-right: 16px;
 } */
 

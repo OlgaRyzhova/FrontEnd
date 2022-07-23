@@ -142,8 +142,12 @@ p, .download_file{
     font-weight: 400;
     font-size: 15px;
     margin-bottom: 20px;
+    display: flex;
 }
 
+.radio_input_label{
+    margin-right: 20px;
+}
 .male_female input{
     display: flex;
     flex-direction: row;
