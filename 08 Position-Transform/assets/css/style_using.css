@@ -112,21 +112,21 @@ header {
     margin: 0 auto;
     cursor: pointer;
     perspective: 1000px;
-}
-
-.flip_cards_container{
-    /* max-width: 1200px;
-    max-height: 390px; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* perspective: 1000px; */
+}
+
+.flip_cards_container{
+    max-width: 270px;
+    max-height: 390px;
+    perspective: 1000px;
     position: relative;
 }
 
 .flip_cards{
-    /* position: relative; */
+    position: relative;
     width: 270px;
     height: 180px;
     margin-bottom: 30px;
