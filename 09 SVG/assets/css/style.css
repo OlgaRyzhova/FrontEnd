@@ -1,0 +1,271 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 100%;
+    padding-top: 25px;
+    padding-bottom: 23px;
+    justify-content: flex-start;
+    border-bottom: 1px solid #EFEEF3;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 100%;
+    max-width: 1170px;
+    justify-content: start;
+    margin: 0 auto;
+    display: flex;
+    gap: 12px;
+}
+
+.logo_text{
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1;
+
+}
+
+.block_content{
+    width: 100%;
+    max-width: 1170px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.service{
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #7690A8;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.main_text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+
+.block_cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.card{
+    border: 1px solid #E5EAF4;
+    border-radius: 8px;
+    padding: 40px;
+    justify-content: center;
+}
+.card:hover{
+    border-color: #3DB370;
+}
+
+/* Card megaphone colors */
+
+.megaphone .color_1{
+    fill: #D1E7FF;
+}
+.megaphone:hover .color_1{
+    fill: #E1F4F5;
+}
+.megaphone .color_2 {
+    fill: #E8F3FF;
+}
+.megaphone:hover .color_2{
+    fill: #F4FEFF;
+}
+.megaphone .color_3{
+    fill: #B9DCFF;
+}
+.megaphone:hover .color_3{
+    fill: #CAEFF2;
+}
+.megaphone .color_4{
+    fill: #007FFC;
+}
+.megaphone:hover .color_4{
+    fill: #52C29D;
+}
+
+/* Card building colors */
+
+.building .color_1 {
+    fill: #D1E7FF;
+}
+.building:hover .color_1 {
+    fill: #E1F4F5;
+}
+.building .color_2 {
+    fill: #E8F3FF;
+}
+.building:hover .color_2 {
+    fill: #F4FEFF;
+}
+.building .color_3 {
+    fill: #B9DCFF;
+}
+.building:hover .color_3 {
+    fill: #CAEFF2;
+}
+.building .color_4 {
+    fill: #007FFC;
+}
+.building:hover .color_4 {
+    fill: #52C29D;
+}
+.building .color_5 {
+    fill: #FFFFFF;
+}
+.building:hover .color_5 {
+    fill: #FFFFFF;
+}
+
+/* Card phone colors */
+
+.phone .color_1 {
+    fill: #D1E7FF;
+}
+.phone:hover .color_1 {
+    fill: #E1F4F5;
+}
+.phone .color_2 {
+    fill: #E8F3FF;
+}
+.building:hover .color_2 {
+    fill: #F4FEFF;
+}
+.phone .color_3 {
+    fill: #B9DCFF;
+}
+.phone:hover .color_3 {
+    fill: #CAEFF2;
+}
+.phone .color_4 {
+    fill: #007FFC;
+}
+.phone:hover .color_4 {
+    fill: #52C29D;
+}
+
+.megaphone, .building, .phone{
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(21, 101, 216, 0.1);
+    border-radius: 16px;
+    padding: 14px;
+    margin-bottom: 30px;
+}
+
+.megaphone, .building, .phone:hover{
+    border: 1px solid rgba(61, 179, 112, 0.1);
+}
+
+.card_title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 0.88;
+    padding-bottom: 15px;
+}
+
+.card_content{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.75;
+    padding-bottom: 30px;
+}
+
+.link_more{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    color: #3DB370;
+}
+.footer{
+    background-color: #16133D;
+    background-size: auto 100%;
+}
+.block_footer{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    justify-content: start;
+}
+
+footer .logo{
+    margin-bottom: 40px;
+    color: #FFFFFF;
+}
+/* .social_links{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    flex-direction: row;
+    background: #EFEEF3;
+    border-radius: 5px;
+    gap: 10px;
+} */
+.link{
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.instagram_sprite, .facebook_sprite, .github_sprite, .dribble_sprite, .twitter_sprite{
+    fill: #0D0D0D;
+    width: 20px;
+    height: 20px;
+    background-color: #EFEEF3;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+svg[class~="active"]:hover{
+    fill: #3DB370;
+}
