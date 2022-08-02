@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SASS</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/font_face.css">
 </head>
 <body>
     <main class="container">
         <div class="all_blocks">
             <section class="header">
-                <p class="min_title">The geniuses behind our work</p>
-                <h1 class="main_title">Our team</h1>
-                <img class="bonfire" src="./assets/img/bonfire-sharp.svg"><span></span></img>
+                <p class="header_min_title">The geniuses behind our work</p>
+                <h1 class="header_main_title">Our team</h1>
+                <div class="lines"><img class="bonfire" src="./assets/img/bonfire-sharp.svg"></div>
             </section>
             <section class="portrait_block">
                 <div class="photo_block">
-                    <div class="frame_corner">
+                    <div class="corner">
+                        <div class="top left"></div>
+                        <div class="top right"></div>
+                        <div class="bottom right"></div>
+                        <div class="bottom left"></div>
                         <img class="photo_img " src="./assets/img/photo.jpg" alt="#">
                     </div>
                 </div>
@@ -42,7 +47,9 @@
                         </a> 
                     </div>
                     <p class="text_about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis cursus dui sit amet ligula efficitur, sit amet lacinia massa dictum. Etiam accumsan felis a nunc facilisis, ut euismod lacus placerat. Praesent rutrum eget massa a convallis. Nam vitae augue malesuada, accumsan mauris ut, consectetur.</p>
-                    <div class="btn"><a class="view" href="#">view profile</a></div>
+                    <div class="decore_line"></div>
+                    <div class="btn">
+                        <a class="view" href="#">view profile</a></div>
                 </div> 
             </section>
         </div>
