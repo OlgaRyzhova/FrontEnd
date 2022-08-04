@@ -3,7 +3,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/Raleway/raleway-v28-latin-regular.woff2") format("woff2"), url("../fonts/Raleway/raleway-v28-latin-regular.woff") format("woff");
+  src: local(""), url("./fonts/Raleway/raleway-v28-latin-regular.woff2") format("woff2"), url("../fonts/Raleway/raleway-v28-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* raleway-500 - latin */
@@ -11,7 +11,7 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 500;
-  src: local(""), url("../fonts/Raleway/raleway-v28-latin-500.woff2") format("woff2"), url("../fonts/Raleway/raleway-v28-latin-500.woff") format("woff");
+  src: local(""), url("./fonts/Raleway/raleway-v28-latin-500.woff2") format("woff2"), url("../fonts/Raleway/raleway-v28-latin-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* roboto-900 - latin */
@@ -19,7 +19,7 @@
   font-family: "Roboto";
   font-style: normal;
   font-weight: 900;
-  src: local(""), url("../fonts/Roboto/roboto-v30-latin-900.woff2") format("woff2"), url("../fonts/Roboto/roboto-v30-latin-900.woff") format("woff");
+  src: local(""), url("./fonts/Roboto/roboto-v30-latin-900.woff2") format("woff2"), url("../fonts/Roboto/roboto-v30-latin-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* open-sans-700 - latin */
@@ -27,6 +27,6 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/Open Sans/open-sans-v29-latin-700.woff2") format("woff2"), url("../fonts/Open Sans/open-sans-v29-latin-700.woff") format("woff");
+  src: local(""), url("./fonts/Open Sans/open-sans-v29-latin-700.woff2") format("woff2"), url("../fonts/Open Sans/open-sans-v29-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
