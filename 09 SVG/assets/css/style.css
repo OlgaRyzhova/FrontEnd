@@ -194,7 +194,7 @@ a{
 }
 
 .card_title{
-    font-family: 'Roboto';
+    font-family: 'Roboto'sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -203,7 +203,7 @@ a{
 }
 
 .card_content{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -212,7 +212,7 @@ a{
 }
 
 .link_more{
-    font-family: 'Roboto';
+    font-family: 'Roboto',sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
