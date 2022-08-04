@@ -23,11 +23,3 @@
   height: 22px;
   padding: 9px;
 }
-
-.item__twitter:hover {
-  background-image: url(../img/twitter_white.svg);
-}
-
-.item__facebook {
-  background-image: url(../img/facebook_white.svg);
-}
