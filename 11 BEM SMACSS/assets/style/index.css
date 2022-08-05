@@ -1,0 +1,224 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+/* train-one-regular - latin */
+@font-face {
+  font-family: "Train One";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/Train One/train-one-v13-latin-regular.woff2") format("woff2"), url("../fonts/Train One/train-one-v13-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html, body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+p, ul, h2 {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  font-family: "Lato", sans-serif;
+  margin: 0 auto;
+  background: #FFFFFF;
+  justify-content: center;
+}
+
+.container_header {
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1;
+  background: #FFFFFF;
+  color: #3C3C3C;
+  border-bottom: 1px solid #BDBDBD;
+}
+
+.about {
+  padding: 230px 0 150px;
+}
+
+.footer {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #3C3C3C;
+  gap: 29px;
+  font-weight: 700;
+}
+
+.header {
+  max-width: 1170px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #282528;
+  justify-content: flex-start;
+}
+.logo .logo__title {
+  font-family: "Train One", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+.button__nav {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border: 1px solid #3C3C3C;
+  justify-content: flex-end;
+}
+
+.menu__list {
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.button__nav {
+  background: #FFFFFF;
+}
+
+.block_about {
+  background: #F6F6F6;
+  color: #3C3C3C;
+}
+.block_about .about__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+}
+.block_about .about__title::after {
+  content: "";
+  position: absolute;
+  width: 45px;
+  height: 4px;
+  background: #DDDBDB;
+  right: 50%;
+  transform: translateX(50%);
+  bottom: 0;
+}
+.block_about .about__text {
+  width: 100%;
+  max-width: 570px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  padding-top: 40px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+}
+
+.cards {
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.cards .cards__item {
+  flex-basis: 25%;
+  gap: 30px;
+  padding-bottom: 20px;
+}
+.cards .cards__item .cards__item__name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282528;
+  display: block;
+  padding-top: 20px;
+}
+.cards .cards__item .cards__item__position {
+  color: #646464;
+  font-weight: 300;
+}
+
+.cards__icon {
+  width: 100%;
+  max-width: 270px;
+  height: 270px;
+  background: #18B5DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.cards__icon .icon__twitter, .cards__icon .icon__facebook, .cards__icon .icon__instagram {
+  width: 22px;
+  height: 22px;
+  padding: 9px;
+  background: #5DCBE6;
+}
+
+.social__links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.social__links .item__twitter, .social__links .item__facebook, .social__links .item__instagram, .social__links .item__linkedin, .social__links .item__telegram {
+  width: 22px;
+  height: 22px;
+  padding: 9px;
+  border: 1px solid #18B5DC;
+}
+
+.list__item:hover {
+  color: #18B5DC;
+}
+
+.button__nav:hover {
+  color: #FFFFFF;
+  background-color: #18B5DC;
+  border: none;
+}
+
+.icon__twitter:hover, .icon__facebook:hover, .icon__instagram:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.item__twitter:hover, .item__facebook:hover, .item__instagram:hover, .item__linkedin:hover, .item__telegram:hover {
+  background-color: #18B5DC;
+  width: 22px;
+  height: 22px;
+  padding: 9px;
+}
