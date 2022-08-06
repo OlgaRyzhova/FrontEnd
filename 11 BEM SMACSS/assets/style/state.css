@@ -5,7 +5,7 @@
 .button__nav:hover {
   color: #FFFFFF;
   background-color: #18B5DC;
-  border: none;
+  border-color: transparent;
 }
 
 .icon__twitter:hover, .icon__facebook:hover, .icon__instagram:hover {

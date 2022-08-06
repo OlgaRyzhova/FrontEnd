@@ -1,0 +1,50 @@
+.header {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.logo {
+  display: inline-block;
+}
+
+.nav_link {
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.nav_item ul {
+  column-gap: 40px;
+}
+
+.search_link, .hamburger {
+  display: inline-block;
+  width: 17px;
+  margin-left: 80px;
+}
+
+.hamburger {
+  width: 34px;
+  display: none;
+}
+
+.main_screen {
+  min-height: 90vh;
+  background-image: url("../img/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  padding-top: 100px;
+}
+
+.main_text {
+  width: 100%;
+  max-width: 730px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+  color: "$text-color-heading";
+}
