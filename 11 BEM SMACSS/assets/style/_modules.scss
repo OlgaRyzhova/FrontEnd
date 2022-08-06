@@ -1,12 +1,34 @@
-.header{
-    max-width: 1170px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    display: flex;
+.flex_row{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
+}
+
+.header{
+    width: 90%;
+    max-width: 1170px;
+    // position: fixed;
+    z-index: 1;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.footer{
+    width: 90%;
+    max-width: 1170px;
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    color: #3C3C3C;
+    background: #FFFFFF;
+    gap: 29px;
+    font-weight: 700;
 }
 
 .logo{
@@ -42,13 +64,22 @@
     gap: 30px;
 }
 
+.hamburger, .callback, .hamburger__footer{
+    width: 34px;
+    display: none;
+}
+
 .button__nav{
     background: #FFFFFF;
 }
 
 .block_about{
-    background: #F6F6F6;
+    padding: 150px 0 150px; 
+    width: 100%;
+    max-width: 1170px;
+    justify-content: center;
     color: #3C3C3C;
+    margin: 0 auto;
     .about__title{
         font-weight: 700;
         font-size: 34px;
@@ -56,71 +87,169 @@
         text-align: center;
         letter-spacing: 0.13em;
         text-transform: uppercase;
-        position: relative;
         padding-bottom: 20px;
-        &::after{
-            content: '';
-            position: absolute;
-            width: 45px;
-            height: 4px;
-            background: #DDDBDB;
-            right: 50%;
-            transform: translateX(50%);
-            bottom: 0;
-        }
     }
-    .about__text{
-        width: 100%;
-        max-width: 570px;
-        font-weight: 300;
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-        padding-top: 40px;
-        margin: 0 auto;
-        padding-bottom: 60px;
-    }
+}
+
+.about__text{
+    width: 100%;
+    max-width: 570px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 40px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 }
 
 .cards{
     width: 100%;
+    height: 333px;
     max-width: 1170px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
     margin: 0 auto;
-    .cards__item{
-        flex-basis: 25%;
-        gap: 30px;
-        padding-bottom: 20px;
-        .cards__item__name{
-            font-weight: 700;
-            font-size: 18px;
-            line-height: 22px;
-            color: #282528;
-            display: block; 
-            padding-top: 20px;
-        }
-        .cards__item__position{
-            color: #646464;
-            font-weight: 300;
-        }
+    cursor: pointer;
+}
+
+.about__cards{
+    background-color: transparent;
+    margin-bottom: 50px;
+}
+
+.cards__item{
+    position: relative;
+    width: 270px;
+    height: 100%;
+    max-height: 270px;
+    text-align: center;
+    transition: transform 0.9s;
+    transform-style: preserve-3d;
+}
+
+.about__cards:hover .cards__item{
+    transform: rotateY(180deg);
+}
+
+.cards__item__img, .cards__item__icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.cards__item__icon{
+    background: #18B5DC;
+    transform: rotateY(180deg);
+}
+
+.cards__text{  
+    width: 270px;
+    height: 270px;
+    padding-bottom: 20px;
+    .cards__text__name{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 22px;
+        color: #282528;
+        display: block; 
+        padding-top: 20px;
+    }
+    .cards__text__position{
+        color: #646464;
+        font-weight: 300;
     }
 }
 
-.cards__icon{
-    width: 100%;
-    max-width: 270px;
-    height: 270px;
-    background: #18B5DC;
+.icons_block{
     display: flex;
-    align-items: center;
     justify-content: center;
+    margin: 114px auto;
     gap: 4px;
-    .icon__twitter, .icon__facebook, .icon__instagram{
-        width: 22px;
-        height: 22px;
-        padding: 9px;
-        background: #5DCBE6;
+    position: relative;
+}
+
+.icon__twitter, .icon__facebook, .icon__instagram{
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: #5DCBE6;
+    width: 22px;
+    height: 22px;
+    padding: 9px;
+    transition: background-color .3s ease-in;
+}
+
+.icon__twitter{
+    background-image: url(../img/twitter_white.svg);
+    &:hover{
+        background-image: url(../img/twitter_blue.svg);
+        background-color: #FFFFFF;
+    }
+}
+
+.icon__facebook{
+    background-image: url(../img/facebook_white.svg);
+    &:hover{
+        background-image: url(../img/facebook_blue.svg);
+        background-color: #FFFFFF;
+    }
+}
+.icon__instagram{
+    background-image: url(../img/instagram_white.svg);
+    &:hover{
+        background-image: url(../img/instagram_blue.svg);
+        background-color: #FFFFFF;
+    }
+}
+
+.item__twitter, .item__facebook, .item__instagram, .item__linkedin, .item__telegram{
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-color: #FFFFFF;
+    width: 22px;
+    height: 22px;
+    padding: 9px;
+    transition: background-color .3s ease-in;
+}
+.item__twitter{
+    background-image: url(../img/twitter_blue.svg);
+    &:hover{
+        background-image: url(../img/twitter_white.svg);
+        background-color: #5DCBE6;
+    }
+}
+
+.item__facebook{
+    background-image: url(../img/facebook_blue.svg);
+    &:hover{
+        background-image: url(../img/facebook_white.svg);
+        background-color: #FFFFFF;
+    }
+}
+.item__instagram{
+    background-image: url(../img/instagram_blue.svg);
+    &:hover{
+        background-image: url(../img/instagram_white.svg);
+        background-color: #FFFFFF;
+    }
+}
+
+.item__linkedin{
+    background-image: url(../img/linkedin_blue.svg);
+    &:hover{
+        background-image: url(../img/linkedin_white.svg);
+        background-color: #FFFFFF;
+    }
+}
+
+.item__telegram{
+    background-image: url(../img/telegram_blue.svg);
+    &:hover{
+        background-image: url(../img/telegram_white.svg);
+        background-color: #FFFFFF;
     }
 }
 
@@ -137,7 +266,3 @@
         border: 1px solid #18B5DC;
     }
 }
-
-
-
-

@@ -8,11 +8,6 @@
   border-color: transparent;
 }
 
-.icon__twitter:hover, .icon__facebook:hover, .icon__instagram:hover {
-  background-color: #fff;
-  color: #000000;
-}
-
 .item__twitter:hover, .item__facebook:hover, .item__instagram:hover, .item__linkedin:hover, .item__telegram:hover {
   background-color: #18B5DC;
   width: 22px;

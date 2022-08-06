@@ -2,8 +2,8 @@
     &:hover{
         color: #18B5DC;
     }
-
 }
+
 .button__nav{
     &:hover{
         color: #FFFFFF;
@@ -11,16 +11,6 @@
         border-color: transparent;
     }       
 }
-
-.icon__twitter, .icon__facebook, .icon__instagram{
-    &:hover{
-        background-color: #fff;
-        color: #000000;
-    }
-}
-// .icon__twitter{
-//     background-image: url(../img/twitter.svg);
-// }
 
 .item__twitter, .item__facebook, .item__instagram, .item__linkedin, .item__telegram{
     &:hover{
@@ -30,9 +20,3 @@
         padding: 9px;
     }
 }
-// .item__twitter:hover{
-//     background-image: url(../img/twitter_white.svg);
-// }
-// .item__facebook{
-//     background-image: url(../img/facebook_white.svg);
-// }
