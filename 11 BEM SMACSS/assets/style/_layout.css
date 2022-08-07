@@ -3,6 +3,9 @@
   background: #FFFFFF;
   color: #3C3C3C;
   border-bottom: 1px solid #BDBDBD;
+  position: fixed;
+  background: #FFFFFF;
+  z-index: 1;
 }
 
 .container_about {

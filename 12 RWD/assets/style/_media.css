@@ -1,0 +1,32 @@
+@media screen and (max-width: 1366px) {
+  .header {
+    padding: 25px 0;
+  }
+
+  .main_text {
+    font-size: 36px;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    margin-left: 40px;
+  }
+
+  .search_link {
+    width: 20px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    margin-left: 20px;
+  }
+
+  .main_text {
+    font-size: 30px;
+  }
+}

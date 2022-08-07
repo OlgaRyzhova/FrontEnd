@@ -1,1 +1,1 @@
-.container{width:100%;background:#FFF;color:#3C3C3C;border-bottom:1px solid #BDBDBD}.container_about{width:100%;font-family:Lato,sans-serif;background:#F6F6F6}.container_footer{width:100%;background:#FFF;color:#3C3C3C}
+.container{width:100%;color:#3C3C3C;border-bottom:1px solid #BDBDBD;position:fixed;background:#FFF;z-index:1}.container_about{width:100%;font-family:Lato,sans-serif;background:#F6F6F6}.container_footer{width:100%;background:#FFF;color:#3C3C3C}
