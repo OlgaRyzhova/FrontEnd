@@ -40,6 +40,8 @@
 // HAEDER//
 
 .header{
+    width: 100%;
+    position: fixed;
     background-color: #fff;
     padding: 40px 0;
 }
@@ -79,7 +81,7 @@
     background-repeat: no-repeat;
     background-size: auto 100%;
     background-position: center;
-    padding-top: 100px;
+    padding-top: 100px+100px;
 }
 
 .main_text{
@@ -98,13 +100,11 @@
 }
 
 .blog_item_img, .blog_item_text{
-    width: 50%;
+    width: 49%;
+    height: auto;
     .blog_item_label_up{
         margin-bottom: 30px;
     }
-    // .blog_item_header{
-    //     margin-bottom: 15px;
-    // }
     .blog_item_label_down{
         margin-bottom: 50px;
     }
@@ -126,9 +126,13 @@
 .blog_item_text{
     margin: auto 0;
     max-width: 445px;
+    &:nth-child(even){
+        margin-right: auto;
+    }
     &:nth-child(odd){
         justify-content: end;
     }
+
 }
 
 .text_label {
@@ -172,6 +176,8 @@
     @include text_lightgrey;
     font-size: 12px;
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 .post_item_header, .popular_item_header{

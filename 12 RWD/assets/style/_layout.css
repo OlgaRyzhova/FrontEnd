@@ -7,7 +7,6 @@
 .flex_row {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 
 .flex_column {
@@ -25,6 +24,7 @@
 
 .container_popular {
   width: 100%;
+  gap: 30px;
   margin-bottom: 54px;
 }
 
@@ -34,9 +34,10 @@
 }
 
 .container_footer {
+  width: 90%;
+  max-width: 1170px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
   padding: 70px 0 25px;
 }
