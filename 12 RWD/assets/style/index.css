@@ -313,7 +313,7 @@ img {
   padding: 10px 45px;
   background-color: #565656;
   margin: 0 auto 90px;
-  border-color: transparent;
+  outline-color: transparent;
 }
 
 .info_item {
@@ -386,7 +386,7 @@ img {
 
 .button:hover {
   background: #FFFFFF;
-  border: 1px solid #565656;
+  outline: 1px solid #565656;
   color: #565656;
 }
 

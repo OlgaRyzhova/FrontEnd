@@ -1,1 +1,1 @@
-.nav_link{position:relative}.nav_link:hover ::after{content:"";width:70%;border-bottom:1px solid #000;bottom:-5px;right:50%;transform:translateX(50%);position:absolute;justify-content:center}.button:hover{background:#FFF;border:1px solid #565656;color:#565656}
+.nav_link{position:relative}.nav_link:hover ::after{content:"";width:70%;border-bottom:1px solid #000;bottom:-5px;right:50%;transform:translateX(50%);position:absolute;justify-content:center}.button:hover{background:#FFF;outline:#565656 solid 1px;color:#565656}
