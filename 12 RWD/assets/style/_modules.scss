@@ -1,3 +1,44 @@
+@use 'vars';
+
+@mixin text_title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: vars.$text-color-heading;
+}
+
+@mixin text_lightgrey {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+
+@mixin text_black{
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: vars.$text-color-heading;
+}
+
+@mixin text_grey{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+.arrow{
+    width: 23px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+// HAEDER//
+
 .header{
     background-color: #fff;
     padding: 40px 0;
@@ -12,7 +53,7 @@
     line-height: 17px;
     letter-spacing: 0.3em;
     text-transform: uppercase;
-    color: #000000;
+    color: vars.$text-color-heading;
 }
 
 .nav_block{
@@ -42,52 +83,169 @@
 }
 
 .main_text{
-    width: 100%;
-    max-width: 730px;
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 64px;
-    letter-spacing: 0.05em;
-    // color: $text-color-heading;
-    color: #000000;
+    @include text_title;
 }
+
+
+// BLOG //
 
 .blog_container{
     margin-top: 90px;
-}
-.blog_main_text{
-    font-weight: 400;
-    margin-bottom: 50px;
-}
-.blog_item_img, .blog_item_text{
-    width: 49%;
-    gap: 30px;
+    .blog_main_text{
+        font-weight: 400;
+        margin-bottom: 50px;
+    }
 }
 
-.blog_item_label{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 166%;
-    letter-spacing: 0.1em;
-    color: #7B7B7B;
-    margin-bottom: 30px;
+.blog_item_img, .blog_item_text{
+    width: 50%;
+    .blog_item_label_up{
+        margin-bottom: 30px;
+    }
+    // .blog_item_header{
+    //     margin-bottom: 15px;
+    // }
+    .blog_item_label_down{
+        margin-bottom: 50px;
+    }
+    .blog_item_description{
+        @include text_grey;
+        display: inline-block;
+    }
+}
+
+.blog_item{
+    gap: 30px;
+    margin-bottom: 50px;
+    &:nth-child(odd){
+        justify-content: flex-end;
+        margin-bottom: 90px;
+    }
+}
+
+.blog_item_text{
+    margin: auto 0;
+    max-width: 445px;
+    &:nth-child(odd){
+        justify-content: end;
+    }
+}
+
+.text_label {
+    @include text_lightgrey;
+}
+
+.text_header{
+    @include text_black;
+}
+.text_description{
+    @include text_grey;
+    display: inline-block;
 }
 
 .blog_item_header{
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 500;
-    font-size: 23px;
-    line-height: 166%;
-    letter-spacing: 0.1em;
-    color: #000000;
     margin-bottom: 15px;
 }
 
-.blog_item_description{
+// POST // 
+
+.post_main_text, .popular_main_text{
+    @include text_black;
+    font-size: 28px;
+}
+
+.title_post, .title_popular{
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.post_item{
+    width: 30%;
+    max-width: 370px;
+    justify-content: flex-start;
+}
+.post_item_label{
+    justify-content: space-between;
+}
+
+.post_item_label, .popular_item_label{
+    @include text_lightgrey;
+    font-size: 12px;
+    margin: 20px 0;
+}
+
+.post_item_header, .popular_item_header{
+    margin-bottom: 20px;
+}
+
+.popular_item{
+    width: 50%;
+    max-width: 570px;
+}
+
+.info_item_about{
+    @include text_lightgrey;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 23px;
+    color: vars.$text-color-heading;
+}
+
+.info_item_label{
+    @include text_grey;
+    font-size: 19px;
+}
+
+.button{
+    @include text_lightgrey;
+    color: #FFFFFF;
+    padding: 10px 45px;
+    background-color: #565656;
+    margin: 0 auto 90px;
+    border-color: transparent;
+}
+
+.info_item{
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.info_block{
+    width: 50%;
+    max-width: 470px;
+}
+
+.footer_item_title{
+    @include text_title;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 166%;
-    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+}
+
+.footer_item_label{
+        margin-bottom: 15px;
+    }
+
+.footer_social_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+
+.icon-instagram, .icon-facebook, .icon-twitter, .icon-linkedin2{
+    padding: 14px;
+    border: 1px solid #565656;
     color: #565656;
-    margin-top: 50px;
+    &:hover{
+        background: #565656;
+        color: #fff;
+    }
+}
+
+.copyright{
+    @include text_black;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
 }
