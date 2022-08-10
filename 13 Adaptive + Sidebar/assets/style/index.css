@@ -177,11 +177,6 @@ img {
   margin-bottom: 90px;
 }
 
-.image_block {
-  width: 100%;
-  height: 100%;
-}
-
 .title_block {
   font-weight: 600;
   font-size: 28px;
@@ -202,7 +197,6 @@ img {
 }
 
 .image_block {
-  width: 100%;
   margin-bottom: 20px;
 }
 
