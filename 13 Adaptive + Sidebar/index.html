@@ -147,6 +147,22 @@
                 $('#hamburger').toggleClass('open');
             })
         });
+        $('.hamburger').click(function(){
+            $this = $(this);
+            if ($this.hasClass('active')) {
+            $this.removeClass('active');
+            }
+            else {
+            $this.addClass('active');    
+            }
+            if($('.blur').hasClass('active')) {
+            $('.blur').removeClass('active');
+            }
+            else {
+            $('.blur').addClass('active');
+            }
+            });
+
     </script>
 </body>
 </html>

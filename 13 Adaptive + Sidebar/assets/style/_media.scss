@@ -10,6 +10,7 @@
         margin-left: 0;
         padding-top: 7px;
     }
+
     .hamburger{
         position: relative;
         z-index: 2;
@@ -44,6 +45,12 @@
             background-color: #000000;
             position: absolute;
         }
+        .body{
+            &::after{
+                backdrop-filter: blur(5px);
+            }
+            
+        }
     }
 
     .nav_list{
@@ -65,13 +72,14 @@
         &.open{
             right: 0;
         }
-
+        
         .nav_link{
         width: 100%;
         padding: 20px 0;
         text-align: center;
         font-weight: 600;
         position: relative;
+        font-size: 20px;
         &:hover{
             ::after{
                 content: '';
