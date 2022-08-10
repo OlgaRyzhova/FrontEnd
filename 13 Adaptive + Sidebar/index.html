@@ -13,7 +13,7 @@
         <div class="container flex_row">
             <a class="logo"href="#">case study</a>
             <nav class="nav_block flex_row">
-                <ul class="nav_list flex_row">
+                <ul class="nav_list flex_row" id="nav">
                     <li class="nav_link"><a href="#">home</a></li>
                     <li class="nav_link"><a href="#">about</a></li>
                     <li class="nav_link"><a href="#">works</a></li>
@@ -23,7 +23,7 @@
                 <a class="search_link" href="#">
                 <img src="./assets/img/search.svg" alt="">
                 </a>
-                <a class="hamburger" href="#">
+                <a class="hamburger" href="#" id="hamburger">
                     <span class="h_line"></span>
                 </a>
             </nav>
@@ -136,11 +136,15 @@
                 <h6 >© Copyright Manifest Theme. Allrights reserved</h6>
             </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
     <script>
         $(document).ready(function() {
-            $('.hamburger').click(function() {
-                $('.nav_list').toggleClass('open');
+            $('#hamburger').click(function() {
+                $('#nav').toggleClass('open');
+                $('#hamburger').toggleClass('open');
             })
         });
     </script>

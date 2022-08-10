@@ -10,6 +10,11 @@
   }
 
   .hamburger {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hamburger {
     display: inline-block;
     width: 42px;
     height: 42px;
@@ -44,7 +49,7 @@
   .nav_list {
     position: fixed;
     background: #FFFFFF;
-    right: 0;
+    right: -1000px;
     top: 0;
     bottom: 0;
     width: 75%;
@@ -55,17 +60,19 @@
     justify-content: center;
     padding: 20px;
     box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: all 0.8s ease;
   }
-
-  .nav_link {
+  .nav_list.open {
+    right: 0;
+  }
+  .nav_list .nav_link {
     width: 100%;
     padding: 20px 0;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     position: relative;
   }
-  .nav_link:hover ::after {
+  .nav_list .nav_link:hover ::after {
     content: "";
     width: 10%;
     border-bottom: 1px solid #000000;
@@ -83,6 +90,10 @@
 
   .header {
     padding: 18px 0;
+  }
+
+  .nav_list {
+    width: 100%;
   }
 
   .main_title {
