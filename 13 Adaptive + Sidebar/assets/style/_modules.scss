@@ -1,0 +1,158 @@
+@use 'vars';
+
+@mixin main_title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 0.05em;
+    color: vars.$text-color-heading;
+}
+
+@mixin title_black{
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: vars.$text-color-heading;
+}
+
+@mixin text_description{
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 32px;
+    letter-spacing: 0.05em;
+    color: #565656;
+}
+@mixin text_lightgrey {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 166%;
+    letter-spacing: 0.1em;
+    color: #7B7B7B;
+}
+
+// HEADER //
+
+.header{
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    padding: 38px 0;
+}
+
+.logo{
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5em;
+    color: vars.$text-color-heading;
+    text-transform: uppercase;
+    margin: auto 0;
+}
+
+.nav_block{
+    ul {
+        column-gap: 40px;
+    }
+}
+
+.search_link, .hamburger{
+    display: inline-block;
+    width: 17px;
+    margin-left: 80px;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav_link{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: vars.$text-color-heading;
+}
+
+// First Screen//
+
+.main_title{
+    @include main_title;
+    margin: 90px 0 70px;
+}
+
+.main_img{
+    width: 100%;
+    margin-bottom: 90px
+}
+
+.image_block{
+    width: 100%;
+    height: 100%;
+}
+// Normalize sections //
+
+.title_block{
+    @include title_black;
+    margin-bottom: 50px;
+}
+
+.text_block{
+    @include text_description;
+    margin-bottom: 90px;
+    width: 100%;
+}
+
+.image_block{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+// OVERVIEW//
+
+.text_part{
+    width: 50%;
+}
+
+.text_first{
+    padding-bottom: 30px;
+}
+
+// FOOTER// 
+
+.footer_title{
+    @include main_title;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.footer_label{
+    @include text_lightgrey;
+    margin-bottom: 15px;
+    }
+
+.footer_social_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    margin: 0;
+}
+
+.icon-instagram, .icon-facebook, .icon-twitter, .icon-linkedin2{
+    padding: 14px;
+    border: 1px solid #565656;
+    color: #565656;
+    &:hover{
+        background: #565656;
+        color: #fff;
+    }
+}
+
+.copyright{
+    @include title_black;
+    font-weight: 400;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
