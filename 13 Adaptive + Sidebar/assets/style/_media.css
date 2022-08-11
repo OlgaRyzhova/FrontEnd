@@ -11,7 +11,7 @@
 
   .hamburger {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 
   .hamburger {
@@ -45,9 +45,6 @@
     background-color: #000000;
     position: absolute;
   }
-  .hamburger .body::after {
-    backdrop-filter: blur(5px);
-  }
 
   .nav_list {
     position: fixed;
@@ -55,10 +52,10 @@
     right: -1000px;
     top: 0;
     bottom: 0;
-    width: 75%;
+    width: 100%;
     max-width: 600px;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -66,6 +63,7 @@
     transition: all 0.8s ease;
   }
   .nav_list.open {
+    width: 100%;
     right: 0;
   }
   .nav_list .nav_link {
@@ -96,8 +94,12 @@
     padding: 18px 0;
   }
 
-  .nav_list {
+  .nav_list, .nav_link {
     width: 100%;
+  }
+
+  .nav_list.open {
+    max-width: 100%;
   }
 
   .main_title {

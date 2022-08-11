@@ -1,6 +1,7 @@
 @use 'vars';
 
 @media screen and (max-width: 1300px){
+    
     .text_part{
         width: 100%;
     }
@@ -13,7 +14,7 @@
 
     .hamburger{
         position: relative;
-        z-index: 2;
+        z-index: 3;
     }
     .hamburger{
         display: inline-block;
@@ -45,12 +46,6 @@
             background-color: #000000;
             position: absolute;
         }
-        .body{
-            &::after{
-                backdrop-filter: blur(5px);
-            }
-            
-        }
     }
 
     .nav_list{
@@ -59,10 +54,10 @@
         right: -1000px;
         top: 0;
         bottom: 0;
-        width: 75%;
+        width: 100%;
         max-width: 600px;
         flex-direction: column;
-        z-index: 1;
+        z-index: 2;
         align-items: center;
         justify-content: center;
         padding: 20px;
@@ -70,6 +65,7 @@
         transition: all .8s ease;
 
         &.open{
+            width: 100%;
             right: 0;
         }
         
@@ -91,7 +87,7 @@
                 position: absolute;
                 justify-content: center;
             }
-        }
+        } 
     }
     }
 }
@@ -106,8 +102,14 @@
     .header{
         padding: 18px 0;
     }
-    .nav_list{
+    .nav_list, .nav_link{
         width: 100%;
+
+    }
+    .nav_list{
+        &.open{
+        max-width: 100%;
+        }
     }
 
     .main_title{

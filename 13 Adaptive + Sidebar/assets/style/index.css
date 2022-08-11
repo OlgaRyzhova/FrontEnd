@@ -93,6 +93,16 @@ body, html {
   box-sizing: border-box;
 }
 
+body::before {
+  content: "";
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 p, ul, li, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -324,7 +334,7 @@ img {
 
   .hamburger {
     position: relative;
-    z-index: 2;
+    z-index: 3;
   }
 
   .hamburger {
@@ -358,9 +368,6 @@ img {
     background-color: #000000;
     position: absolute;
   }
-  .hamburger .body::after {
-    backdrop-filter: blur(5px);
-  }
 
   .nav_list {
     position: fixed;
@@ -368,10 +375,10 @@ img {
     right: -1000px;
     top: 0;
     bottom: 0;
-    width: 75%;
+    width: 100%;
     max-width: 600px;
     flex-direction: column;
-    z-index: 1;
+    z-index: 2;
     align-items: center;
     justify-content: center;
     padding: 20px;
@@ -379,6 +386,7 @@ img {
     transition: all 0.8s ease;
   }
   .nav_list.open {
+    width: 100%;
     right: 0;
   }
   .nav_list .nav_link {
@@ -409,8 +417,12 @@ img {
     padding: 18px 0;
   }
 
-  .nav_list {
+  .nav_list, .nav_link {
     width: 100%;
+  }
+
+  .nav_list.open {
+    max-width: 100%;
   }
 
   .main_title {

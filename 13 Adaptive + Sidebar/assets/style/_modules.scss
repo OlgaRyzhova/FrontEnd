@@ -23,6 +23,7 @@
     letter-spacing: 0.05em;
     color: #565656;
 }
+
 @mixin text_lightgrey {
     font-weight: 400;
     font-size: 16px;
@@ -48,6 +49,7 @@
     text-transform: uppercase;
     margin: auto 0;
 }
+
 .hamburger{
     display: block;
 }
