@@ -21,26 +21,23 @@
   z-index: 0;
 }
 
-.photo_block, .photo_city {
+.photo_block {
   display: grid;
+  justify-content: center;
+  grid-gap: 30px;
+}
+
+.photo_city {
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat(3, 370px);
-  justify-content: space-between;
-  gap: 30px;
 }
 
 .photo_country {
-  display: grid;
-  justify-content: center;
-  gap: 30px;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat 4, 25%;
 }
 
 .photo_vyshyvanka {
-  display: grid;
-  justify-content: center;
-  gap: 30px;
   grid-template-columns: repeat(3, 30%);
   grid-template-rows: repeat(5, 20%);
 }
@@ -87,28 +84,25 @@
   position: absolute;
   justify-content: space-between;
   bottom: 20px;
-  padding: 0 20px;
   width: 100%;
 }
-
-.name {
+.text .name {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
   color: #FFFFFF;
-  width: 50%;
+  margin-left: 20px;
 }
-
-.date {
+.text .date {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
   color: #E0E0E0;
-  width: 50%;
+  margin-right: 20px;
 }
 
 .item_city img {

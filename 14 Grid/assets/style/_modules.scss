@@ -43,33 +43,23 @@
     z-index: 0;
 }
 
-.photo_block, .photo_city{
-    // width: 100%;
-    // max-width: 1170px;
+.photo_block{
     display: grid;
+    justify-content: center;
+    grid-gap: 30px;
+}
+
+.photo_city{
     grid-template-columns: repeat(3, 30%);
-    // grid-template-rows: repeat(3, 30%);
     grid-template-rows: repeat(3, 370px);
-    justify-content: space-between;
-    gap: 30px;
 }
 
 .photo_country{
-    // width: 100%;
-    // max-width: 1170px;
-    display: grid;
-    justify-content: center;
-    gap: 30px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat (4, 25%);
 }
 
 .photo_vyshyvanka{
-    // width: 100%;
-    // max-width: 1170px;
-    display: grid;
-    justify-content: center;
-    gap: 30px;
     grid-template-columns: repeat(3, 30%);
     grid-template-rows: repeat(5, 20%);
 }
@@ -121,20 +111,17 @@
     position: absolute;
     justify-content: space-between;
     bottom: 20px;
-    padding: 0 20px;
     width: 100%;
-}
-
-
-.name{
+    .name{
         @include name_text;
-        width: 50%;
+        margin-left: 20px
     }
 
     .date{
         @include date_text;
-        width: 50%;
+        margin-right: 20px;
     }
+}
 
 .item_city{
     img{
