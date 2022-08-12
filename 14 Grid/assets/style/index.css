@@ -294,12 +294,15 @@ img {
     padding-top: 100px;
   }
 
+  .ua {
+    top: 20px;
+  }
+
   .title {
     margin-bottom: 60px;
   }
 
   .block_about {
-    width: 90%;
     justify-content: center;
   }
 
@@ -317,11 +320,11 @@ img {
     margin-bottom: 40px;
   }
 
-  .block_about {
-    width: 90%;
-    justify-content: center;
+  .photo_block {
+    grid-gap: 10px;
   }
-
+}
+@media screen and (max-width: 620px) {
   .photo_block {
     display: flex;
     flex-direction: column;
