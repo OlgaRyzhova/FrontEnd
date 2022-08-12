@@ -124,6 +124,7 @@
 }
 
 .item_city{
+    max-height: 370px;
     img{
         position: absolute;
         left: 50%;
@@ -152,6 +153,7 @@
 }
 
 .item_country{
+    max-height: 370px;
     img{
         position: absolute;
         left: 50%;
@@ -187,6 +189,7 @@
 }
 
 .item_vyshyvanka{
+    max-height: 370px;
     img{
         position: absolute;
         left: 50%;
@@ -202,30 +205,28 @@
     &:nth-child(2){
         grid-row: 1/3;
         grid-column: 2/3;
+        max-height: 770px;
     }
 
     &:nth-child(5){
         grid-row: 2/4;
         grid-column: 3/4;
+        max-height: 770px;
     }
 
     &:nth-child(6){
         grid-row: 3/5;
         grid-column: 1/2;
+        max-height: 770px;
     }
 
     &:nth-child(8){
         grid-row: 4/5;
         grid-column: 2/4;
-        max-height:370px;
     }
 
     &:nth-child(9){
         grid-row: 5/6;
         grid-column: 1/3;
-        // max-height: 370px;
-    }
-    &:nth-child(10){
-        max-height: 370px;
     }
 }
