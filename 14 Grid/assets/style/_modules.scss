@@ -119,6 +119,7 @@
 
     .date{
         @include date_text;
+        text-align: right;
         margin-right: 20px;
     }
 }
