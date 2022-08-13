@@ -14,7 +14,7 @@
 
 .ua {
   width: 100%;
-  height: 5%;
+  height: 10%;
   position: absolute;
   top: 50px;
   right: 35%;
@@ -59,6 +59,7 @@
 .item:hover img {
   height: 100%;
   filter: brightness(1);
+  transition: all 0.3s ease;
 }
 .item:hover .icon {
   width: 100%;
@@ -119,6 +120,7 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
 .item_city:nth-child(2) {
   grid-row: 1/2;
@@ -146,6 +148,7 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
 .item_country:nth-child(2) {
   grid-row: 1/2;
@@ -178,6 +181,7 @@
   transform: translate(-50%, -50%);
   object-fit: cover;
   filter: brightness(0.7);
+  transition: all 0.3s ease;
 }
 .item_vyshyvanka:nth-child(2) {
   grid-row: 1/3;

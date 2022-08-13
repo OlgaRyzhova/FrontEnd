@@ -36,7 +36,7 @@
 
 .ua{
     width: 100%;
-    height: 5%;
+    height: 10%;
     position: absolute;
     top: 50px;
     right: 35%;
@@ -84,6 +84,7 @@
         img{
             height: 100%;
             filter: brightness(1);
+            transition: all .3s ease;
         }
         .icon{
             width: 100%;
@@ -136,6 +137,7 @@
         transform: translate(-50%, -50%);
         object-fit: cover;
         filter: brightness(0.7);
+        transition: all .3s ease;
     }
 
     &:nth-child(2){
@@ -165,6 +167,7 @@
         transform: translate(-50%, -50%);
         object-fit: cover;
         filter: brightness(0.7);
+        transition: all .3s ease;
     }
 
     &:nth-child(2){
@@ -201,6 +204,7 @@
         transform: translate(-50%, -50%);
         object-fit: cover;
         filter: brightness(0.7);
+        transition: all .3s ease;
     }
 
     &:nth-child(2){
