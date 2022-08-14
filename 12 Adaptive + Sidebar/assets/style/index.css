@@ -93,16 +93,6 @@ body, html {
   box-sizing: border-box;
 }
 
-body::before {
-  content: "";
-  display: block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-}
-
 p, ul, li, h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
@@ -187,10 +177,12 @@ img {
 .hamburger.open::before {
   transform: rotate(45deg) translate(20px, 15px);
   background-color: #000000;
+  transition: all 0.3s ease;
 }
 .hamburger.open::after {
   transform: rotate(-45deg) translate(6px, -1px);
   background-color: #000000;
+  transition: all 0.3s ease;
 }
 
 .nav_link {

@@ -76,11 +76,13 @@
         &::before {
             transform: rotate(45deg) translate(20px, 15px);
             background-color: vars.$text-color-heading;
+            transition: all .3s ease;
         }
     
         &::after {
             transform: rotate(-45deg) translate(6px, -1px);
             background-color: vars.$text-color-heading;
+            transition: all .3s ease;
         }
     }
 }
