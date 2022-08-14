@@ -1,0 +1,1 @@
+.container,body,html,img{width:100%}body,html{padding:0;margin:0;height:100%;box-sizing:border-box}img{display:block}.grid{max-width:840px;margin:0 auto;display:grid;grid-gap:10px;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr)}.letter{transition:all .3 ease}.letter.flipped{transform:rotate(360deg) scale(.8)}
