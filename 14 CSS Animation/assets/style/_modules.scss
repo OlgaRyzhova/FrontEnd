@@ -1,16 +1,37 @@
 .grid{
-    max-width: 840px;
-    margin: 0 auto;
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    position: absolute;
+    width: 100%;
+    max-width: 640px;
+    height: 90%;
+    // transition: all .4s ease;
+    transition: all 0.8s ease;
+    transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
 }
 
-.letter{
-    transition: all .3 ease;
+.bg_image, .letter{
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
 }
 
-.letter.flipped {
-    transform: rotate(360deg) scale(.8);
+
+.grid:hover{
+    transform: rotateY(180deg);
+    .letter.flipped{
+        animation: randomLetter 1000ms steps(26, end) infinite;
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes randomLetter {
+    0% {
+    background-position: 0 0;
+    }
+    100% {
+    background-position: 100% 0;
+    }
 }
