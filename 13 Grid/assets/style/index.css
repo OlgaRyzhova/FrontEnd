@@ -153,10 +153,6 @@ img {
   padding-top: 100%;
 }
 
-.ratio_2_to_1::before {
-  padding-top: 45%;
-}
-
 .icon {
   display: none;
 }
@@ -354,5 +350,6 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    padding: 0 10px;
   }
 }

@@ -37,7 +37,6 @@
     &:nth-child(2){
         padding-top: 63px;
     }
-    
 }
 
 .ua{
@@ -80,11 +79,11 @@
         padding-top: 100%;
     }
 }
-.ratio_2_to_1{
-    &::before{
-        padding-top: 45%;
-    }
-}
+// .ratio_2_to_1{
+//     &::before{
+//         padding-top: 45%;
+//     }
+// }
 .icon{
     display: none;
 }
