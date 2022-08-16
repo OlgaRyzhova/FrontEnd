@@ -1,14 +1,14 @@
-.grid{
+.cards{
     position: absolute;
     width: 100%;
-    max-width: 640px;
-    height: 90%;
-    // transition: all .4s ease;
-    transition: all 0.8s ease;
+    height: 100%;
+    transition: all .8s ease-in;
     transform-style: preserve-3d;
     display: flex;
-    align-items: center;
+    text-align: center;
     cursor: pointer;
+    padding-top: 50%;
+    animation: cardAppear 1.4s forwards;
 }
 
 .bg_image, .letter{
@@ -19,10 +19,12 @@
 }
 
 
-.grid:hover{
+.cards:hover{
+    // animation: cardFlip .275s forwards linear;
     transform: rotateY(180deg);
     .letter.flipped{
         animation: randomLetter 1000ms steps(26, end) infinite;
+        // animation: cardUnFlip .275s forwards linear;
         transform: rotateY(180deg);
     }
 }
@@ -34,4 +36,44 @@
     100% {
     background-position: 100% 0;
     }
+}
+@keyframes cardAppear {
+  0% {
+    transform: rotate3d(0,0,1,15deg) translate3d(0,-100vh,0);
+  }
+  30% {
+    transform: rotate3d(0,0,0,0deg) translate3d(0,0,0);
+  }
+  65% {
+    transform: rotate3d(0,0,0,0deg) translate3d(0,0,0) scale3d(1,1,1);
+  }
+  80% {
+    transform: rotate3d(0,0,1,-5deg) scale3d(1.05,1.05,1);
+  }
+}
+
+@keyframes cardFlip {
+  0% {
+    transform: rotateZ(0deg) rotateY(180deg);
+  } 
+  50% {
+    transform: rotateZ(-10deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  }
+  
+}
+
+@keyframes cardUnFlip {
+  0% {
+    transform: rotateZ(0deg) rotateY(0deg);
+  } 
+  50% {
+    transform: rotateZ(-10deg) rotateY(90deg);
+  }
+  100% {
+    transform: rotateZ(0deg) rotateY(180deg);
+  }
+  
 }
