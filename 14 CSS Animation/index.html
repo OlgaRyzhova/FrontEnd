@@ -150,7 +150,7 @@
 //   let flif_cardIndex = Math.floor(Math.random() * 51);
 //   flip_card[flip_cardIndex].classList.add('flipped');
 // }, 2000)
-        let flip_card = document.querySelectorAll('.letter');
+        let flip_card = document.querySelectorAll('.flip_card');
         window.setInterval(function() {
             flip_card.forEach(el => el.classList.remove('flipped'));
             let flip_cardIndex = Math.floor(Math.random() * 26);

@@ -39,7 +39,6 @@ img {
   cursor: pointer;
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.2);
   margin: 0 auto;
-  perspective: 1000px;
 }
 
 .letter {
@@ -56,8 +55,6 @@ img {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: ease-in-out 600ms;
 }
 
 .bg_image {
@@ -68,8 +65,12 @@ img {
   transform: rotateY(180deg);
 }
 .flip_card:hover .letter.flipped {
-  animation: randomletter 500ms steps(26, end) infinite;
+  animation: randomletter 2000ms steps(26, end) infinite;
   transform: rotateY(180deg);
+}
+
+.flip_card.flipped {
+  transform: rotateY(180deg) scale(0.9);
 }
 
 @keyframes randomLetter {
