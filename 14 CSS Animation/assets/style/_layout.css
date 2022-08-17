@@ -1,11 +1,18 @@
 .container {
   width: 100%;
-  background: #FFFFFF;
+  background: #e6f0f7;
 }
 
-.section {
-  width: 90%;
-  max-width: 680px;
-  position: relative;
+.container_cards {
+  width: 100%;
+  max-width: 1860px;
   margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 30px;
 }
