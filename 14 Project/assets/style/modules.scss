@@ -68,18 +68,40 @@
     gap: 24px;
 }
 
+// .nav_item{
+//     &:hover{
+//         &:after{
+//             content: '';
+//             width: 10%;
+//             border-bottom: 1px solid #1A1930;
+//             bottom: 0;
+//             right: 50%;
+//             transform: translateX(50%);
+//             position: absolute;
+//             justify-content: center;
+//         }
+//     }
+// }
 .button{
     display: inline-block;
     @include text_button;
     padding: 18px 36px 19px;
     border-radius: 5px;
+    transition: 0.5s ease;
+    &:hover{
+        transform: scale(0.9);
+    }
 }
 
 .button_header{
     color: #1A1930;
+    transition: 0.5s ease;
     background: rgba(255, 255, 255, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+    &:hover{
+        transform: scale(0.9);
+    }
 }
 
 // FIRST SCREEN //
@@ -110,6 +132,10 @@
 .button_standard{
     color: #FFFFFF;
     background: #6259EA;
+    transition: 0.5s ease;
+    &:hover{
+        transform: scale(0.9);
+    }
 }
 
 .button_light{
@@ -153,6 +179,11 @@
 .icon_twitter, .icon_instagram, .icon_facebook{
     width: 25px;
     height: 25px;
+    // transition: 0.5s ease;
+    // &:hover{
+    //     transform: scale(0.9);
+    //     background-color: #EA5959;
+    // }
 }
 
 .advertisement_block{
