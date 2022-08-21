@@ -209,6 +209,7 @@ img {
 
 .nav_item {
   position: relative;
+  transition: 0.5s ease;
 }
 .nav_item:hover {
   transform: scale(0.9);
