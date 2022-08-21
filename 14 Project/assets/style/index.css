@@ -207,6 +207,23 @@ img {
   gap: 24px;
 }
 
+.nav_item {
+  position: relative;
+}
+.nav_item:hover {
+  transform: scale(0.9);
+}
+.nav_item:hover :after {
+  content: "";
+  width: 70%;
+  border-bottom: 1px solid #1A1930;
+  bottom: -5%;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  justify-content: center;
+}
+
 .button {
   display: inline-block;
   font-family: "Prompt", sans-serif;
@@ -320,11 +337,6 @@ img {
 .icon_twitter, .icon_instagram, .icon_facebook {
   width: 25px;
   height: 25px;
-  transition: 0.5s ease;
-}
-.icon_twitter:hover, .icon_instagram:hover, .icon_facebook:hover {
-  transform: scale(0.9);
-  background-color: #EA5959;
 }
 
 .advertisement_block {

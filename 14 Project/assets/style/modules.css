@@ -34,6 +34,23 @@
   gap: 24px;
 }
 
+.nav_item {
+  position: relative;
+}
+.nav_item:hover {
+  transform: scale(0.9);
+}
+.nav_item:hover :after {
+  content: "";
+  width: 70%;
+  border-bottom: 1px solid #1A1930;
+  bottom: -5%;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  justify-content: center;
+}
+
 .button {
   display: inline-block;
   font-family: "Prompt", sans-serif;
