@@ -271,19 +271,19 @@
 
 .bg_features1 {
   max-width: 235px;
-  top: 35%;
+  top: 40%;
   right: 85%;
 }
 
 .bg_features2 {
   max-width: 317px;
   top: 70%;
-  right: 40%;
+  right: 43%;
 }
 
 .bg_features3 {
   max-width: 420px;
-  bottom: 10%;
+  bottom: 15%;
   left: 72%;
 }
 
@@ -300,15 +300,45 @@
 
 .features_block {
   display: flex;
-  padding: 44px 65px 61px 52px;
+  justify-content: space-between;
+  padding: 44px 65px 41px 52px;
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid #FBFBFF;
   box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
   border-radius: 10px;
+  align-items: flex-start;
 }
 
 .simple_block {
   max-width: 279px;
+  justify-content: flex-start;
+}
+
+.custom_block {
+  max-width: 320px;
+  justify-content: center;
+  position: relative;
+}
+.custom_block::before {
+  content: "";
+  height: 100%;
+  border-left: 1px solid #E7E5FF;
+  position: absolute;
+  top: 0%;
+  left: -20%;
+}
+
+.style_block {
+  max-width: 316px;
+  justify-content: flex-end;
+  position: relative;
+}
+.style_block::before {
+  content: "";
+  height: 120%;
+  border-left: 1px solid #E7E5FF;
+  position: absolute;
+  top: 0%;
+  left: -20%;
 }
 
 .feature_title {
@@ -333,18 +363,23 @@
 }
 
 .feature_item {
-  vertical-align: top;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-family: "Prompt", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #1A1930;
+  margin-bottom: 14px;
 }
 
 .icon {
-  width: 17.5px;
-  height: 17.5px;
   padding-right: 22px;
+}
+
+.text {
+  justify-content: flex-start;
 }
 
 .video_section {
@@ -532,15 +567,13 @@
   font-size: 80px;
   line-height: 112px;
   color: #2D2B5C;
-  margin-top: 52px;
   display: inline-block;
 }
 .price_item .price_footer {
   display: flex;
   max-width: 536px;
-}
-.price_item .price_month {
-  margin-left: 0;
+  margin-top: 52px;
+  align-items: center;
 }
 .price_item .button_price {
   margin-left: 178px;
@@ -548,11 +581,41 @@
   background: #6259EA;
   align-items: center;
 }
+.price_item .price_month {
+  margin-top: 70px;
+}
+
+.pro_header {
+  display: flex;
+}
+
+.team_container {
+  display: flex;
+}
+
+.arrow {
+  padding: 10px 15px;
+  background: #FBFBFF;
+  box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
+  border-radius: 5px;
+}
+
+.arrow_left {
+  margin-right: 68px;
+}
+
+.arrow_right {
+  margin-left: 68px;
+}
 
 .team_header {
   padding-top: 39px;
   display: flex;
   margin-bottom: 91px;
+}
+.team_header .button_standard {
+  justify-content: flex-end;
+  margin-right: 30px;
 }
 
 .team_title {
@@ -562,7 +625,7 @@
 .team_block {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1140px;
+  max-width: 1220px;
 }
 
 .employee {
@@ -610,6 +673,24 @@
   z-index: -1;
 }
 
+.arrow_circle {
+  width: 45px;
+  padding: 42px;
+}
+
+.no_line {
+  display: flex;
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1A1930;
+  font-size: 34px;
+  line-height: 38px;
+  max-width: 823px;
+  align-items: center;
+}
+
 .question_item {
   display: flex;
   font-family: "Prompt", sans-serif;
@@ -620,18 +701,14 @@
   font-size: 34px;
   line-height: 38px;
   max-width: 823px;
-  margin-top: 31px;
-  text-align: left;
+  align-items: center;
 }
 .question_item::before {
-  content: url(../img/arrow_circle.svg);
-  padding-right: 45px;
-}
-.question_item::after {
   content: "";
   width: 100%;
   position: absolute;
   border: 1px solid #E7E5FF;
+  margin-bottom: 90px;
 }
 
 .feedback_section {
@@ -644,6 +721,13 @@
   top: -20%;
   right: 70%;
   z-index: 0;
+}
+
+.bg_feedback_pink {
+  position: absolute;
+  max-width: 217px;
+  right: 10%;
+  bottom: -5%;
 }
 
 .feedback_title {
@@ -663,12 +747,12 @@
 
 .feedback_photo {
   max-width: 200px;
-  margin-right: 50px;
   margin-bottom: 32px;
 }
 
-.photo_block {
-  max-width: 200px;
+.feedback_photo_block {
+  width: 550px;
+  margin-right: 50px;
 }
 
 .icon_horizontal {
@@ -678,11 +762,18 @@
   gap: 26px;
 }
 
+.feedback_text {
+  display: flex;
+  margin-top: 50px;
+  margin-bottom: 69px;
+}
+
 .name_block {
   max-width: 200px;
 }
 
 .name_man {
+  margin-top: 20px;
   font-family: "Prompt", sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -701,24 +792,90 @@
   color: #ABAABB;
 }
 
+.star_inactive:before {
+  content: "";
+  color: #EA5959;
+}
+
+.star_active:before {
+  content: "";
+  color: #EA5959;
+}
+
+.feedback_message {
+  font-family: "Prompt", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1A1930;
+  font-size: 30px;
+  line-height: 42px;
+  color: #2D2B5C;
+  margin-bottom: 33px;
+}
+
+.arrow_block {
+  display: flex;
+  float: right;
+  gap: 20px;
+  max-width: 120px;
+}
+
 .press_section {
-  max-width: 1440px;
+  max-width: 1390px;
   margin: 0 auto;
   position: relative;
 }
 
 .press_header {
+  max-width: 1330px;
   display: flex;
-  margin: 39px 0 68px;
+  margin: 39px auto 68px;
+  justify-content: space-between;
 }
 
 .press_block {
+  max-width: 1440px;
   display: flex;
   margin-bottom: 140px;
+  margin: 0 auto;
+  align-items: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .press_item {
-  max-width: 548px;
+  max-width: 418px;
+  padding-right: 60px;
+}
+.press_item:nth-child(3) {
+  padding-right: 0;
+}
+
+.vertical_line {
+  position: relative;
+  width: 100%;
+}
+.vertical_line::before {
+  content: "";
+  height: 100%;
+  border-left: 1px solid #E7E5FF;
+  position: absolute;
+  top: 0%;
+  left: -5%;
+}
+
+.press_photo {
+  width: 430px;
+}
+
+.press_description {
+  width: 430px;
+  padding-left: 20px;
+}
+
+.press_photo3 {
+  max-width: 430px;
 }
 
 .button_small {
@@ -729,7 +886,7 @@
   padding: 4px 25px;
   background: #E7E5FF;
   border-radius: 5px;
-  margin-bottom: 16px;
+  color: #2D2B5C;
 }
 
 .press_text {
@@ -738,6 +895,7 @@
   font-size: 35px;
   line-height: 42px;
   color: #1A1930;
+  margin-top: 16px;
   margin-bottom: 38px;
 }
 
@@ -825,6 +983,14 @@
 .media_block {
   display: flex;
   margin-bottom: 104px;
+}
+
+.media_photos {
+  display: flex;
+}
+
+.media_photo {
+  max-width: 230px;
 }
 
 .footer {
