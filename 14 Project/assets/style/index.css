@@ -201,10 +201,6 @@ img {
 }
 .logo:hover :after {
   content: "";
-  width: 70%;
-  border-bottom: 1px solid #1A1930;
-  bottom: -5%;
-  right: 50%;
   transform: translateX(50%);
   position: absolute;
   justify-content: center;

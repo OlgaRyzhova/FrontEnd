@@ -65,10 +65,6 @@
         transform: scale(1.2);
         :after{
             content: '';
-            width: 70%;
-            border-bottom: 1px solid #1A1930;
-            bottom: -5%;
-            right: 50%;
             transform: translateX(50%);
             position: absolute;
             justify-content: center;
@@ -593,9 +589,6 @@
     border: 2px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
     border-radius: 10px;
-    // &:nth-child(1){
-    //     margin-right: 20px;
-    // }
     .price_title{
         padding-bottom: 44px;
     }
