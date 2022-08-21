@@ -46,6 +46,7 @@
     z-index: 0;
     justify-content: flex-end;
 }
+
 .header_block{
     position: relative;
     max-width: 1330px;
@@ -59,6 +60,20 @@
 .logo{
     justify-content: flex-start;
     max-width: 111px;
+    transition: 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+        :after{
+            content: '';
+            width: 70%;
+            border-bottom: 1px solid #1A1930;
+            bottom: -5%;
+            right: 50%;
+            transform: translateX(50%);
+            position: absolute;
+            justify-content: center;
+        }
+    }
 }
 
 .nav_list{
@@ -72,7 +87,7 @@
     position: relative;
     transition: 0.5s ease;
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
         :after{
             content: '';
             width: 70%;
@@ -93,7 +108,7 @@
     border-radius: 5px;
     transition: 0.5s ease;
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
     }
 }
 
@@ -104,7 +119,7 @@
     border: 1px solid rgba(255, 255, 255, 0.4);
     box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
     }
 }
 
@@ -138,7 +153,7 @@
     background: #6259EA;
     transition: 0.5s ease;
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
     }
 }
 
@@ -150,7 +165,7 @@
     box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
     border-radius: 5px;
     &:hover{
-        transform: scale(0.9);
+        transform: scale(1.2);
     }
 }
 .click_block{
@@ -187,11 +202,10 @@
 .icon_twitter, .icon_instagram, .icon_facebook{
     width: 25px;
     height: 25px;
-    // transition: 0.5s ease;
-    // &:hover{
-    //     transform: scale(0.9);
-    //     background-color: #EA5959;
-    // }
+    transition: 0.5s ease;
+    &:hover{
+        transform: scale(1.2);
+    }
 }
 
 .advertisement_block{
@@ -218,7 +232,7 @@
 .analytics_section{
     &::after{
         content: '';
-        width: 100vw;
+        width: 100%;
         position: absolute;
         border-top: 1px solid #E7E5FF;
     }
@@ -269,7 +283,6 @@
 .analytics_item{
     max-width: 750px;
     align-items: center;
-    margin-bottom: 31px;
     position: relative;
     left: 20%;
     display: flex;
@@ -342,6 +355,7 @@
 .features_header{
     display: flex;
     align-items: center;
+    padding-top: 100px;
     margin-bottom: 167px;
 }
 
@@ -441,7 +455,7 @@
         content: '';
         margin: auto;
         border: 1px solid #E7E5FF;
-        width: 100vw;
+        width: 140%;
         top: 50%;
         left: 100%;
     }
@@ -518,7 +532,7 @@
         content: '';
         margin: auto;
         border: 1px solid #E7E5FF;
-        width: 100vw;
+        width: 160%;
         top: 50%;
         right: 100%;
     }
@@ -661,7 +675,6 @@
 }
 
 .employee{
-    flex-direction: column;
     padding: 0 22px 16px;
     text-align: center;
     .photo{
@@ -944,16 +957,19 @@
 }
 
 .form_block{
-    max-width: 604px;
+    max-width: 640px;
     @include text_nav;
     .label{
         width: 100%;
         color: #2D2B5C;
     }
     .button_contact{
+        width: 100%;
         font-size: 20px;
-        padding: 17px 287px;
-        margin-bottom: 50px
+        padding: 17px 0px;
+        margin-bottom: 50px;
+        box-sizing: border-box;
+        text-align: center;
     }
 }
 
@@ -968,6 +984,7 @@
     padding: 15px 0 15px 32px;
     margin-top: 11px;
     margin-bottom: 18px;
+    box-sizing: border-box;
 }
 
 .input_large{
@@ -1052,6 +1069,8 @@
     position: relative;
     margin-top: 58px;
     margin-bottom: 61px;
+    width: 60%;
+    
     &::before{
         content: '';
         position: absolute;
@@ -1071,5 +1090,20 @@
         flex-direction: column;
         gap: 9px;
         margin-right: 139px;
+        max-height: 153px;
+        flex-wrap: wrap;
+        width: 100%;
     }
+}
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: .1s all ease;
+}
+
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
 }
