@@ -1,0 +1,108 @@
+@use 'vars';
+
+@mixin main_logo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52px;
+    text-transform: uppercase;
+    color: vars.$text_white;
+}
+
+@mixin text_slogan{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: vars.$text_white;
+}
+
+@mixin text_14px{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2em;
+}
+
+@mixin section_logo{
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: vars.$text_white;
+}
+
+@mixin text_question{
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: vars.$text_white;
+}
+
+@mixin text_title{
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 40px;
+    text-transform: capitalize;
+    color: vars.$text_white;
+}
+
+@mixin text_description {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: vars.$text_white;
+}
+
+@mixin text_button{
+    font-family: 'Aleo', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: vars.$text_white;
+}
+
+@mixin text_country {
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1em;
+    color: vars.$text_white;
+}
+
+.header{
+    background-image: url(../img/bg_main.jpg);
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.logo{
+    @include main_logo;
+    padding-top: 295px;
+    margin-bottom: 8px;
+}
+
+.slogan{
+    
+}

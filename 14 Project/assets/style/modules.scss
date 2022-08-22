@@ -963,6 +963,7 @@
         margin-bottom: 50px;
         box-sizing: border-box;
         text-align: center;
+        border: none;
     }
 }
 
@@ -1087,16 +1088,4 @@
         flex-wrap: wrap;
         width: 100%;
     }
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: .1s all ease;
-}
-
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
 }

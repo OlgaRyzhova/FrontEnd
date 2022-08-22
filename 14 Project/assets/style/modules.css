@@ -999,6 +999,7 @@
   margin-bottom: 50px;
   box-sizing: border-box;
   text-align: center;
+  border: none;
 }
 
 .input {
@@ -1131,16 +1132,4 @@
   max-height: 153px;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.reveal {
-  position: relative;
-  transform: translateY(150px);
-  opacity: 0;
-  transition: 0.1s all ease;
-}
-
-.reveal.active {
-  transform: translateY(0);
-  opacity: 1;
 }
