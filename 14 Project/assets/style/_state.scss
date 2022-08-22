@@ -6,8 +6,15 @@
     }
 }
 
-.bg_analytics,.bg_features1, .bg_features2, .bg_features3{
-    animation:rise 1.5s 1;
+.bg_analytics,.bg_features1{
+    animation:rise .8s 1;
+}
+.bg_features3{
+    animation:rise_pause 1.5s 1;
+}
+
+.bg_features2, {
+    animation:rise_pause .9s 1;
 }
 
 .img_bubles{
@@ -56,6 +63,12 @@
     100% {transform:scale(1);}
 }
 
+
+@keyframes rise_pause {
+    0% {transform:scale(.0);}
+    30% {transform:scale(.0);}
+    100% {transform:scale(1);}
+}
 @keyframes rise_right {
     0% {transform: translateX(-100%);}
     50% {transform: translateX(0);}
