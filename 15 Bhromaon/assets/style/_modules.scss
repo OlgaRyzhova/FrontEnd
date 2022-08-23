@@ -16,6 +16,7 @@
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
+    text-transform: capitalize;
     color: vars.$text_white;
 }
 
@@ -91,18 +92,196 @@
     color: vars.$text_white;
 }
 
+// HEADER //
+
 .header{
+    max-width: 1920px;
+    min-height: 862px;
     background-image: url(../img/bg_main.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     margin: 0 auto;
+    text-align: center;
 }
 
 .logo{
     @include main_logo;
     padding-top: 295px;
-    margin-bottom: 8px;
+    margin: 0 auto 8px;
 }
 
 .slogan{
-    
+    @include text_slogan;
+    color: vars.$text_white;
+    letter-spacing: 0.31em;
+    margin-bottom: 48px;
+}
+
+.form{
+    margin-bottom: 211px;
+    position: relative;
+    .input{
+        width: 30%;
+        background: #FFFFFF;
+        padding: 20px 334px 20px 36px;
+        // border: none;
+        margin: 0;
+        box-sizing: border-box;
+        &::placeholder{
+            @include text_14px;
+            text-transform: capitalize;
+        }
+    }
+    .button{
+        position: absolute;
+        @include text_question;
+        top: 2px;
+        cursor: pointer;
+        // width: 100%;
+        border: none;
+        padding: 16px 24px;
+        background: #5373FD;
+        box-sizing: border-box;
+        display: inline-block;
+        z-index: 2;
+        .search_icon{
+            fill: white;
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+        }
+    }
+}
+
+.scroll{
+    @include text_14px;
+    color: vars.$text_white;
+    text-transform: capitalize;
+    position: relative;
+    padding-bottom: 8px;
+    &::after{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        width: 8px;
+        height: 9px;
+        border: solid #FFFFFF;
+        border-radius: 10%;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+        right: 50%;
+        bottom: -10px;
+    }
+}
+
+// NAVIGATION //
+
+.navbar{
+    background: #5373FD;
+}
+
+.navbar_block{
+    display: flex;
+    padding: 32px 0;
+    .nav_logo{
+        @include section_logo;
+        justify-content: flex-start;
+    }
+}
+
+.nav_list{
+    @include text_question;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    .nav_item{
+        position: relative;
+        margin-right: 40px;
+        transition: .5s ease;
+        &:last-child{
+            margin-right: 0;
+        }
+        &:hover{
+            transform: scale(1.1);
+            &:after{
+                content: '';
+                position: absolute;
+                border-bottom: 1px solid #FFFFFF;
+                transform: translateX(50%);
+                width: 80%;
+                right: 50%;
+                bottom: -5px;
+            }
+        } 
+    }
+}
+
+// EXPLORE section //
+
+.explore{
+    width: 100%;
+    max-width: 1920px;
+    height: 862px;
+    background-image: url(../img/bg_explore.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0 auto;
+    .container_explore{
+        display: flex;
+        padding-top: 124px;
+        justify-content: flex-start;
+        .explore_wrapper_text{
+            width: 50%;
+            margin: 0;
+            .explore_title{
+                @include text_title;
+                margin-top: 66px;
+                margin-bottom: 24px;
+            }
+            .explore_text{
+                @include text_description;
+                padding-bottom: 32px;
+                .text:nth-child(1){
+                    padding-bottom: 30px;
+                }
+            }
+            .button{
+                @include text_button;
+                padding: 20px 32px;
+                margin-top: 52px;
+                background: #5373FD;
+            }
+        }
+        .explore_wrapper_img{
+            max-width: 424px;
+            margin: 0 136px;
+            display: flex;
+            flex-direction: column;
+            .explore_img1{
+                margin-bottom: 16px;
+            }
+            .explore_img2{
+                margin-left: 74px;
+            }
+        }
+    }
+}
+
+// STEPS section //
+
+
+.steps{
+    background: #333333;
+}
+.container_steps{
+
 }

@@ -154,6 +154,14 @@ img {
   padding-top: 100%;
 }
 
+.one_to_two::before {
+  padding-top: 46%;
+}
+
+.three_to_one::before {
+  padding-top: 208%;
+}
+
 .icon {
   display: none;
 }
@@ -209,9 +217,6 @@ img {
   margin-right: 20px;
 }
 
-.item_city {
-  max-height: 370px;
-}
 .item_city img {
   position: absolute;
   left: 50%;

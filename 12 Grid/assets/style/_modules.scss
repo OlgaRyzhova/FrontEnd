@@ -80,11 +80,19 @@
         padding-top: 100%;
     }
 }
-// .ratio_2_to_1{
-//     &::before{
-//         padding-top: 45%;
-//     }
-// }
+
+.one_to_two{
+    &::before{
+        padding-top: 46%;
+    }
+}
+
+.three_to_one{
+    &::before{
+        padding-top: 208%;
+    }
+}
+
 .icon{
     display: none;
 }
@@ -136,7 +144,6 @@
 }
 
 .item_city{
-    max-height: 370px;
     img{
         position: absolute;
         left: 50%;
@@ -247,3 +254,5 @@
         grid-column: 1/3;
     }
 }
+
+

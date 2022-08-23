@@ -30,6 +30,7 @@
   src: local(""), url("../fonts/Aleo/aleo-v11-latin-regular.woff2") format("woff2"), url("../fonts/Aleo/aleo-v11-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* Reset and base styles  */
 body, html {
   padding: 0;
   margin: 0;
@@ -43,7 +44,7 @@ a {
   color: inherit;
 }
 
-p, ul, li, h1, h2, h3, h4, h5, h6 {
+p, ul, li, h1, h2, h3, h4, h5, h6, label, input {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -56,15 +57,30 @@ img {
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
+  width: 90%;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
-.header {
-  background-image: url(../img/bg_main.jpg);
-  background-repeat: no-repeat;
+.flex_row {
+  flex-direction: row;
+  justify-content: space-between;
   margin: 0 auto;
+  align-items: center;
+}
+
+.header {
+  max-width: 1920px;
+  min-height: 862px;
+  background-image: url(../img/bg_main.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .logo {
@@ -76,5 +92,221 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   padding-top: 295px;
-  margin-bottom: 8px;
+  margin: 0 auto 8px;
+}
+
+.slogan {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  color: #FFFFFF;
+  letter-spacing: 0.31em;
+  margin-bottom: 48px;
+}
+
+.form {
+  margin-bottom: 211px;
+  position: relative;
+}
+.form .input {
+  width: 30%;
+  background: #FFFFFF;
+  padding: 20px 334px 20px 36px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.form .input::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  text-transform: capitalize;
+}
+.form .button {
+  position: absolute;
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  top: 2px;
+  cursor: pointer;
+  border: none;
+  padding: 16px 24px;
+  background: #5373FD;
+  box-sizing: border-box;
+  display: inline-block;
+  z-index: 2;
+}
+.form .button .search_icon {
+  fill: white;
+  width: 16px;
+  height: 16px;
+  margin-right: 12px;
+}
+
+.scroll {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  color: #FFFFFF;
+  text-transform: capitalize;
+  position: relative;
+  padding-bottom: 8px;
+}
+.scroll::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  border: solid #FFFFFF;
+  border-radius: 10%;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  right: 50%;
+  bottom: -10px;
+}
+
+.navbar {
+  background: #5373FD;
+}
+
+.navbar_block {
+  display: flex;
+  padding: 32px 0;
+}
+.navbar_block .nav_logo {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  justify-content: flex-start;
+}
+
+.nav_list {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav_list .nav_item {
+  position: relative;
+  margin-right: 40px;
+  transition: 0.5s ease;
+}
+.nav_list .nav_item:last-child {
+  margin-right: 0;
+}
+.nav_list .nav_item:hover {
+  transform: scale(1.1);
+}
+.nav_list .nav_item:hover:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid #FFFFFF;
+  transform: translateX(50%);
+  width: 80%;
+  right: 50%;
+  bottom: -5px;
+}
+
+.explore {
+  width: 100%;
+  max-width: 1920px;
+  height: 862px;
+  background-image: url(../img/bg_explore.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+}
+.explore .container_explore {
+  display: flex;
+  padding-top: 124px;
+  justify-content: flex-start;
+}
+.explore .container_explore .explore_wrapper_text {
+  width: 50%;
+  margin: 0;
+}
+.explore .container_explore .explore_wrapper_text .explore_title {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin-top: 66px;
+  margin-bottom: 24px;
+}
+.explore .container_explore .explore_wrapper_text .explore_text {
+  font-family: "Josefin Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  padding-bottom: 32px;
+}
+.explore .container_explore .explore_wrapper_text .explore_text .text:nth-child(1) {
+  padding-bottom: 30px;
+}
+.explore .container_explore .explore_wrapper_text .button {
+  font-family: "Aleo", serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 20px 32px;
+  margin-top: 52px;
+  background: #5373FD;
+}
+.explore .container_explore .explore_wrapper_img {
+  max-width: 424px;
+  margin: 0 136px;
+  display: flex;
+  flex-direction: column;
+}
+.explore .container_explore .explore_wrapper_img .explore_img1 {
+  margin-bottom: 16px;
+}
+.explore .container_explore .explore_wrapper_img .explore_img2 {
+  margin-left: 74px;
+}
+
+.steps {
+  background: #333333;
 }
