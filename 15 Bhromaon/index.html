@@ -8,23 +8,31 @@
     <title>Bhromaon</title>
 </head>
 <body>
-    <header class="header">
-        <h2 class="logo">bromaon</h2>
-        <h3 class="slogan">safe travel anywhere</h3>
-        <form class="form" action="#">
-            <input class="input" type="text" placeholder="search your travel destination">
-            <button class="button" type="submit">
-                <svg class="search_icon">
-                    <use href="./assets/img/sprite_svg.svg#search"/>
-                </svg>search
-            </button>
-        </form>
-        <p class="scroll">scroll Down</p>
+    <div class="container">
+        <header class="header">
+        <div class="container_header">
+            <a class="logo_header" href="#">bromaon</a>
+            <h3 class="slogan">safe travel anywhere</h3>
+            <form class="form" action="#">
+                <input class="input" type="text" placeholder="search your travel destination">
+                <button class="button_form" type="submit">
+                    <svg class="search_icon">
+                        <use href="./assets/img/sprite_svg.svg#search"/>
+                    </svg>search
+                </button>
+            </form>
+            <div class="scroll">
+                <a href="#">scroll down
+                <p class="arrow"></p>
+                </a>
+            </div>
+            
+        </div>
     </header>
 
     <nav class="navbar">
-        <div class="container navbar_block flex_row">
-            <a class="nav_logo">Bhromaon</a>
+        <div class="navbar_container flex_row">
+            <a class="nav_logo" href="#">Bhromaon</a>
             <ul class="nav_list ">
                 <li class="nav_item"><a href="#">who we are</a></li>
                 <li class="nav_item"><a href="#">what we do</a></li>
@@ -35,7 +43,7 @@
     </nav>
 
     <section class="explore">
-        <div class="container container_explore">
+        <div class="container_explore">
             <div class="explore_wrapper_text">
                 <h4 class="explore_title">why choose us</h4>
                 <div class="explore_text">
@@ -51,84 +59,102 @@
         </div>
     </section>
 
-        <section class="steps">
-            <div class="container container_steps">
-                <div class="step_block">
-                    <img src="" alt="Search Place">
-                    <p class="search_text">search places</p>
-                </div>
-                <div class="step_block">
-                    <img src="" alt="Select Places">
-                    <p class="search_text">select places</p>
-                </div>
-                <div class="step_block">
-                    <img src="" alt="Book & Enjoy">
-                    <p class="search_text">book & enjoy</p>
-                </div>
-            </div>
-        </section>
+    <section class="steps">
+        <div class="container_steps flex_row">
+            <a class="step_block" href="#">
+                <svg class="step_icon step_icon_search">
+                    <use href="./assets/img/sprite_svg.svg#search"/>
+                </svg>
+                <p class="search_text">search places</p>
+            </a>
+            <a class="step_block" href="#">
+                <svg class="step_icon step_icon_circle">
+                    <use href="./assets/img/sprite_svg.svg#check_circle"/>
+                </svg>
+                <p class="search_text">select places</p>
+            </a>
+            <a class="step_block" href="#">
+                <svg class="step_icon step_icon_thumb">
+                    <use href="./assets/img/sprite_svg.svg#thumbs_up"/>
+                </svg>
+                <p class="search_text">book & enjoy</p>
+            </a>
+        </div>
+    </section>
 
-        <section class="book">
-            <div class="container container_book">
+    <section class="book_apartments">
+        <div class="container_book">
+            <div class="book_wrapper">
                 <p class="book_country">Spain</p>
                 <h5 class="book_place">grand spain madrid</h5>
                 <p class="book_description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
                 <a class="button" href="#">book now</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="book">
-            <div class="container container_book">
+    <section class="book_adventure">
+        <div class="container_book ">
+            <div class="book_wrapper book_right">
                 <p class="book_country">Spain</p>
                 <h5 class="book_place">grand spain madrid</h5>
                 <p class="book_description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
                 <a class="button" href="#">book now</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="feedback">
-            <div class="container container_feedback">
-                <h4 class="feedback_title">what our  tourists say</h4>
-                <div class="feedback_block">
-                    <img class="feedback_photo" src="" alt="photo_feedback">
-                    <div class="feedback_about">
-                        <h5 class="feedback_name">Sam Sumon</h5>
-                        <p class="feedback_text">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
-                    </div>
+    <section class="feedback">
+        <div class="container_feedback">
+            <h4 class="feedback_title">what our  tourists say</h4>
+            <div class="feedback_wrapper flex_row">
+                <img class="feedback_photo" src="./assets/img/photo_feedback.jpg" alt="photo_feedback">
+                <div class="feedback_about">
+                    <h5 class="feedback_name">Sam Sumon</h5>
+                    <p class="feedback_text">
+                        <svg class="icon_quote">
+                            <use href="./assets/img/sprite_svg.svg#quote_left"/>
+                        </svg>
+                        But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <footer class="footer">
-            <h2 class="logo">Bhromaon</h2>
-            <h3 class="slogan">safe travel anywhere</h3>
+    <footer class="footer">
+        <div class="container_footer">
+            <a class="logo_footer" href="#">Bhromaon</a>
+            <h3 class="slogan slogan_footer">safe travel anywhere</h3>
             <div class="footer_icon">
-                <a class="facebook" href="#">
-                    <svg>
+                <a href="#">
+                    <svg class="icon facebook">
                         <use href="./assets/img/sprite_svg.svg#facebook"/>
                     </svg>
                 </a>
-                <a class="twitter" href="#">
-                    <svg>
+                <a href="#">
+                    <svg class="icon twitter">
                         <use href="./assets/img/sprite_svg.svg#twitter"/>
                     </svg>
                 </a>
-                <a class="instagram" href="#">
-                    <svg>
-                        <use href="./assets/img/sprite_svg.svg#instagram"/>
+                <a href="#">
+                    <svg class="icon linkedin">
+                        <use href="./assets/img/sprite_svg.svg#linkedin"/>
                     </svg>
                 </a>
-                <a class="youtube" href="#">
-                    <svg>
+                <a href="#">
+                    <svg class="icon youtube">
                         <use href="./assets/img/sprite_svg.svg#youtube"/>
                     </svg>
                 </a>
-                <a class="pinterest" href="#">
-                    <svg>
+                <a href="#">
+                    <svg class="icon pinterest">
                         <use href="./assets/img/sprite_svg.svg#pinterest"/>
                     </svg>
                 </a>
             </div>
-        </footer>
+        </div>
+    </footer>
+    </div>
+    
 </body>
 </html>

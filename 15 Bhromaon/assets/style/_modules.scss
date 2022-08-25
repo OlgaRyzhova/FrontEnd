@@ -1,5 +1,17 @@
 @use 'vars';
 
+@mixin bg_image{
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    -o-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
 @mixin main_logo{
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
@@ -82,7 +94,7 @@
     color: vars.$text_white;
 }
 
-@mixin text_country {
+@mixin text_country{
     font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -92,43 +104,56 @@
     color: vars.$text_white;
 }
 
+@mixin text_name{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: vars.$text_white;
+}
+
+// .button{
+    
+// }
 // HEADER //
 
 .header{
-    max-width: 1920px;
+    @include bg_image;
+    height: 100%;
     min-height: 862px;
     background-image: url(../img/bg_main.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 0 auto;
-    text-align: center;
+    .container_header{
+        margin: 0 auto;
+        padding-top: 295px;
+        position: relative;
+        text-align: center;
+    }
 }
 
-.logo{
+.logo_header{
     @include main_logo;
-    padding-top: 295px;
-    margin: 0 auto 8px;
 }
 
 .slogan{
     @include text_slogan;
     color: vars.$text_white;
     letter-spacing: 0.31em;
-    margin-bottom: 48px;
+    margin: 12px auto 48px;
 }
 
 .form{
-    margin-bottom: 211px;
+    display: inline-flex;
     position: relative;
+    // width: 30%;
+    width: 647px;
+    height: 60px;
+    margin-bottom: 211px;
     .input{
-        width: 30%;
+        width: 100%;
         background: #FFFFFF;
-        padding: 20px 334px 20px 36px;
-        // border: none;
+        padding: 20px 36px;
+        border: none;
         margin: 0;
         box-sizing: border-box;
         &::placeholder{
@@ -136,18 +161,24 @@
             text-transform: capitalize;
         }
     }
-    .button{
+    .button_form{
+        display: inline-block;
         position: absolute;
         @include text_question;
-        top: 2px;
+        top: 3px;
+        right: 0;
         cursor: pointer;
-        // width: 100%;
         border: none;
         padding: 16px 24px;
+        margin-right: 3px;
         background: #5373FD;
         box-sizing: border-box;
         display: inline-block;
+        transition: .5s;
         z-index: 2;
+        &:hover{
+            transform: scale(1.1);
+        }
         .search_icon{
             fill: white;
             width: 16px;
@@ -162,29 +193,60 @@
     color: vars.$text_white;
     text-transform: capitalize;
     position: relative;
-    padding-bottom: 8px;
-    &::after{
-        content: '';
-        position: absolute;
-        display: inline-block;
-        width: 8px;
-        height: 9px;
-        border: solid #FFFFFF;
-        border-radius: 10%;
-        border-width: 0 3px 3px 0;
-        transform: rotate(45deg);
-        right: 50%;
-        bottom: -10px;
+    margin-bottom: 140px;
+}
+
+.arrow, .arrow:before{
+    position: absolute;
+    right: 50%;
+}
+
+.arrow{
+    width: 10px;
+    height: 10px;
+    top: 200%;
+    margin: -10px 0 0 -10px;
+    -webkit-transform: rotate(45deg);
+    border-left: none;
+    border-top: none;
+    border-right: 2px #fff solid;
+    border-bottom: 2px #fff solid;
+}
+
+.arrow:before{
+    content: '';
+    width: 5px;
+    height: 5px;
+    top: 50%;
+    margin: -5px 0 0 5px;
+    border-left: none;
+    border-top: none;
+    border-right: 1px #fff solid;
+    border-bottom: 1px #fff solid;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: arrow;
+}
+
+@keyframes arrow{
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate(-5px, -5px);
     }
 }
 
 // NAVIGATION //
 
 .navbar{
+    width: 100%;
     background: #5373FD;
 }
 
-.navbar_block{
+.navbar_container{
+    max-width: 1320px;
     display: flex;
     padding: 32px 0;
     .nav_logo{
@@ -224,20 +286,15 @@
 // EXPLORE section //
 
 .explore{
-    width: 100%;
-    max-width: 1920px;
-    height: 862px;
+    @include bg_image;
+    max-height: 862px;
+    max-height: 704px;
     background-image: url(../img/bg_explore.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    margin: 0 auto;
     .container_explore{
+        max-width: 1320px;
         display: flex;
-        padding-top: 124px;
+        padding: 124px 0;
+        margin: 0 auto;
         justify-content: flex-start;
         .explore_wrapper_text{
             width: 50%;
@@ -247,41 +304,219 @@
                 margin-top: 66px;
                 margin-bottom: 24px;
             }
-            .explore_text{
-                @include text_description;
-                padding-bottom: 32px;
-                .text:nth-child(1){
-                    padding-bottom: 30px;
-                }
-            }
-            .button{
-                @include text_button;
-                padding: 20px 32px;
-                margin-top: 52px;
-                background: #5373FD;
-            }
         }
         .explore_wrapper_img{
             max-width: 424px;
             margin: 0 136px;
-            display: flex;
-            flex-direction: column;
             .explore_img1{
+                max-width: 350px;
                 margin-bottom: 16px;
             }
             .explore_img2{
+                max-width: 350px;
                 margin-left: 74px;
             }
         }
     }
 }
 
-// STEPS section //
+.explore_text{
+    margin-bottom: 32px;
+    .text{
+        @include text_description;
+        &:nth-child(1){
+            padding-bottom: 30px;
+        }
+    }
+    
+}
 
+.button{
+    display: inline-block;
+    // width: 100%;
+    @include text_button;
+    cursor: pointer;
+    padding: 20px 32px;
+    background: #5373FD;
+    box-sizing: border-box;
+    transition: .5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+// STEPS section //
 
 .steps{
     background: #333333;
+    
 }
 .container_steps{
+    max-width: 1320px;
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/Line.svg);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position-x: 190px;
+    background-position-y: 40px;
+    margin: 0 auto;
+    padding-top: 107px;
+    padding-bottom: 60px;
+    z-index: 1;
+    .step_block{
+        text-align: center;
+        margin-right: 280px;
+        &:nth-child(3){
+            margin-right: 0;
+        }
+    }
+    .step_icon{
+        width: 64px;
+        height: 64px;
+        background: #333333;
+        transition: .3s;
+        // padding: 20px;
+        
+    }
+    .search_text{
+        @include text_title;
+        text-align: center;
+    }
+}
 
+.step_icon_search{
+    fill: #5373FD;
+}
+
+.step_icon_circle{
+    fill: #e65a78;
+}
+
+.step_icon_thumb{
+    fill: #4b92df;
+}
+
+// BOOK section //
+
+.book_apartments{
+    @include bg_image;
+    height: 100%;
+    min-height: 684px;
+    background-image: url(../img/bg_book1.jpg);
+}
+
+.book_adventure{
+    @include bg_image;
+    height: 100%;
+    min-height: 684px;
+    background-image: url(../img/bg_book2.jpg);
+}
+
+.container_book{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding-top: 220px;
+    .book_wrapper{
+        max-width: 584px;
+        padding: 44px 32px;
+        background: rgba(35, 35, 35, 0.9);
+    }
+}
+
+.book_right{
+        float: right;
+    }
+
+
+
+.book_country{
+    @include text_country;
+    margin-bottom: 16px
+}
+
+.book_place{
+    @include text_name;
+    margin-bottom: 16px;
+}
+
+.book_description{
+    @include text_description;
+    padding-bottom: 24px;
+}
+
+// FEEDBACK section //
+
+.feedback{
+    @include bg_image;
+    min-height: 680px;
+    background-image: url(../img/bg_feedback.jpg);
+    .container_feedback{
+        max-width: 1320px;
+        margin: 0 auto;
+    }
+}
+
+.feedback_title{
+    @include text_title;
+    text-align: center;
+    padding-top: 120px;
+    margin-bottom: 60px;
+}
+
+.feedback_wrapper{
+    display: flex;
+    .feedback_photo{
+        width: 30%;
+        min-height: 282px;
+    }
+    .feedback_about{
+        width: 70%;
+        background: #333333;
+        padding: 48px 65px;
+        .feedback_name{
+            @include text_name;
+            padding-bottom: 16px;
+        }
+        .feedback_text{
+            @include text_description;
+            text-align: justify;
+        }
+    }
+}
+
+.icon_quote{
+    width: 20px;
+    height: 20px;
+    fill: #5373FD;
+}
+
+// FOOTER //
+
+.footer{
+    background: #000000;
+    .container_footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 80px 0;
+    }
+    .logo_footer{
+        @include section_logo;
+        margin-bottom: 8px;
+    }
+    .slogan_footer{
+        @include text_14px;
+        margin-bottom: 22px;
+    }
+}
+
+.icon{
+    fill: #FFFFFF;
+    max-width: 32px;
+    height: 32px;
+    margin-right: 32px;
+    &:nth-child(5){
+        margin-right: 0px;
+    }
 }

@@ -1,0 +1,16 @@
+.step_block{
+    &:hover{
+        .step_icon{
+            transition: .5s;
+            transform: scale(.8);
+        }
+    }
+}
+
+.icon{
+        &:hover{
+            fill: #5373FD;
+            transition: .5s;
+            transform: scale(1.1);
+        }
+    }
