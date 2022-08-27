@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/img/favicon.png" />
     <link rel="stylesheet" href="./assets/style/index.css">
     <title>Bhromaon</title>
 </head>
 <body>
-    <div class="container">
-        <header class="header">
-        <div class="container_header">
+    <header class="header">
+        <div class="container container_header">
             <a class="logo_header" href="#">bromaon</a>
             <h3 class="slogan">safe travel anywhere</h3>
             <form class="form" action="#">
@@ -23,7 +23,7 @@
             </form>
             <div class="scroll">
                 <a href="#">scroll down
-                <p class="arrow"></p>
+                <i class="arrow"></i>
                 </a>
             </div>
             
@@ -31,7 +31,7 @@
     </header>
 
     <nav class="navbar">
-        <div class="navbar_container flex_row">
+        <div class="container navbar_container flex_row">
             <a class="nav_logo" href="#">Bhromaon</a>
             <ul class="nav_list ">
                 <li class="nav_item"><a href="#">who we are</a></li>
@@ -42,8 +42,8 @@
         </div>
     </nav>
 
-    <section class="explore">
-        <div class="container_explore">
+    <section class="explore" id="p2">
+        <div class="container container_explore">
             <div class="explore_wrapper_text">
                 <h4 class="explore_title">why choose us</h4>
                 <div class="explore_text">
@@ -53,27 +53,27 @@
                 <a class="button" href="#">explore places</a>
             </div>
             <div class="explore_wrapper_img">
-                <img class="explore_img1" src="./assets/img/img_explore1.jpg" alt="">
-                <img class="explore_img2" src="./assets/img/img_explore2.jpg" alt="">
+                <img class="explore_img1" src="./assets/img/img_explore1.webp" alt="">
+                <img class="explore_img2" src="./assets/img/img_explore2.webp" alt="">
             </div>
         </div>
     </section>
 
     <section class="steps">
-        <div class="container_steps flex_row">
-            <a class="step_block" href="#">
+        <div class="container container_steps flex_row">
+            <a class="step_block" href="#p2">
                 <svg class="step_icon step_icon_search">
                     <use href="./assets/img/sprite_svg.svg#search"/>
                 </svg>
                 <p class="search_text">search places</p>
             </a>
-            <a class="step_block" href="#">
+            <a class="step_block" href="#p2">
                 <svg class="step_icon step_icon_circle">
                     <use href="./assets/img/sprite_svg.svg#check_circle"/>
                 </svg>
                 <p class="search_text">select places</p>
             </a>
-            <a class="step_block" href="#">
+            <a class="step_block" href="#p2">
                 <svg class="step_icon step_icon_thumb">
                     <use href="./assets/img/sprite_svg.svg#thumbs_up"/>
                 </svg>
@@ -83,7 +83,7 @@
     </section>
 
     <section class="book_apartments">
-        <div class="container_book">
+        <div class="container container_book">
             <div class="book_wrapper">
                 <p class="book_country">Spain</p>
                 <h5 class="book_place">grand spain madrid</h5>
@@ -94,8 +94,8 @@
     </section>
 
     <section class="book_adventure">
-        <div class="container_book ">
-            <div class="book_wrapper book_right">
+        <div class="container container_book book_right">
+            <div class="book_wrapper ">
                 <p class="book_country">Spain</p>
                 <h5 class="book_place">grand spain madrid</h5>
                 <p class="book_description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
@@ -105,10 +105,16 @@
     </section>
 
     <section class="feedback">
-        <div class="container_feedback">
+        <div class="container container_feedback">
             <h4 class="feedback_title">what our  tourists say</h4>
-            <div class="feedback_wrapper flex_row">
-                <img class="feedback_photo" src="./assets/img/photo_feedback.jpg" alt="photo_feedback">
+            <div class="feedback_wrapper">
+                <picture class="feedback_photo">
+                    <source srcset="./assets/img/photo_feedback1360.webp" media="(min-width: 1360px)">
+                    <source srcset="./assets/img/photo_feedback1024.webp" media="(min-width: 1024px)">
+                    <source srcset="./assets/img/photo_feedback768.webp" media="(min-width: 768px)">
+                    <source srcset="./assets/img/photo_feedback576.webp" media="(min-width: 576px)">
+                    <img src="./assets/img/photo_feedback.webp" alt="photo_feedback">
+                </picture>
                 <div class="feedback_about">
                     <h5 class="feedback_name">Sam Sumon</h5>
                     <p class="feedback_text">
@@ -154,7 +160,5 @@
             </div>
         </div>
     </footer>
-    </div>
-    
 </body>
 </html>

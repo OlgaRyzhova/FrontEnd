@@ -57,8 +57,7 @@ img {
 }
 
 .container {
-  width: 100%;
-  max-width: 1920px;
+  max-width: 1320px;
   margin: 0 auto;
 }
 
@@ -70,24 +69,19 @@ img {
 }
 
 .header {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  height: 100%;
-  min-height: 862px;
-  background-image: url(../img/bg_main.jpg);
+  background-image: url(../img/bg_main.webp);
 }
 .header .container_header {
-  margin: 0 auto;
   padding-top: 295px;
   position: relative;
   text-align: center;
+  padding-bottom: 160px;
 }
 
 .logo_header {
@@ -122,6 +116,7 @@ img {
 }
 .form .input {
   width: 100%;
+  color: #999999;
   background: #FFFFFF;
   padding: 20px 36px;
   border: none;
@@ -153,12 +148,15 @@ img {
   right: 0;
   cursor: pointer;
   border: none;
-  padding: 17px 24px;
+  padding: 18px 24px 17px;
   margin-right: 2px;
   background: #5373FD;
   box-sizing: border-box;
   transition: 0.5s;
   z-index: 2;
+}
+.form .button_form:hover {
+  transform: scale(1.1);
 }
 .form .button_form .search_icon {
   fill: white;
@@ -177,7 +175,6 @@ img {
   color: #FFFFFF;
   text-transform: capitalize;
   position: relative;
-  margin-bottom: 140px;
 }
 
 .arrow, .arrow:before {
@@ -227,7 +224,6 @@ img {
 }
 
 .navbar_container {
-  max-width: 1320px;
   display: flex;
   padding: 32px 0;
 }
@@ -241,6 +237,10 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   justify-content: flex-start;
+  transition: 0.5s;
+}
+.navbar_container .nav_logo:hover {
+  transform: scale(1.1);
 }
 
 .nav_list {
@@ -279,28 +279,21 @@ img {
 }
 
 .explore {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  max-height: 862px;
-  max-height: 704px;
-  background-image: url(../img/bg_explore.jpg);
+  background-image: url(../img/bg_explore.webp);
 }
 .explore .container_explore {
-  max-width: 1320px;
   display: flex;
   padding: 124px 0;
-  margin: 0 auto;
   justify-content: flex-start;
 }
 .explore .container_explore .explore_wrapper_text {
-  width: 50%;
+  max-width: 648px;
   margin: 0;
 }
 .explore .container_explore .explore_wrapper_text .explore_title {
@@ -368,7 +361,6 @@ img {
 }
 
 .container_steps {
-  max-width: 1320px;
   display: flex;
   justify-content: center;
   background-image: url(../img/Line.svg);
@@ -376,9 +368,7 @@ img {
   background-repeat: no-repeat;
   background-position-x: 190px;
   background-position-y: 40px;
-  margin: 0 auto;
-  padding-top: 107px;
-  padding-bottom: 60px;
+  padding: 107px 0 60px;
   z-index: 1;
 }
 .container_steps .step_block {
@@ -393,6 +383,7 @@ img {
   height: 64px;
   background: #333333;
   transition: 0.3s;
+  margin-bottom: 20px;
 }
 .container_steps .search_text {
   font-family: "Aleo", serif;
@@ -418,39 +409,30 @@ img {
 }
 
 .book_apartments {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  height: 100%;
   min-height: 684px;
-  background-image: url(../img/bg_1book.jpg);
+  background-image: url(../img/bg_1book.webp);
 }
 
 .book_adventure {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  height: 100%;
   min-height: 684px;
-  background-image: url(../img/bg_1book.jpg);
+  background-image: url(../img/bg_2book.webp);
 }
 
 .container_book {
-  max-width: 1320px;
-  margin: 0 auto;
-  padding-top: 220px;
+  display: flex;
+  padding: 220px 0 120px;
 }
 .container_book .book_wrapper {
   max-width: 584px;
@@ -459,7 +441,7 @@ img {
 }
 
 .book_right {
-  float: right;
+  justify-content: flex-end;
 }
 
 .book_country {
@@ -495,21 +477,18 @@ img {
 }
 
 .feedback {
-  width: 100%;
-  max-width: 1920px;
-  height: 100%;
-  -webkit-background-size: auto 100%;
-  -moz-background-size: auto 100%;
-  -o-background-size: auto 100%;
-  background-size: auto 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
   min-height: 680px;
-  background-image: url(../img/bg_feedback.jpg);
+  background-image: url(../img/bg_feedback.webp);
 }
-.feedback .container_feedback {
-  max-width: 1320px;
-  margin: 0 auto;
+
+.container_feedback {
+  padding: 120px 0 180px;
 }
 
 .feedback_title {
@@ -521,7 +500,6 @@ img {
   text-transform: capitalize;
   color: #FFFFFF;
   text-align: center;
-  padding-top: 120px;
   margin-bottom: 60px;
 }
 
@@ -529,11 +507,11 @@ img {
   display: flex;
 }
 .feedback_wrapper .feedback_photo {
-  width: 30%;
-  min-height: 282px;
+  height: 100%;
+  max-width: 440px;
 }
 .feedback_wrapper .feedback_about {
-  width: 70%;
+  max-width: 760px;
   background: #333333;
   padding: 48px 65px;
 }
@@ -582,6 +560,10 @@ img {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 8px;
+  transition: 0.5s;
+}
+.footer .logo_footer:hover {
+  transform: scale(1.1);
 }
 .footer .slogan_footer {
   font-family: "Josefin Sans", sans-serif;
@@ -612,4 +594,245 @@ img {
   fill: #5373FD;
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+@media screen and (max-width: 1360px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .header {
+    background-image: url(../img/bg_main1360.webp);
+  }
+
+  .explore {
+    background-image: url(../img/bg_explore1360.webp);
+  }
+  .explore .container_explore .explore_wrapper_text {
+    max-width: 558px;
+  }
+  .explore .container_explore .explore_wrapper_img {
+    margin: 0 122px;
+  }
+
+  .book_apartments {
+    background-image: url(../img/bg_1book1360.webp);
+  }
+
+  .book_adventure {
+    ackground-image: url(../img/bg_2book1360.webp);
+  }
+
+  .feedback {
+    background-image: url(../img/bg_feedback1360.webp);
+  }
+  .feedback .container_feedback .feedback_photo {
+    min-height: 308px;
+  }
+  .feedback .container_feedback .feedback_about {
+    max-width: 640px;
+  }
+
+  .container_steps {
+    background-size: 75%;
+    background-position-x: 135px;
+  }
+  .container_steps .step_block {
+    margin-right: 220px;
+  }
+
+  .book_description {
+    max-width: 494px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .container_steps {
+    background-position-x: 120px;
+  }
+  .container_steps .step_block {
+    margin-right: 150px;
+  }
+
+  .explore .container_explore .explore_wrapper_img {
+    margin: 0 24px;
+  }
+  .explore .container_explore .explore_wrapper_img .explore_img2 {
+    max-width: 350px;
+    margin-left: 36px;
+  }
+
+  .feedback .container_feedback .feedback_about {
+    max-width: 510px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .header {
+    background-image: url(../img/bg_main1024.webp);
+  }
+
+  .explore {
+    background-image: url(../img/bg_explore1024.webp);
+  }
+  .explore .container_explore .explore_wrapper_text {
+    max-width: 550px;
+  }
+
+  .book_apartments {
+    background-image: url(../img/bg_1book1024.webp);
+  }
+
+  .book_adventure {
+    ackground-image: url(../img/bg_2book1024.webp);
+  }
+
+  .feedback {
+    background-image: url(../img/bg_feedback1024.webp);
+  }
+  .feedback .container_feedback .feedback_about {
+    max-width: 520px;
+  }
+
+  .container_steps {
+    background-size: 75%;
+    background-position-x: 135px;
+  }
+
+  .book_description {
+    max-width: 486px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .header {
+    background-image: url(../img/bg_main768.webp);
+  }
+
+  .explore {
+    background-image: url(../img/bg_explore768.webp);
+  }
+  .explore .container_explore {
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+  .explore .container_explore .explore_wrapper_img {
+    width: 100%;
+    max-width: 720px;
+    display: flex;
+    margin: 0 0 32px;
+  }
+  .explore .container_explore .explore_wrapper_img .explore_img1 {
+    max-width: 350px;
+    margin-bottom: 0px;
+  }
+  .explore .container_explore .explore_wrapper_img .explore_img2 {
+    max-width: 350px;
+    margin-left: 24px;
+  }
+  .explore .container_explore .explore_wrapper_text {
+    max-width: 558px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .explore .container_explore .explore_wrapper_text .explore_title {
+    margin-top: 0;
+  }
+  .explore .container_explore .explore_wrapper_text .explore_text {
+    margin-bottom: 24px;
+  }
+
+  .container_steps {
+    background-image: none;
+    flex-direction: column;
+    padding: 60px 0;
+  }
+  .container_steps .step_block {
+    margin: 0 auto 76px;
+  }
+  .container_steps .step_block:nth-child(3) {
+    margin: 0 auto;
+  }
+
+  .book_apartments {
+    background-image: url(../img/bg_1book768.webp);
+  }
+  .book_apartments .container_book .book_wrapper {
+    max-width: 720px;
+  }
+  .book_apartments .container_book .book_wrapper .book_description {
+    max-width: 720px;
+  }
+
+  .book_adventure {
+    background-image: url(../img/bg_2book768.webp);
+  }
+  .book_adventure .container_book .book_wrapper {
+    max-width: 720px;
+  }
+  .book_adventure .container_book .book_wrapper .book_description {
+    max-width: 720px;
+  }
+
+  .feedback {
+    background-image: url(../img/bg_feedback768.webp);
+  }
+  .feedback .container_feedback {
+    padding-top: 60px;
+  }
+  .feedback .feedback_wrapper {
+    flex-direction: column;
+  }
+  .feedback .feedback_wrapper .feedback_photo, .feedback .feedback_wrapper .feedback_about {
+    max-width: 720px;
+  }
+
+  .navbar_container {
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0;
+  }
+  .navbar_container .nav_logo {
+    margin-bottom: 32px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .header {
+    background-image: url(../img/bg_main576.webp);
+  }
+
+  .explore {
+    background-image: url(../img/bg_explore576.webp);
+  }
+
+  .book_apartments {
+    background-image: url(../img/bg_1book576.webp);
+  }
+
+  .book_adventure {
+    ackground-image: url(../img/bg_2book576.webp);
+  }
+
+  .feedback {
+    background-image: url(../img/bg_feedback576.webp);
+  }
+
+  .form {
+    width: 540px;
+  }
 }

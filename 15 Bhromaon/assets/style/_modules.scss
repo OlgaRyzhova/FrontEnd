@@ -1,13 +1,10 @@
 @use 'vars';
 
 @mixin bg_image{
-    width: 100%;
-    max-width: 1920px;
-    height: 100%;
-    -webkit-background-size: auto 100%;
-    -moz-background-size: auto 100%;
-    -o-background-size: auto 100%;
-    background-size: auto 100%;
+    -webkit-background-size:100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -120,14 +117,14 @@
 
 .header{
     @include bg_image;
-    height: 100%;
-    min-height: 862px;
-    background-image: url(../img/bg_main.jpg);
+    // max-height: 862px;
+    background-image: url(../img/bg_main.webp);
+    // height: 100vh;
     .container_header{
-        margin: 0 auto;
         padding-top: 295px;
         position: relative;
         text-align: center;
+        padding-bottom: 160px;
     }
 }
 
@@ -145,12 +142,12 @@
 .form{
     display: inline-flex;
     position: relative;
-    // width: 30%;
     width: 647px;
     height: 60px;
     margin-bottom: 211px;
     .input{
         width: 100%;
+        color: vars.$text_grey;
         background: #FFFFFF;
         padding: 20px 36px;
         border: none;
@@ -170,15 +167,15 @@
         right: 0;
         cursor: pointer;
         border: none;
-        padding: 17px 24px;
+        padding: 18px 24px 17px;
         margin-right: 2px;
         background: #5373FD;
         box-sizing: border-box;
         transition: .5s;
         z-index: 2;
-        // &:hover{
-        //     transform: scale(1.1);
-        // }
+        &:hover{
+            transform: scale(1.1);
+        }
         .search_icon{
             fill: white;
             width: 16px;
@@ -193,7 +190,6 @@
     color: vars.$text_white;
     text-transform: capitalize;
     position: relative;
-    margin-bottom: 140px;
 }
 
 .arrow, .arrow:before{
@@ -246,12 +242,15 @@
 }
 
 .navbar_container{
-    max-width: 1320px;
     display: flex;
     padding: 32px 0;
     .nav_logo{
         @include section_logo;
         justify-content: flex-start;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -287,17 +286,13 @@
 
 .explore{
     @include bg_image;
-    max-height: 862px;
-    max-height: 704px;
-    background-image: url(../img/bg_explore.jpg);
+    background-image: url(../img/bg_explore.webp);
     .container_explore{
-        max-width: 1320px;
         display: flex;
         padding: 124px 0;
-        margin: 0 auto;
         justify-content: flex-start;
         .explore_wrapper_text{
-            width: 50%;
+            max-width: 648px;
             margin: 0;
             .explore_title{
                 @include text_title;
@@ -352,7 +347,6 @@
     
 }
 .container_steps{
-    max-width: 1320px;
     display: flex;
     justify-content: center;
     background-image: url(../img/Line.svg);
@@ -360,9 +354,7 @@
     background-repeat: no-repeat;
     background-position-x: 190px;
     background-position-y: 40px;
-    margin: 0 auto;
-    padding-top: 107px;
-    padding-bottom: 60px;
+    padding: 107px 0 60px;
     z-index: 1;
     .step_block{
         text-align: center;
@@ -376,8 +368,7 @@
         height: 64px;
         background: #333333;
         transition: .3s;
-        // padding: 20px;
-        
+        margin-bottom: 20px;
     }
     .search_text{
         @include text_title;
@@ -401,22 +392,21 @@
 
 .book_apartments{
     @include bg_image;
-    height: 100%;
+    // height: 100%;
     min-height: 684px;
-    background-image: url(../img/bg_1book.jpg);
+    background-image: url(../img/bg_1book.webp);
 }
 
 .book_adventure{
     @include bg_image;
-    height: 100%;
+    // height: 100%;
     min-height: 684px;
-    background-image: url(../img/bg_1book.jpg);
+    background-image: url(../img/bg_2book.webp);
 }
 
 .container_book{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding-top: 220px;
+    display: flex;
+    padding: 220px 0 120px;
     .book_wrapper{
         max-width: 584px;
         padding: 44px 32px;
@@ -425,10 +415,8 @@
 }
 
 .book_right{
-        float: right;
-    }
-
-
+    justify-content: flex-end;
+}
 
 .book_country{
     @include text_country;
@@ -450,28 +438,26 @@
 .feedback{
     @include bg_image;
     min-height: 680px;
-    background-image: url(../img/bg_feedback.jpg);
-    .container_feedback{
-        max-width: 1320px;
-        margin: 0 auto;
-    }
+    background-image: url(../img/bg_feedback.webp);
 }
 
+.container_feedback{
+    padding: 120px 0 180px;
+}
 .feedback_title{
     @include text_title;
     text-align: center;
-    padding-top: 120px;
     margin-bottom: 60px;
 }
 
 .feedback_wrapper{
     display: flex;
     .feedback_photo{
-        width: 30%;
-        min-height: 282px;
+        height: 100%;
+        max-width: 440px;
     }
     .feedback_about{
-        width: 70%;
+        max-width: 760px;
         background: #333333;
         padding: 48px 65px;
         .feedback_name{
@@ -504,6 +490,10 @@
     .logo_footer{
         @include section_logo;
         margin-bottom: 8px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.1);
+        }
     }
     .slogan_footer{
         @include text_14px;
