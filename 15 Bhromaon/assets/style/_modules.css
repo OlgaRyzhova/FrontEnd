@@ -229,17 +229,7 @@
   transform: translateX(50%);
   width: 60%;
   right: 50%;
-  bottom: 15px;
-}
-.nav_list .nav_item:hover ::after {
-  content: "";
-  width: 10%;
-  border-bottom: 1px solid #000000;
-  bottom: 10px;
-  right: 50%;
-  transform: translateX(50%);
-  position: absolute;
-  justify-content: center;
+  bottom: -5px;
 }
 
 .explore {

@@ -240,12 +240,6 @@
     display: block;
 }
 
-// .navbar_container{
-//     ul {
-//         column-gap: 40px;
-//         margin: auto 0;
-//     }
-// }
 .hamburger{
     display: inline-block;
     width: 17px;
@@ -312,25 +306,12 @@
                 transform: translateX(50%);
                 width: 60%;
                 right: 50%;
-                bottom: 15px;
+                bottom: -5px;
             }
         } 
     }
-    .nav_item{
-    &:hover{
-        ::after{
-            content: '';
-            width: 10%;
-            border-bottom: 1px solid #000000;
-            bottom: 10px;
-            right: 50%;
-            transform: translateX(50%);
-            position: absolute;
-            justify-content: center;
-        }
-    }
 }
-}
+
 
 // EXPLORE section //
 

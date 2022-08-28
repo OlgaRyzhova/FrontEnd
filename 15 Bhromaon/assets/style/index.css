@@ -299,17 +299,7 @@ img {
   transform: translateX(50%);
   width: 60%;
   right: 50%;
-  bottom: 15px;
-}
-.nav_list .nav_item:hover ::after {
-  content: "";
-  width: 10%;
-  border-bottom: 1px solid #000000;
-  bottom: 10px;
-  right: 50%;
-  transform: translateX(50%);
-  position: absolute;
-  justify-content: center;
+  bottom: -5px;
 }
 
 .explore {
@@ -1023,14 +1013,14 @@ img {
     position: absolute;
   }
 
-  .navbar_container {
+  .navbar_container .nav_list {
     position: fixed;
     background: #5373FD;
-    right: -100px;
-    top: 0;
+    right: -1000px;
+    top: 0%;
     bottom: 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     flex-direction: column;
     z-index: 2;
     align-items: center;
@@ -1039,22 +1029,20 @@ img {
     box-sizing: border-box;
     transition: all 0.8s ease;
   }
-  .navbar_container.open {
+  .navbar_container .nav_list.open {
     width: 100%;
     right: 0;
   }
-  .navbar_container .nav_list {
+  .navbar_container .nav_list .nav_item {
     display: inline-block;
-  }
-  .navbar_container .nav_item {
-    width: 100%;
-    padding: 24px 0;
+    width: 30%;
+    padding-bottom: 5px;
     text-align: center;
     position: relative;
+    margin: 0 0 19px;
   }
-  .navbar_container .nav_item:hover ::after {
+  .navbar_container .nav_list .nav_item:hover ::after {
     content: "";
-    width: 10%;
     border-bottom: 1px solid #5373FD;
     bottom: 5px;
     right: 50%;
