@@ -39,6 +39,9 @@
                 <li class="nav_item"><a href="#">travel with us</a></li>
                 <li class="nav_item"><a href="#">contact us</a></li>
             </ul>
+            <a class="hamburger" href="#" id="hamburger">
+                <span class="h_line"></span>
+            </a>
         </div>
     </nav>
 
@@ -160,5 +163,17 @@
             </div>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+    </script>
+    <script>
+        $(document).ready(function() {
+            $('#hamburger').click(function() {
+                $('#nav').toggleClass('open');
+                $('#hamburger').toggleClass('open');
+            })
+        });
+    </script>
 </body>
 </html>

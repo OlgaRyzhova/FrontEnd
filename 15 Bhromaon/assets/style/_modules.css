@@ -148,6 +148,30 @@
     transform: translate(-5px, -5px);
   }
 }
+.hamburger {
+  display: block;
+}
+
+.hamburger {
+  display: inline-block;
+  width: 17px;
+  margin: auto 0 auto 80px;
+}
+
+.hamburger.open .h_line {
+  display: none;
+}
+.hamburger.open::before {
+  transform: rotate(45deg) translate(20px, 15px);
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+.hamburger.open::after {
+  transform: rotate(-45deg) translate(6px, -1px);
+  background-color: #FFFFFF;
+  transition: all 0.3s ease;
+}
+
 .navbar {
   width: 100%;
   background: #5373FD;
@@ -203,9 +227,19 @@
   position: absolute;
   border-bottom: 1px solid #FFFFFF;
   transform: translateX(50%);
-  width: 80%;
+  width: 60%;
   right: 50%;
-  bottom: -5px;
+  bottom: 15px;
+}
+.nav_list .nav_item:hover ::after {
+  content: "";
+  width: 10%;
+  border-bottom: 1px solid #000000;
+  bottom: 10px;
+  right: 50%;
+  transform: translateX(50%);
+  position: absolute;
+  justify-content: center;
 }
 
 .explore {
