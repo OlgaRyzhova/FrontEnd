@@ -947,7 +947,13 @@ img {
     width: 42px;
     height: 42px;
     position: relative;
+  }
+  .hamburger.open {
+    position: fixed;
+    top: 27px;
+    right: 27px;
     z-index: 2;
+    margin: 0;
   }
   .hamburger::before, .hamburger::after {
     content: "";
@@ -977,9 +983,16 @@ img {
   .navbar_container {
     flex-direction: row;
     justify-content: center;
+    transition: all 0.8s ease;
   }
   .navbar_container .nav_logo {
     margin: 0 auto 0 35%;
+  }
+  .navbar_container .nav_logo.open {
+    position: fixed;
+    top: 50px;
+    margin: 0 auto;
+    z-index: 3;
   }
 
   .nav_list {
