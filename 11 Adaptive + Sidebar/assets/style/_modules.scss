@@ -95,18 +95,18 @@
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: vars.$text-color-heading;
-    &:hover{
-        ::after{
-            content: '';
-            width: 10%;
-            border-bottom: 1px solid #000000;
-            bottom: 10px;
-            right: 50%;
-            transform: translateX(50%);
-            position: absolute;
-            justify-content: center;
-        }
-    }
+    // &:hover{
+    //     ::after{
+    //         content: '';
+    //         width: 10%;
+    //         border-bottom: 1px solid #000000;
+    //         bottom: 10px;
+    //         right: 50%;
+    //         transform: translateX(50%);
+    //         position: absolute;
+    //         justify-content: center;
+    //     }
+    // }
 }
 
 // First Screen//

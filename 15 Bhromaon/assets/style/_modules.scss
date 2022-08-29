@@ -110,16 +110,11 @@
     color: vars.$text_white;
 }
 
-// .button{
-    
-// }
 // HEADER //
 
 .header{
     @include bg_image;
-    // max-height: 862px;
     background-image: url(../img/bg_main.webp);
-    // height: 100vh;
     .container_header{
         padding-top: 295px;
         position: relative;
@@ -236,14 +231,62 @@
 
 // NAVIGATION //
 
-.hamburger{
-    display: block;
+.navbar{
+    width: 100%;
+    background: #5373FD;
 }
 
+.navbar_container{
+    display: flex;
+    padding: 32px 0;
+}
+.nav_logo{
+    @include section_logo;
+    justify-content: flex-start;
+    transition: 0.5s;
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.nav_list{
+    @include text_question;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    float: right;
+    align-items: center;
+}
+
+.nav_item{
+    position: relative;
+    margin-right: 40px;
+    transition: .5s ease;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        transform: scale(1.1);
+        &:after{
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid #FFFFFF;
+            transform: translateX(50%);
+            width: 60%;
+            right: 50%;
+            bottom: -5px;
+        }
+    } 
+}
 .hamburger{
     display: inline-block;
     width: 17px;
     margin: auto 0 auto 80px;
+}
+
+.hamburger{
+    display: none;
+    width: 0;
 }
 
 .hamburger{
@@ -263,52 +306,6 @@
             background-color: vars.$text_white;
             transition: all .3s ease;
         }
-    }
-}
-
-.navbar{
-    width: 100%;
-    background: #5373FD;
-}
-
-.navbar_container{
-    display: flex;
-    padding: 32px 0;
-    .nav_logo{
-        @include section_logo;
-        justify-content: flex-start;
-        transition: 0.5s;
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-}
-
-.nav_list{
-    @include text_question;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    .nav_item{
-        position: relative;
-        margin-right: 40px;
-        transition: .5s ease;
-        &:last-child{
-            margin-right: 0;
-        }
-        &:hover{
-            transform: scale(1.1);
-            &:after{
-                content: '';
-                position: absolute;
-                border-bottom: 1px solid #FFFFFF;
-                transform: translateX(50%);
-                width: 60%;
-                right: 50%;
-                bottom: -5px;
-            }
-        } 
     }
 }
 
@@ -359,7 +356,6 @@
 
 .button{
     display: inline-block;
-    // width: 100%;
     @include text_button;
     cursor: pointer;
     padding: 20px 32px;
@@ -423,14 +419,12 @@
 
 .book_apartments{
     @include bg_image;
-    // height: 100%;
     min-height: 684px;
     background-image: url(../img/bg_1book.webp);
 }
 
 .book_adventure{
     @include bg_image;
-    // height: 100%;
     min-height: 684px;
     background-image: url(../img/bg_2book.webp);
 }

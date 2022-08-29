@@ -32,7 +32,7 @@
 
     <nav class="navbar">
         <div class="container navbar_container flex_row">
-            <a class="nav_logo" href="#">Bhromaon</a>
+            <a class="nav_logo" id="logo" href="#">Bhromaon</a>
             <ul class="nav_list" id="nav">
                 <li class="nav_item"><a href="#">who we are</a></li>
                 <li class="nav_item"><a href="#">what we do</a></li>
@@ -170,6 +170,7 @@
     <script>
         $(document).ready(function() {
             $('#hamburger').click(function() {
+                $('#logo').toggleClass('open');
                 $('#nav').toggleClass('open');
                 $('#hamburger').toggleClass('open');
             })
