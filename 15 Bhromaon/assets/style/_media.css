@@ -391,7 +391,7 @@
   }
   .nav_list .nav_item {
     display: inline-block;
-    width: 30%;
+    width: 60%;
     padding-bottom: 5px;
     margin: 0 0 19px;
     text-align: center;
@@ -404,7 +404,7 @@
     content: "";
     border-bottom: 1px solid #FFFFFF;
     bottom: 10px;
-    right: 50%;
+    right: 30%;
     transform: translateX(50%);
     position: absolute;
     justify-content: center;
@@ -455,8 +455,11 @@
     float: inline-end;
   }
   .form .button_form {
-    top: 70px;
-    right: 35%;
+    top: 15px;
+    position: relative;
+    padding: 20px 36px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
 
   .navbar_container {
