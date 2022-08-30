@@ -114,7 +114,7 @@
 
 .header{
     @include bg_image;
-    background-image: url(../img/bg_main.webp);
+    background-image: url(../img/bg_main.png);
     .container_header{
         padding-top: 295px;
         position: relative;
@@ -314,7 +314,7 @@
 
 .explore{
     @include bg_image;
-    background-image: url(../img/bg_explore.webp);
+    background-image: url(../img/bg_explore.png);
     .container_explore{
         display: flex;
         padding: 124px 0;
@@ -420,13 +420,13 @@
 .book_apartments{
     @include bg_image;
     min-height: 684px;
-    background-image: url(../img/bg_1book.webp);
+    background-image: url(../img/bg_1book.png);
 }
 
 .book_adventure{
     @include bg_image;
     min-height: 684px;
-    background-image: url(../img/bg_2book.webp);
+    background-image: url(../img/bg_2book.png);
 }
 
 .container_book{
@@ -463,7 +463,7 @@
 .feedback{
     @include bg_image;
     min-height: 680px;
-    background-image: url(../img/bg_feedback.webp);
+    background-image: url(../img/bg_feedback.png);
 }
 
 .container_feedback{

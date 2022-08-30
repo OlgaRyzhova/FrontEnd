@@ -75,7 +75,7 @@ img {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url(../img/bg_main.webp);
+  background-image: url(../img/bg_main.png);
 }
 .header .container_header {
   padding-top: 295px;
@@ -313,7 +313,7 @@ img {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   margin: 0 auto;
-  background-image: url(../img/bg_explore.webp);
+  background-image: url(../img/bg_explore.png);
 }
 .explore .container_explore {
   display: flex;
@@ -444,7 +444,7 @@ img {
   background-repeat: no-repeat;
   margin: 0 auto;
   min-height: 684px;
-  background-image: url(../img/bg_1book.webp);
+  background-image: url(../img/bg_1book.png);
 }
 
 .book_adventure {
@@ -455,7 +455,7 @@ img {
   background-repeat: no-repeat;
   margin: 0 auto;
   min-height: 684px;
-  background-image: url(../img/bg_2book.webp);
+  background-image: url(../img/bg_2book.png);
 }
 
 .container_book {
@@ -512,7 +512,7 @@ img {
   background-repeat: no-repeat;
   margin: 0 auto;
   min-height: 680px;
-  background-image: url(../img/bg_feedback.webp);
+  background-image: url(../img/bg_feedback.png);
 }
 
 .container_feedback {
