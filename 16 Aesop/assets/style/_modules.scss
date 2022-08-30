@@ -1,0 +1,194 @@
+@use 'vars';
+
+@mixin title_font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+@mixin description{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 27px;
+}
+@mixin text_about {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+@mixin tetx_link{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+@mixin text_slogan{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.notice{
+    display: flex;
+    gap: 10px;
+    background: #A6672B;
+    padding: 10px 0;
+    color: vars.$text_light;
+    @include text_about;
+}
+
+.delivery{
+    color: vars.$text_light;
+    @include text_about;
+    display: flex;
+    padding: 12px 0 10px;
+    background: #252525;
+}
+
+.container_bg{
+    background-image: url(../img/bg_main.jpg);
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.container_header{
+    width: 100%;
+    max-width: 1350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 14px;
+    margin: 0 auto;
+}
+
+.logo{
+    max-width: 100px;
+    max-height: 32px;
+    justify-content: flex-start;
+}
+
+.nav_list{
+    display: flex;
+    color: vars.$text_light;
+    @include text_about;
+    gap: 25px;
+    margin-left: 40px;
+    justify-content: flex-start;
+}
+
+.buttons_header{
+    color: vars.$text_light;
+    @include text_about;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.container_main{
+    width: 100%;
+    max-width: 400px;
+    padding: 120px 0;
+    margin-left: 240px;
+}
+
+.title{
+    color: vars.$text_light;
+    @include title_font;
+    margin-bottom: 16px;
+}
+
+.description{
+    color: vars.$text_light;
+    @include description;
+}
+
+.hair_product{
+    display: flex;
+}
+
+.hair_img_block{
+    width: 50%;
+}
+
+.hair_description_block{
+    width: 50%;
+    background: #CFC7C0;
+}
+
+.container_hair{
+    padding: 40px 40px 170px;
+}
+
+.link{
+    max-width: 73px;
+    display: inline-block;
+    @include tetx_link;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 106px;
+}
+
+.description_block{
+    display: flex;
+    gap: 40px;
+}
+
+.hair_decription_img{
+    width: 100%;
+    height: 100%;
+    padding: 70px 0;
+    max-width: 200px;
+    max-height: 242px;
+}
+
+.hair_description_text{
+    max-width: 400px;
+    color: vars.$text_dark;
+    .title_hair{
+        @include title_font;
+        margin-bottom: 20px;
+    }
+    .slogan{
+        @include text_slogan;
+        margin-bottom: 20px;
+    }
+    .about{
+        @include text_about;
+        margin-bottom: 26px;
+    }
+}
+
+.button_basket{
+    display: inline-block;
+    color: vars.$text_light;
+    @include text_about;
+    padding: 20px 77px 26px;
+    background: #333333;
+    border: 1px solid #333333;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 0 0 20px;
+}
+
+.button_favorites{
+    display: inline-block;
+    color: vars.$text_dark;
+    @include text_about;
+    padding: 20px 77px 26px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-right: 0;
+    &::after{
+        content: url(../img/arrow.svg);
+        padding-left: 44px;
+        text-align: center;
+    }
+}

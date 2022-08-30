@@ -3,62 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/index.css">
     <title>Aesop</title>
 </head>
 <body>
-    <div class="notice">
-        <span>Unsere deutschen Geschäfte sind nun wieder regulär oder per Terminvereinbarung geöffnet.</span>
-        <span>Aktuelle Informationen zu unseren Geschäften</span>
-    </div>
-    <div class="delivery">Wir bieten kostenfreien Versand nach Deutschland und Österreich an.</div>
-    <header>
-        <a class="logo" href="#">
-            <img src="./assets/img/Group.svg" alt="Logo">
-        </a>
-        <nav class="navbar">
-            <ul class="nav_list">
-                <li class="nav_item">
-                    <a href="#">Einkaufen</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Lesen</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Standorte</a>
-                </li>
-                <li class="nav_item">
-                    <a href="#">Suchen</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="buttons_header">
-            <a class="sign_up" href="#">Anmelden</a>
-            <a class="basket" href="#">Warenkorb</a>
-        </div>
-    </header>
-    <section class="main_screen">
-        <div>
-            <h2 class="title">Gebändigt und geformt: Formulierungen mit Funktion</h2>
-            <p class="description">Mit Tame Hair Serum und Sculpt Hair Polish stellen wir zwei neue Formulierungen vor, die dabei behilflich sind, die Haare in Szene zu setzen, und gleichzeitig die Haarwurzeln sorgsam einbeziehen.</p>
-        </div>
-    </section>
+    <div class="container_bg">
+        <header class="header">
+            <div class="notice flex_row">
+                <span>Unsere deutschen Geschäfte sind nun wieder regulär oder per Terminvereinbarung geöffnet.</span>
+                <span>Aktuelle Informationen zu unseren Geschäften</span>
+            </div>
+            <div class="delivery flex_row">Wir bieten kostenfreien Versand nach Deutschland und Österreich an.</div>
 
-    <section class="hair_product">
+            <div class="container_header flex_row">
+                <a class="logo" href="#">
+                    <img src="./assets/img/Group.svg" alt="Logo">
+                </a>
+                <nav class="navbar">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="#">Einkaufen</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">Lesen</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">Standorte</a>
+                        </li>
+                        <li class="nav_item">
+                            <a href="#">Suchen</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="buttons_header">
+                    <a class="sign_up" href="#">Anmelden</a>
+                    <a class="basket" href="#">Warenkorb</a>
+                </div>
+            </div>
+        </header>
+
+        <section class="main_screen">
+            <div class="container_main">
+                <h2 class="title">Gebändigt und geformt: Formulierungen mit Funktion</h2>
+                <p class="description">Mit Tame Hair Serum und Sculpt Hair Polish stellen wir zwei neue Formulierungen vor, die dabei behilflich sind, die Haare in Szene zu setzen, und gleichzeitig die Haarwurzeln sorgsam einbeziehen.</p>
+            </div>
+        </section>
+    </div>
+
+    <section class="hair_product flex_row">
         <div class="hair_img_block">
             <img src="./assets/img/img_hair_block.jpg" alt="">
         </div>
         <div class="hair_description_block">
-            <a class="link" href="#">Schließen</a>
-            <div class="description_block">
-                <img src="./assets/img/img_hair_product.png" alt="">
-                <div class="">
-                    <h2 class="title">Sculpt Hair Polish</h2>
-                    <p class="about">Ein Gel, das Präzision und Geschmeidigkeit vereint</p>
-                    <p class="about">Das Sculpt Hair Polish ist ein Styling-Gel mit einzigartigem Halt. Fest und doch flexibel, das Resultat ist stets eine sorgfältig komponierte Frisur – ob kurz oder lang, akribisch oder betont lässig.</p>
-                    <a class="button_basket" href="#">Zum Warenkorb hinzufügen — 27,00 €</a>
-                    <a class="button_favorites" href="#">Sculpt Hair Polish entdecken</a>
+            <div class="container_hair">
+                <a class="link" href="#">Schließen</a>
+                <div class="description_block flex_row">
+                    <img class="hair_decription_img" src="./assets/img/img_hair_product.png" alt="">
+                    <div class="hair_description_text">
+                        <h2 class="title_hair">Sculpt Hair Polish</h2>
+                        <p class="slogan">Ein Gel, das Präzision und Geschmeidigkeit vereint</p>
+                        <p class="about">Das Sculpt Hair Polish ist ein Styling-Gel mit einzigartigem Halt. Fest und doch flexibel, das Resultat ist stets eine sorgfältig komponierte Frisur – ob kurz oder lang, akribisch oder betont lässig.</p>
+                        <a class="button_basket" href="#">Zum Warenkorb hinzufügen — 27,00 €</a>
+                        <a class="button_favorites" href="#">Sculpt Hair Polish entdecken</a>
+                    </div>
                 </div>
             </div>
         </div>
