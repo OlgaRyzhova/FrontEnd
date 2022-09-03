@@ -34,17 +34,23 @@
     line-height: 26px;
 }
 
+.light{
+    color: vars.$text_light;
+}
+
+.dark{
+    color: vars.$text_dark;
+}
+
 .notice{
     display: flex;
     gap: 10px;
     background: #A6672B;
     padding: 10px 0;
-    color: vars.$text_light;
     @include text_about;
 }
 
 .delivery{
-    color: vars.$text_light;
     @include text_about;
     display: flex;
     padding: 12px 0 10px;
@@ -56,7 +62,7 @@
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
-    background-size: 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     margin: 0 auto;
 }
@@ -78,7 +84,6 @@
 
 .nav_list{
     display: flex;
-    color: vars.$text_light;
     @include text_about;
     gap: 25px;
     margin-left: 40px;
@@ -86,7 +91,6 @@
 }
 
 .buttons_header{
-    color: vars.$text_light;
     @include text_about;
     gap: 30px;
     justify-content: flex-end;
@@ -100,22 +104,22 @@
 }
 
 .title{
-    color: vars.$text_light;
     @include title_font;
     margin-bottom: 16px;
 }
 
 .description{
-    color: vars.$text_light;
     @include description;
 }
 
 .hair_product{
     display: flex;
+    // max-height: 720px;
 }
 
 .hair_img_block{
     width: 50%;
+    // height: 100%;
 }
 
 .hair_description_block{
@@ -123,9 +127,9 @@
     background: #CFC7C0;
 }
 
-.container_hair{
-    padding: 40px 40px 170px;
-}
+// .container_hair{
+//     padding: 40px 40px auto;
+// }
 
 .link{
     max-width: 73px;
@@ -142,7 +146,7 @@
 
 .hair_decription_img{
     width: 100%;
-    height: 100%;
+    // height: 100%;
     padding: 70px 0;
     max-width: 200px;
     max-height: 242px;
@@ -191,4 +195,79 @@
         padding-left: 44px;
         text-align: center;
     }
+}
+
+.bg_light{
+    width: 100%;
+    background: #FFFEF2;
+}
+
+.container_hair_list{
+    max-width: 1280px;
+    display: flex;
+    padding: 100px 0 48px;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    &::after{
+        content: '';
+        width: 100%;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+.hair_item{
+    max-width: 427px;
+    position: relative;
+    &:hover{
+        &::after{
+            position: absolute;
+            content: '';
+            width: 100%;
+            border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+            bottom: -10%;
+            right: 0;
+        }
+    }
+}
+
+.title_item{
+    text-align: center;
+    color: vars.$text_dark;
+    @include description;
+    &:nth-child(even){
+        margin: 10px auto;
+    }
+}
+
+.pharmacy_product{
+    display: flex;
+    padding-top: 150px;
+    margin: 0 auto;
+    gap: 120px;
+}
+
+.pharmacy_text{
+    max-width: 400px;
+    color: vars.$text_dark;
+}
+
+.vitamin{
+    margin-bottom: 24px;
+    @include description;
+}
+
+.title_pharmacy{
+    @include title_font;
+    margin-bottom: 27px;
+}
+
+.description_pharmacy{
+    margin-bottom: 26px;
+}
+.pharmacy_img{
+
 }
