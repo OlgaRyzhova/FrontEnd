@@ -71,7 +71,7 @@ console.log(convertedNumber); // MIN 3-1
 // let arr = [];
 // let sum = add(arr);
 // console.log(sum);
-// Варіант нижче не вийшов, так як прописував цифри через кому
+// Варіант нижче не вийшов, так як прописувала цифри через кому
 // function range(x, y){
 //     let rangeNumber = [];
 //     while( x <= y ){
