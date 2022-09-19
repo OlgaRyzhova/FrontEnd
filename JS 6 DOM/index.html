@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+    <style>
+        /* TASK 2 */
+
+        .modal {
+            position: fixed;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            background-color: #898989;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .modal.open{
+            display: block;
+        }
+
+
+        /* TASK 3 */
+        #traffic_light {
+            margin-top: 100px;
+            height: 550px;
+            width: 200px;
+            background-color: #333;
+            float: left;
+            border-radius: 40px;
+        }
+
+        .bulb {
+            height: 150px;
+            width: 150px;
+            background-color: #111;
+            border-radius: 50%;    
+            margin: 25px auto;
+            }
+
+        #control_panel {
+            float:left;
+            display: flex;
+            flex-direction: column;
+            margin-top: 100px;
+        }
+
+        .circle {
+            font-size: 16px;
+            background-color: rgb(196, 196, 196);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 20px 30px;
+            text-align: center;
+            margin: 20px 40px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- TASK 1 -->
+    <ol id="nav_list">
+        
+    </ol>
+
+    <!-- TASK 2 -->
+    <div class="modal">
+        <button onclick="switchModal()">X</button>
+        Hello, I'm a modal!
+    </div>
+    <button onclick="switchModal()">Open Modal</button>
+
+    <!-- TASK 3 -->
+    <div id="control_panel">
+        <button id="red" class="circle">STOP</button>
+        <button id="yellow" class="circle">SLOW</button>
+        <button id="green" class="circle">GO</button>
+    </div>
+
+    <div id="traffic_light">
+        <div id="redLight" class="bulb"></div>
+        <div id="yellowLight" class="bulb"></div>
+        <div id="greenLight" class="bulb"></div>
+    </div>
+    
+    <script src="./js/app.js"></script>
+</body>
+</html>
