@@ -69,4 +69,5 @@ console.log(time);
 time.showTime();
 time.setSeconds(25);
 time.setMinutes(5);
-time.setHours(5);
+time.setHours(5); // MAX
+//  Поки мені важко з цим завданням, але це мені для мотивації, щоб зробити його !
