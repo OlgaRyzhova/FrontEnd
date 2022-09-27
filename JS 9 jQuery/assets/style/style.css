@@ -29,13 +29,26 @@ a {
 }
 
 .bg_container{
+    position: relative;
     margin: 0 auto;
     max-width: 1000px;
     height: 860px;
-    background-image: url(../img/bg_image.jpg);
-    /* opacity: 20%; */
     display: flex;
     align-items: center;
+    z-index: 0;
+}
+
+.bg_game{
+    content: "";
+    background-image: url(../img/bg_image.jpg);
+    position: absolute;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: .4;
 }
 
 .game_info{
@@ -43,7 +56,7 @@ a {
     display: flex;
     justify-content: center;
     background: #FFF;
-    /* z-index: 1; */
+    z-index: 1;
 }
 #tabs{
     max-width: 600px;
