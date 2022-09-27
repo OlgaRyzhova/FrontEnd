@@ -2,7 +2,7 @@
 
 $( function() {
     $( "#tabs" ).tabs();
-})
+} );
 
 
 // RATING stars
