@@ -43,6 +43,7 @@ a {
     display: flex;
     justify-content: center;
     background: #FFF;
+    /* z-index: 1; */
 }
 #tabs{
     max-width: 600px;
