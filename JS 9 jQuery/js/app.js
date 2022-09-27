@@ -13,25 +13,27 @@ $("#basic").rating({
             $("#basicInput").val(e.stars);
         }
     });
-  $("#half").rating({
-    "half": true,
-        "click": function (e) {
-            console.log(e);
-            $("#halfInput").val(e.stars);
-        }
-    });
-  $("#custom").rating({
-       stars: 7,
-        emptyStar: "far fa-arrow-alt-circle-left",
-        halfStar: "far fa-angry",
-        filledStar: "fas fa-arrow-alt-circle-right",
-        color: "#ff3ef9",
-        half: true,
-        "click": function (e) {
-            console.log(e);
-            $("#customInput").val(e.stars);
-        }
-    });
+
+$("#half").rating({
+"half": true,
+    "click": function (e) {
+        console.log(e);
+        $("#halfInput").val(e.stars);
+    }
+});
+
+$("#custom").rating({
+    stars: 7,
+    emptyStar: "far fa-arrow-alt-circle-left",
+    halfStar: "far fa-angry",
+    filledStar: "fas fa-arrow-alt-circle-right",
+    color: "#ff3ef9",
+    half: true,
+    "click": function (e) {
+        console.log(e);
+        $("#customInput").val(e.stars);
+    }
+});
 
 
 // PIE Chart
