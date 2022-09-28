@@ -143,11 +143,11 @@ a {
 }
 
 .chart{
-    /* position: relative; */
-    /* display: inline-block; */
+    position: relative;
+    display: inline-block;
     width: 75px;
     height: 75px;
-    /* text-align: center; */
+    text-align: center;
 }
 
 .percent{
@@ -163,7 +163,9 @@ a {
 
 .chart canvas{
     position: absolute;
-    top: 0;
+    width: 75px;
+    height: 75px;
+    bottom: 30%;
     left: 0;
 }
 

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.logo {
+  width: 182px;
+  display: inline-block;
+}
+
+.nav_list {
+  gap: 30px;
+}
+
+.icon-search-icon:before {
+  content: "";
+}
+
+.icon-profile-icon:before {
+  content: "";
+}
