@@ -293,7 +293,7 @@ img {
 }
 
 .products_wrapper {
-  max-width: 1200px;
+  max-width: 1320px;
   margin-bottom: 50px;
   display: flex;
   gap: 20px;
@@ -372,10 +372,6 @@ img {
   display: flex;
   gap: 34px;
   justify-content: center;
-}
-
-.slick-track {
-  gap: 34px;
 }
 
 .partner_title {
