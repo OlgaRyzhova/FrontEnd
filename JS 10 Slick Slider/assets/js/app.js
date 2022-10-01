@@ -52,6 +52,8 @@ $(function() {
         prevArrow: '<button type="button" class="slick-prev"><i class="icon-prev"></i></button>',
         nextArrow: '<button type="button" class="slick-next"><i class="icon-next"></i></button>',
         slidesToShow: 8,
+        autoplay: true,
+        autoplaySpeed: 1500,
         responsive: [
             {
                 breakpoint: 1024,
