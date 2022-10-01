@@ -1,3 +1,24 @@
+@use 'vars';
+
+@mixin bg_image{
+    -webkit-background-size:100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+@mixin link_item {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+// HEADER
+
 .logo{
     width: 182px;
     display: inline-block;
@@ -5,12 +26,265 @@
 
 .nav_list{
     gap: 30px;
+    flex-wrap: wrap
 }
 
-.icon-search-icon:before {
-    content: "\e905";
+.nav_link{
+    @include link_item;
+    color: vars.$text-black;
+    padding: 28px 15px;
+    transition: 0.5s ease-in;
 }
 
-.icon-profile-icon:before {
-    content: "\e904";
+.icon_block{
+    gap: 30px;
+}
+
+.search .profile{
+    transition: 0.5s ease;
+    width: 36px;
+    height: 36px;
+}
+
+// MAIN
+
+.slick-dots{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    bottom: 50px;
+    right: 50%;
+}
+
+.slick-dots button{
+    font-size: 0;
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    padding: 0;
+    border: none;
+    background: #CAC2BA;
+}
+
+.slick-dots li.slick-active button{
+    background-color: #F16A50;
+}
+.screen_discover{
+    background-image: url(../img/slide_1.webp);
+    @include bg_image;
+}
+
+.screen_expand{
+    background-image: url(../img/slide_2.webp);
+    @include bg_image;
+}
+
+.screen_find{
+    background-image: url(../img/slide_3.webp);
+    @include bg_image;
+}
+
+.gradient{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.84) 0%, rgba(217, 217, 217, 0) 100%);
+}
+
+.screen_container{
+    max-width: 400px;
+    padding-top: 120px;
+    padding-bottom: 368px;
+    flex-direction: column;
+    margin: 0 0 0 auto;
+    text-align: center;
+}
+
+.title_slide{ 
+    max-width: 400px;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 61px;
+    text-align: center;
+    text-transform: uppercase;
+    color: vars.$text-light;
+    margin-bottom: 50px;
+}
+
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: vars.$text-white;
+    padding: 15px 57px;
+    border: 2px solid #F8F1EA;
+    transition: 0.8s ease;
+}
+
+// ARRIVALS 
+
+.container_arrivals{
+    padding: 70px 0;
+    max-width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title_block{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    text-transform: uppercase;
+    color: vars.$text-black;
+    margin-bottom: 50px;
+}
+
+.products{
+    align-items: center;
+    flex-wrap: wrap;
+}
+.products_wrapper{
+    max-width: 1200px;
+    margin-bottom: 50px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.slick-arrow{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.guitar{
+    width: 224px;
+    border: 1px solid #F8F1EA;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.guitar:last-child{
+    margin-right: 0;
+}
+
+.guitar img{
+    width: 100%;
+    height: 300px;
+}
+.stock{
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: vars.$text-light;
+    padding: 4px 5.5px;
+    background: #F16A50;
+}
+
+.title_guitar{
+    max-width: 204px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: vars.$text-black;
+    margin: 18px auto 10px;
+}
+
+.price{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: vars.$text-black;
+    margin-bottom: 20px;
+}
+
+.btn_dark{
+    color: vars.$text-black;
+    border: 2px solid #000000;
+}
+
+
+// PARTNERS
+
+.partners_section{
+    background-color: vars.$text-light;
+}
+
+.partners_container{
+    max-width: 1320px;
+    padding: 70px 0;
+    margin: 0 auto;
+}
+
+.partner_list{
+    max-width: 1186px;
+    display: flex;
+    gap: 34px;
+    justify-content: center;
+}
+
+.partner_title{
+    max-width: 100px;
+    transition: 0.8s ease;
+}
+
+// FOOTER
+
+.footer{
+    background: #35312D;
+}
+
+.footer_container{
+    padding: 70px 0 20px;
+    max-width: 1142px;
+    display: flex;
+    gap: 659px;
+    justify-content: center;
+    margin: 0 auto 54px;
+}
+
+.logo_footer{
+    width: 150px;
+    color: vars.$text-light;
+    margin-bottom: 35px;
+}
+
+
+.footer_link{
+    color: vars.$text-white;
+    margin-bottom: 10px;
+}
+
+.contact_title, .phone{
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    text-transform: capitalize;
+    color: vars.$text-light;
+    margin-bottom: 50px;
+}
+
+.social_links{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 35px;
+}
+
+.copyright{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: vars.$text-light;
+    text-align: center;
+    padding-bottom: 20px;
 }

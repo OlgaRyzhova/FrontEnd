@@ -2,20 +2,20 @@
     width: 100%;
     background: #F8F1EA;
     margin: 0 auto;
-    padding: 22px 0;
 }
 
 .container{
     width: 90%;
     max-width: 1280px;
+    margin: 0 auto;
+    align-items: center;
 }
 
 .flex_row{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin: 0 auto;
-    align-items: center;
+    // margin: 0 auto;
+    // align-items: center;
 }
 
 
