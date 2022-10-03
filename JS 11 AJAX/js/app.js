@@ -1,11 +1,26 @@
-const URL = 'http://www.omdbapi.com/apikey.aspx?VERIFYKEY=8b8a998f-9afa-4b43-a2c8-37b02d8751ca';
+// const xhr = new XMLHttpRequest(); 
+// xhr.open('get', 'data/data.json');   // сходи туди і візьми
+// xhr.send();  // запускаємо методом send
+
+// console.log(xhr);
+
+const URL = 'http://www.omdbapi.com/?i=tt3896198&apikey=f55932f2';
 
 axios(URL)
     .then(res => {
-        console.log(res.status);
-        createProductList(res.data);
+        console.log(res);
+        createMovieList(res.data);
     })
     .catch(err => {
-        console.log(ree.response.status);
+        console.log(err);
     });
-    
+
+function createMovieList(list) {
+    list.forEach(el => {
+        const ul = document.getElementById('list');
+        const li = document.createElement('li');
+        li.textContent = el.Title
+
+        ul.append(li);
+    });
+}
