@@ -1,6 +1,93 @@
-// @media screen and (max-width: 768px){
-//     .products_wrapper{
-//         max-width: 704px;
-//     }
+@media screen and (max-width: 1320px){
+    .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list{
+        max-width: 1200px;
+    }
+    .partner_list .slick-track{
+        gap: 24px;
+    }
 
-// }
+    .partner_wrapper{
+        gap: 15px;
+    }
+
+    .products_wrapper .slick-list{
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list, .footer_container{
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .partner_list .slick-track{
+        gap: 24px;
+    }
+
+    .products_wrapper .slick-list{
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list{
+        max-width: 704px;
+        margin: 0 auto;
+    }
+    .logo{
+        width: 168px;
+    }
+    .partner_list .slick-track{
+        gap: 24px;
+    }
+
+    .products_wrapper .slick-list, .footer_container{
+        max-width: 704px;
+    }
+
+    .main_block{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .search, .profile{
+        width: 27px;
+        height: 27px;
+    }
+
+    .products_wrapper{
+        max-width: 704px;
+    }
+
+    .main_block{
+        width: 66%;
+    }
+
+    .logo_footer, .navbar_footer{
+        justify-content: flex-start;
+        width: 34%;
+    }
+    .contact_block{
+        width: 34%;
+        max-width: 212px;
+    }     
+    .main_info_footer{
+        display: flex;
+        flex-direction: row;
+    }
+    .nav_link{
+        padding: 20px 15px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .contact_title, .phone{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .icon_block{
+        gap: 20px;
+    }
+}
+

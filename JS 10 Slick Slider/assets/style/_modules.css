@@ -4,7 +4,7 @@
 }
 
 .nav_list {
-  gap: 30px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -12,9 +12,9 @@
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
+  color: #000000;
   font-size: 20px;
   line-height: 24px;
-  color: #000000;
   padding: 28px 15px;
   transition: 0.5s ease-in;
 }
@@ -23,7 +23,7 @@
   gap: 30px;
 }
 
-.search .profile {
+.search, .profile {
   transition: 0.5s ease;
   width: 36px;
   height: 36px;
@@ -124,6 +124,10 @@
   transition: 0.8s ease;
 }
 
+.icon-prev:hover {
+  color: #F16A50;
+}
+
 .container_arrivals {
   padding: 70px 0;
   max-width: 1320px;
@@ -142,7 +146,7 @@
 }
 
 .products {
-  align-items: center;
+  max-width: 1320px;
   flex-wrap: wrap;
 }
 
@@ -150,8 +154,13 @@
   max-width: 1320px;
   margin-bottom: 50px;
   display: flex;
+  flex-direction: row;
   gap: 20px;
   align-items: center;
+}
+
+.products_wrapper .slick-list {
+  max-width: 1200px;
 }
 
 .slick-arrow {
@@ -162,6 +171,7 @@
 
 .guitar {
   width: 224px;
+  max-height: 437px;
   border: 1px solid #F8F1EA;
   text-align: left;
   margin-right: 20px;
@@ -171,8 +181,13 @@
   margin-right: 0;
 }
 
+.guitar div {
+  width: 224px;
+}
+
 .guitar img {
   width: 100%;
+  max-width: 224px;
   height: 300px;
 }
 
@@ -221,11 +236,21 @@
   margin: 0 auto;
 }
 
+.partner_wrapper {
+  max-width: 1320px;
+  align-items: center;
+}
+
 .partner_list {
   max-width: 1320px;
+  align-items: center;
+}
+
+.partner_list .slick-track {
   display: flex;
   gap: 34px;
-  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .partner_title {
@@ -238,12 +263,16 @@
 }
 
 .footer_container {
-  padding: 70px 0 20px;
-  max-width: 1142px;
   display: flex;
-  gap: 659px;
-  justify-content: center;
+  padding: 70px 0 20px;
+  width: 100%;
+  max-width: 1142px;
   margin: 0 auto 54px;
+}
+
+.main_info_footer {
+  display: flex;
+  flex-direction: column;
 }
 
 .logo_footer {
@@ -255,6 +284,14 @@
 .footer_link {
   color: #FFFFFF;
   margin-bottom: 10px;
+}
+
+.contact_block {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  max-width: 331px;
+  align-items: flex-start;
 }
 
 .contact_title, .phone {

@@ -10,13 +10,14 @@
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
+  font-size: 36px;
+  color: #F8F1EA;
   speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  color: #F8F1EA;
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -34,22 +35,18 @@
 
 .icon-youtube1:before {
   content: "";
-  font-size: 36px;
 }
 
 .icon-facebook:before {
   content: "";
-  font-size: 36px;
 }
 
 .icon-instagram:before {
   content: "";
-  font-size: 36px;
 }
 
 .icon-pinterest:before {
   content: "";
-  font-size: 36px;
 }
 
 .icon-profile-icon:before {
@@ -62,5 +59,4 @@
 
 .icon-twitter1:before {
   content: "";
-  font-size: 36px;
 }

@@ -22,9 +22,9 @@ $(function() {
         slidesToShow: 5,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
-                    slidesToShow: 5,
+                    slidesToShow: 4,
                     arows: true
                 }
             },
@@ -56,9 +56,16 @@ $(function() {
         autoplaySpeed: 1500,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1200,
                 settings: {
                     slidesToShow: 8,
+                    arows: true
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 5,
                     arows: true
                 }
             },
