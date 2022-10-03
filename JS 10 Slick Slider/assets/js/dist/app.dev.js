@@ -19,11 +19,12 @@ $(function () {
   $('.products_wrapper').slick({
     prevArrow: '<button type="button" class="slick-prev"><i class="icon-prev"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="icon-next"></i></button>',
+    variableWidth: true,
     slidesToShow: 5,
     responsive: [{
       breakpoint: 1200,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 5,
         arows: true
       }
     }, {
@@ -64,7 +65,7 @@ $(function () {
     }, {
       breakpoint: 768,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 2,
         arows: true
       }
     }, {

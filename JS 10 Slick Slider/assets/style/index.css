@@ -171,6 +171,38 @@ img {
   height: 36px;
 }
 
+.hamburger {
+  display: inline-block;
+  width: 17px;
+  margin: auto 0 auto 80px;
+}
+
+.hamburger.open .h_line {
+  display: none;
+}
+.hamburger.open::before {
+  transform: rotate(45deg) translate(20px, 15px);
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+.hamburger.open::after {
+  transform: rotate(-45deg) translate(6px, -1px);
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+.search, .profile {
+  display: inline-block;
+}
+
+.main_screen .slick-track {
+  height: 100%;
+}
+
 .slick-dots {
   list-style: none;
   padding: 0;
@@ -179,7 +211,7 @@ img {
   gap: 30px;
   position: absolute;
   bottom: 50px;
-  right: 50%;
+  right: 45%;
 }
 
 .slick-dots button {
@@ -312,7 +344,7 @@ img {
 }
 
 .guitar {
-  width: 224px;
+  max-width: 224px;
   max-height: 437px;
   border: 1px solid #F8F1EA;
   text-align: left;
@@ -393,6 +425,7 @@ img {
   gap: 34px;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .partner_title {
@@ -532,8 +565,12 @@ img {
 }
 @media screen and (max-width: 1200px) {
   .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list, .footer_container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
+  }
+
+  .icon-next:before, .icon-prev:before {
+    font-size: 50px;
   }
 
   .partner_list .slick-track {
@@ -542,16 +579,32 @@ img {
 
   .products_wrapper .slick-list {
     max-width: 1000px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 1000px) {
   .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list {
-    max-width: 704px;
+    max-width: 780px;
     margin: 0 auto;
   }
 
   .logo {
     width: 168px;
+  }
+
+  .screen_container {
+    max-width: 210px;
+  }
+
+  .title_slide {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .btn {
+    padding: 10px 27px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .partner_list .slick-track {
@@ -569,9 +622,12 @@ img {
 }
 @media screen and (max-width: 800px) {
   .search, .profile {
-    transition: 0.5s ease;
     width: 27px;
     height: 27px;
+  }
+
+  .icon-next:before, .icon-prev:before {
+    font-size: 30px;
   }
 
   .products_wrapper {
@@ -610,5 +666,56 @@ img {
 
   .icon_block {
     gap: 20px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .container_arrivals, .products, .products_wrapper, .partner_container, .partner_wrapper, .partner_list {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .nav_list {
+    display: none;
+  }
+
+  .hamburger {
+    position: relative;
+    z-index: 3;
+  }
+
+  .hamburger {
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    position: relative;
+  }
+  .hamburger::before, .hamburger::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
+  }
+  .hamburger::before {
+    top: 5px;
+    left: 0;
+  }
+  .hamburger::after {
+    top: 35px;
+    left: 0;
+  }
+  .hamburger .h_line {
+    top: 20px;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    position: absolute;
   }
 }

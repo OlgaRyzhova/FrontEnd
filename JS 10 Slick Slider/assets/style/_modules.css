@@ -29,6 +29,38 @@
   height: 36px;
 }
 
+.hamburger {
+  display: inline-block;
+  width: 17px;
+  margin: auto 0 auto 80px;
+}
+
+.hamburger.open .h_line {
+  display: none;
+}
+.hamburger.open::before {
+  transform: rotate(45deg) translate(20px, 15px);
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+.hamburger.open::after {
+  transform: rotate(-45deg) translate(6px, -1px);
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+.search, .profile {
+  display: inline-block;
+}
+
+.main_screen .slick-track {
+  height: 100%;
+}
+
 .slick-dots {
   list-style: none;
   padding: 0;
@@ -37,7 +69,7 @@
   gap: 30px;
   position: absolute;
   bottom: 50px;
-  right: 50%;
+  right: 45%;
 }
 
 .slick-dots button {
@@ -170,7 +202,7 @@
 }
 
 .guitar {
-  width: 224px;
+  max-width: 224px;
   max-height: 437px;
   border: 1px solid #F8F1EA;
   text-align: left;
@@ -251,6 +283,7 @@
   gap: 34px;
   align-items: center;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .partner_title {
