@@ -65,7 +65,7 @@ $(document).on('click', '.close-modal', function (e) {
   closeModal();
 });
 pageLoader('search');
-var URL = 'https://www.omdbapi.com/?apikey=f55932f2';
+var URL = 'http://www.omdbapi.com/?apikey=f55932f2';
 var PAGE = 1;
 
 function createMovieList(list) {

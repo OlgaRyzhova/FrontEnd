@@ -88,7 +88,7 @@ $(document).on('click','.close-modal', function(e) {
 
 pageLoader('search');
 
-const URL = 'https://www.omdbapi.com/?apikey=f55932f2';
+const URL = 'http://www.omdbapi.com/?apikey=f55932f2';
 let PAGE = 1;
 
 function createMovieList(list) {
