@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+}
+
+.header {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: transparent;
+  position: relative;
+}
+
+.flex_row {
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.container_violet {
+  background: #E7E5FF;
+  z-index: -1;
+}
+
+.container_light {
+  background: #FBFBFF;
+  padding-bottom: 100px;
+  z-index: 0;
+}
+
+.container_footer {
+  width: 100%;
+  background: #1A1930;
+}
+
+.analytics_section, .team_section, .questions_section, .price_section, .feedback_section, .contact_section, .media_section {
+  max-width: 1330px;
+  margin: 0 auto 100px;
+  position: relative;
+}

@@ -1,0 +1,37 @@
+.nav_link{
+    &:before{
+        content: '';
+        max-width: 4px;
+        max-height: 4px;
+        border: 1px solid #FFFFFF;
+        color: transparent;
+        border-radius: 50%;
+        padding-right: 15px;
+        margin-right: 10px;
+    }
+}
+
+// .icon{
+//     &:before{
+//         content: '';
+//         border-radius: 50%;
+//         width: 20px;
+        
+//     }
+//     &:hover{
+//         color: aqua;
+//     }
+// }
+
+.icon-facebook:before {
+    content: "\e900";
+    width: 10px;
+    height: 18px;
+}
+.icon-instagram:before {
+    content: "\e901";
+}
+
+.icon-twitter:before {
+    content: "\e903";
+}
