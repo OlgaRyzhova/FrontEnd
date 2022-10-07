@@ -1,25 +1,46 @@
-@charset "UTF-8";
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: url(../img/header_mask.png);
+  background-repeat: no-repeat;
+}
+
 .nav_link:before {
   content: "";
-  max-width: 4px;
-  max-height: 4px;
+  padding: 3px 3px;
   border: 1px solid #FFFFFF;
   color: transparent;
   border-radius: 50%;
-  padding-right: 15px;
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
-.icon-facebook:before {
-  content: "";
-  width: 10px;
-  height: 18px;
+.arrow::before {
+  content: "";
+  padding: 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 50%;
 }
 
-.icon-instagram:before {
-  content: "";
+.title_section::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
+  border: 1px solid #2C4058;
 }
 
-.icon-twitter:before {
-  content: "";
+.news_section .title_section::before {
+  content: "";
+  width: 100px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 80px;
+  border: 1px solid #FFFFFF;
 }

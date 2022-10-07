@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/img/flag_favicon.png"/>
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+    <!-- fonts Open Sans italic -->
+    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');</style>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <title>Monticello</title>
+</head>
+<body>
+    <header class="header main_bg">
+        <div class="navigation container flex_row">
+            <a class="logo" href="">
+                <img src="./assets/img/Logo.svg" alt="">
+            </a>
+            <nav class="navbar flex_row">
+                <ul class="nav_list">
+                    <li >
+                        <a class="nav_link" href="#about_us">
+                            <span class="dot"></span>about us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#project">
+                            <span class="dot"></span>projects
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#news">
+                            <span class="dot"></span>news
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#contact">
+                            <span class="dot"></span>contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social_links">
+                <a href="#contact">
+                    <i class="icon icon-facebook"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-twitter"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="heading_slider" id="about_us">
+            <div class="heading_wrapper">
+                <h2 class="title">simple & modern</h2>
+                <p class="slogan">we make the world beautiful everyday</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">simple</h2>
+                <p class="slogan">we make the world different</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">modern & simple</h2>
+                <p class="slogan">we make the world incredible</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">modern</h2>
+                <p class="slogan">we make the world beutiful everyday</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">simple & modern</h2>
+                <p class="slogan">we make the best moments every day</p>
+            </div>
+        </div>
+        <a href="#project"><i class="arrow"></i></a>
+    </header>
+
+    <section class="project_section" id="project">
+        <h3 class="title_section">what we do</h3>
+        <div class="trade_block container flex_row">
+            <div class="image_project">
+                <p class="bg_blue"></p>
+                <img class="img_trade" src="./assets/img/img_trade.jpg" alt="">
+            </div>
+            <div class="text_project">
+                <p class="text_article">one world</p>
+                <h4 class="title_project">trade center</h4>
+                <p class="description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                <a class="btn" href="#gallery">more details</a>
+                <div class="destination">
+                    <i class="icon-marker"></i>
+                    <p class="city">New York City, United States - 1776 feet</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="commerce_block container flex_row" id="">
+            <div class="text_project">
+                <p class="text_article">international</p>
+                <h4 class="title_project">commerce center</h4>
+                <p class="description">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                <a class="btn" href="#gallery">more details</a>
+                <div class="destination">
+                    <i class="icon-marker"></i>
+                    <p class="city">Hong Kong - 1588 feet</p>
+                </div>
+            </div>
+            <div class="image_project">
+                <p class="bg_violet"></p>
+                <img src="./assets/img/img_commerce.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="news_section" id="news">
+        <h3 class="title_section">latest news</h3>
+        <div class="news_wrapper container flex_row">
+            <div class="card card_1">
+                <img class="img_news" src="./assets/img/img_news1.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h5>
+                    <p class="text_card">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="person_block">
+                        <img class="avatar" src="./assets/img/avatar_1.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">ALJA BRUN</h6>
+                            <p class="date">20 Jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card card_2">
+                <img class="img_news" src="./assets/img/img_news2.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">EFFECTIVE ADVERTISING POINTERS.</h5>
+                    <p class="text_card">Having a home based business is a wonderful asset to your life...</p>
+                    <div class="person_block flex_row">
+                        <img class="avatar" src="./assets/img/avatar_2.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">DOMINIC FREEMAN</h6>
+                            <p class="date">13 Dec 2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="card card_3">
+                <img class="img_news" src="./assets/img/img_news3.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">HYPNOTIZE YOURSELF INTO THE GHOST.</h5>
+                    <p class="text_card">There are many things that are important to catalog design...</p>
+                    <div class="person_block">
+                        <img class="avatar" src="./assets/img/avatar_3.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">ALICE WARD</h6>
+                            <p class="date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div class="card card_2">
+                <img class="img_news" src="./assets/img/img_news2.jpg" alt="">
+                <h5 class="title_card">EFFECTIVE ADVERTISING POINTERS.</h5>
+                <p class="text_card">Having a home based business is a wonderful asset to your life...</p>
+                <div class="person_block">
+                    <img class="avatar" src="./assets/img/avatar_2.png" alt="">
+                    <div class="name_block">
+                        <h6 class="name">DOMINIC FREEMAN</h6>
+                        <p class="date">13 Dec 2019</p>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="gallery_section" id="gallery">
+        <h3 class="title_section">gallery</h3>
+        <div class="img_gallery container">
+            <img class="img_grid" src="./assets/img/gallery1.jpg" alt="">
+            <img class="img_grid" src="./assets/img/gallery2.jpg" alt="">
+            <img class="img_grid" src="./assets/img/gallery3.jpg" alt="">
+            <img class="img_grid" src="./assets/img/gallery4.jpg" alt="">
+            <img class="img_grid" src="./assets/img/gallery5.jpg" alt="">
+        </div>
+        <a class="btn" href="#">see more</a>
+    </section>
+
+    <section class="contact_section" id="contact">
+        <div class="map_block" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12105.560575990783!2d-73.8050676815573!3d40.66537191795816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c26650d5404947%3A0xec4fb213489f11f0!2z0JzRltC20L3QsNGA0L7QtNC90LjQuSDQsNC10YDQvtC_0L7RgNGCINGW0LzQtdC90ZYg0JTQttC-0L3QsCDQmtC10L3QvdC10LTRlg!5e0!3m2!1suk!2sua!4v1665145898844!5m2!1suk!2sua" width="1600" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- <img src="./img/img_map.jpg" alt=""> -->
+        </div>
+        <div class="contact_block flex_row">
+            <h3 class="title_section">get in touch</h3>
+            <div class="contact_wrapper">
+                <p class="address">91 Nolan Extensions Suite 670</p>
+                <p class="phone">+001 356-868-2454</p>
+                <p class="e_mail">montichello@service.com</p>
+                <p class="worktime">From 07:05AM to 19:30PM</p>
+            </div>
+            <div class="form_wrapper">
+                <label>
+                    <input type="text" placeholder="Name">
+                    <input type="e-mail" name="" id="" placeholder="E-mail">
+                </label>
+                <a class="btn" href="#">submit</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="nav_footer">
+            <div class="logo_copyright_block">
+                <img class="logo" src="./img/Logo.svg" alt="">
+                <p class="copyright">Copyrights © 2020 Montichello</p>
+            </div>
+            
+            <div class="social_links">
+                <a href="#">
+                    <img class="icon" src="./img/facebook.svg" alt="Facebook">
+                </a>
+                <a href="#">
+                    <img class="icon" src="./img/twitter.svg" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img class="icon" src="./img/instagram.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="./assets/js/dist/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>

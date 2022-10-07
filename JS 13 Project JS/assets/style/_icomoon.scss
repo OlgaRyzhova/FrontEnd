@@ -13,6 +13,7 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
+  font-size: 16px;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -25,6 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-zoom:before {
+  content: "\e904";
+  color: #fff;
+}
 .icon-facebook:before {
   content: "\e900";
   color: #fff;
@@ -40,4 +45,16 @@
 .icon-twitter:before {
   content: "\e903";
   color: #fff;
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-clock:before {
+  content: "\e94e";
+}
+.icon-drawer2:before {
+  content: "\e95d";
+}
+.icon-search:before {
+  content: "\e986";
 }

@@ -1,37 +1,89 @@
-.nav_link{
-    &:before{
-        content: '';
-        max-width: 4px;
-        max-height: 4px;
-        border: 1px solid #FFFFFF;
-        color: transparent;
-        border-radius: 50%;
-        padding-right: 15px;
-        margin-right: 10px;
+.header::before{
+    @include bg_image;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/header_mask.png);
+}
+.nav_link:active{
+    .dot{
+        background-color: #FFFFFF;
     }
 }
 
-// .icon{
-//     &:before{
-//         content: '';
-//         border-radius: 50%;
-//         width: 20px;
-        
-//     }
-//     &:hover{
-//         color: aqua;
-//     }
-// }
-
-.icon-facebook:before {
-    content: "\e900";
-    width: 10px;
-    height: 18px;
+.icon{
+    &::before{
+        position: absolute;
+        top: 30%;
+        right: 25%;
+    }
+    &:hover{
+        transform: scale(0.8);
+    }
 }
-.icon-instagram:before {
-    content: "\e901";
+.icon-facebook{
+    &::before{
+        position: absolute;
+        top: 30%;
+        right: 35%;
+    }
 }
 
-.icon-twitter:before {
-    content: "\e903";
+.arrow{
+    &::before{
+        position: absolute;
+        content: "";
+        top: -15px;
+        left: -14px;
+        display: inline-block;
+        border-radius: 50%;
+        padding: 19px;
+        border: 1px solid #FFFFFF;
+        background-color: transparent;
+    }
+}
+
+.title_section::before{
+    content: "";
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    border: 1px solid #2C4058;
+}
+
+.news_section::before{
+    content: '';
+    @include bg_image;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/news_mask.png);
+    margin-top: 388px;
+}
+.news_section .title_section::before{
+    content: "";
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    border: 1px solid #FFFFFF;
+}
+
+.contact_block::before{
+    @include bg_image;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/modal_mask.png);
 }
