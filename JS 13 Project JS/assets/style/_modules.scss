@@ -325,16 +325,21 @@ html {
 }
 
 .news_wrapper{
+    max-width: 1370px;
     display: flex;
-    gap: 30px;
     padding-bottom: 170px;
 }
 
 .card{
     max-width: 370px;
     background-color: vars.$color_white;
+    margin-right: 30px;
 }
 
+.slick-prev{
+    background-image: url(../img/prev.svg);
+    padding-right: 60px;
+}
 .card_about{
     max-width: 330px;
     margin: 30px 20px;
@@ -423,9 +428,9 @@ html {
     max-height: 800px;
 }
 
-.map_block{
+// .map_block{
    
-}
+// }
 .contact_block{
     position: relative;
     background: transparent;
@@ -434,6 +439,10 @@ html {
     max-width: 770px;
     margin: 0 auto;
     z-index: 1;
+    @include text_slogan;
+    color: #000000;
+    letter-spacing: 0;
+    text-transform: capitalize;
 }
 
 .contact_block .title_section{
@@ -441,6 +450,7 @@ html {
 }
 
 .contact_wrapper{
+    
     display: flex;
     flex-direction: column;
     gap: 20px;

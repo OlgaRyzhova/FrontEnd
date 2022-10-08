@@ -9,12 +9,15 @@ $(function () {
     autoplaySpeed: 1500,
     dots: true
   });
-});
+}); // NEWS 
+
 $(function () {
   $('.news_wrapper').slick({
     // lazyLoad: 'ondemand',
-    prevArrow: false,
-    nextArrow: false,
+    prevArrow: '<button type="button" class="slick-prev"><img src="./assets/img/prev.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="./assets/img/next.svg"></i></button>',
+    variableWidth: true,
+    slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 1500,
     dots: true
