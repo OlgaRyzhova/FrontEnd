@@ -14,8 +14,8 @@ $(function () {
 $(function () {
   $('.news_wrapper').slick({
     // lazyLoad: 'ondemand',
-    prevArrow: '<button type="button" class="slick-prev"><img src="./assets/img/prev.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="./assets/img/next.svg"></i></button>',
+    prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev" src="./assets/img/prev.svg" alt=""></button>',
+    nextArrow: '<button type="button" class="slick-next"><img class="slick-next" src="./assets/img/next.svg" alt=""></button>',
     variableWidth: true,
     slidesToShow: 3,
     autoplay: true,

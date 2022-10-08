@@ -82,9 +82,20 @@
     @include bg_image;
     content: '';
     position: absolute;
-    top: 0;
+    top: 200px;
     left: 0;
     bottom: 0;
     right: 0;
     background-image: url(../img/modal_mask.png);
+}
+
+.footer::before{
+    @include bg_image;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/footer_mask.png);
 }

@@ -39,7 +39,6 @@
 
 .icon-marker:before {
   content: "";
-  color: #2c4058;
 }
 
 .icon-twitter:before {
@@ -49,14 +48,17 @@
 
 .icon-phone:before {
   content: "";
+  color: #7E5AFF;
 }
 
 .icon-clock:before {
   content: "";
+  color: #7E5AFF;
 }
 
 .icon-drawer2:before {
   content: "";
+  color: #7E5AFF;
 }
 
 .icon-search:before {
