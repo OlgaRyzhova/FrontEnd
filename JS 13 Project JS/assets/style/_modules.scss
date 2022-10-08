@@ -447,7 +447,7 @@ html {
 .map_section{
     position: absolute;
     min-width: 4000px;
-    height: 1280px;
+    max-height: 1280px;
     z-index: 2;
 }
 
