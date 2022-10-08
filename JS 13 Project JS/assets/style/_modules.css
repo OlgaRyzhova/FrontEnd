@@ -236,6 +236,7 @@ html {
   text-transform: uppercase;
   padding: 16px 41px;
   border: 1px solid #2C4058;
+  transition: 0.5s;
 }
 
 .destination {

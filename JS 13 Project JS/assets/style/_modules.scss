@@ -274,6 +274,7 @@ html {
     @include text_btn;
     padding: 16px 41px;
     border: 1px solid vars.$color_grey;
+    transition: 0.5s;
 }
 
 .destination{
