@@ -5,9 +5,22 @@ $(function() {
         nextArrow: false,
         autoplay: true,
         autoplaySpeed: 1500,
+        infinite: true,
         dots: true,
+        fade: true,
+        // cssEase: 'linear',
     });
 }); 
+
+$(document).ready(function () {
+ 
+    $('ul.nav_list > li')
+            .click(function (e) {
+        $('ul.nav_list > li')
+            .removeClass('active');
+        $(this).addClass('active');
+    });
+});
 
 
 // NEWS 
@@ -15,8 +28,8 @@ $(function() {
 $(function() {
     $('.news_wrapper').slick({
         // lazyLoad: 'ondemand',
-        prevArrow: '<button type="button" class="slick-prev"><img class="slick-prev" src="./assets/img/prev.svg" alt=""></button>',
-        nextArrow: '<button type="button" class="slick-next"><img class="slick-next" src="./assets/img/next.svg" alt=""></button>',
+        prevArrow: '<button type="button"><img class="arrow-prev" src="./assets/img/prev.svg" alt=""></button>',
+        nextArrow: '<button type="button"><img class="arrow-next" src="./assets/img/next.svg" alt=""></button>',
         variableWidth: true,
         slidesToShow: 3,
         autoplay: true,

@@ -8,9 +8,16 @@
     right: 0;
     background-image: url(../img/header_mask.png);
 }
-.nav_link:active{
+
+// .nav_link:hover{
+//     .dot{
+//         background-color: #FFFFFF;
+//     }
+// }
+
+.active, .nav_link:hover{
     .dot{
-        background-color: #FFFFFF;
+        background: #FFFFFF;
     }
 }
 
@@ -45,6 +52,19 @@
         background-color: transparent;
     }
 }
+
+.arrow-prev{
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
+.arrow-next{
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+
 
 .title_section::before{
     content: "";
@@ -83,6 +103,11 @@
     border: 1px solid #FFFFFF;
 }
 
+.card{
+    &:hover{
+        transform: scale(0.9);
+    }
+}
 .contact_block::before{
     @include bg_image;
     content: '';

@@ -386,6 +386,7 @@ html {
 }
 
 .destination {
+  cursor: pointer;
   display: flex;
   align-items: center;
   margin-top: 79px;
@@ -448,28 +449,60 @@ html {
   max-width: 1370px;
   display: flex;
   padding-bottom: 170px;
+  gap: 60px;
 }
 
 .card {
+  cursor: pointer;
   max-width: 370px;
   background-color: #FFFFFF;
   margin-right: 30px;
+  transition: 0.5s;
 }
 
-.slick-list .news_wrapper {
+.news_wrapper .slick-list {
   width: 1170px;
+  overflow: hidden;
 }
 
-.slick-prev {
+.slick-arrow {
+  width: 55px;
+  height: 55px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  transition: 0.5s;
+}
+
+.arrow-prev {
+  cursor: pointer;
   background: transparent;
   border: none;
   padding-right: 60px;
+  transition: 0.5s;
 }
 
-.slick-next {
+.arrow-next {
+  cursor: pointer;
   background: transparent;
   border: none;
-  padding-left: 60px;
+  transition: 0.5s;
+}
+
+.news_wrapper .slick-dots {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 0%;
+  right: 50%;
+  transform: translate(50%);
+  margin-bottom: 120px;
+  margin-right: 0;
 }
 
 .card_about {
@@ -535,19 +568,6 @@ html {
   color: #000000;
   text-transform: uppercase;
   color: #55B7FF;
-}
-
-.news_wrapper .slick-dots {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 40px;
-  position: absolute;
-  bottom: 0%;
-  right: 50%;
-  margin-bottom: 120px;
 }
 
 .gallery_section .title_section {
@@ -728,13 +748,20 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .highlight {
-  position: absolute;
   height: 60%;
   width: 100px;
-  top: 25%;
+  top: 15%;
   left: 0;
   pointer-events: none;
   opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.3em;
+  color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 input:focus ~ .highlight {
@@ -789,6 +816,7 @@ input:focus ~ .highlight {
 }
 
 .nav_footer {
+  position: relative;
   max-width: 770px;
   padding-top: 203px;
   padding-bottom: 234px;
@@ -833,8 +861,8 @@ input:focus ~ .highlight {
   background-image: url(../img/header_mask.png);
 }
 
-.nav_link:active .dot {
-  background-color: #FFFFFF;
+.active .dot, .nav_link:hover .dot {
+  background: #FFFFFF;
 }
 
 .icon::before {
@@ -862,6 +890,14 @@ input:focus ~ .highlight {
   padding: 19px;
   border: 1px solid #FFFFFF;
   background-color: transparent;
+}
+
+.arrow-prev:hover {
+  transform: scale(1.1);
+}
+
+.arrow-next:hover {
+  transform: scale(1.1);
 }
 
 .title_section::before {
@@ -904,6 +940,10 @@ input:focus ~ .highlight {
   transform: translateX(-50%);
   bottom: 80px;
   border: 1px solid #FFFFFF;
+}
+
+.card:hover {
+  transform: scale(0.9);
 }
 
 .contact_block::before {
