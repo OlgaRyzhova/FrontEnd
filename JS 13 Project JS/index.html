@@ -16,16 +16,17 @@
     <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 
     <!-- fonts Open Sans italic -->
-    <style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');</style>
+    <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');</style> -->
 
     <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/style/lightbox.css">
     <link rel="stylesheet" href="./assets/style/index.css">
     <title>Monticello</title>
 </head>
 <body>
     <header class="header main_bg">
         <div class="navigation container flex_row">
-            <a class="logo" href="#">
+            <a class="logo" href="#gallery">
                 <img src="./assets/img/Logo.svg">
             </a>
             <nav class="navbar flex_row">
@@ -209,11 +210,11 @@
         <div class="gallery_wrapper container">
             <h3 class="title_section">gallery</h3>
             <div class="img_gallery container">
-                <img class="img_grid" src="./assets/img/gallery1.jpg" alt="">
-                <img class="img_grid" src="./assets/img/gallery2.jpg" alt="">
-                <img class="img_grid" src="./assets/img/gallery3.jpg" alt="">
-                <img class="img_grid" src="./assets/img/gallery4.jpg" alt="">
-                <img class="img_grid" src="./assets/img/gallery5.jpg" alt="">
+                <a class="img_grid" href="./assets/img/gallery1.jpg" data-lightbox="roadtrip"><img src="./assets/img/gallery1.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery2.jpg" data-lightbox="roadtrip"><img src="./assets/img/gallery2.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery3.jpg" data-lightbox="roadtrip"><img src="./assets/img/gallery3.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery4.jpg" data-lightbox="roadtrip"><img src="./assets/img/gallery4.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery5.jpg" data-lightbox="roadtrip"><img src="./assets/img/gallery5.jpg" alt=""></a>
             </div>
             <a class="btn btn_gallery" href="#">see more</a>
         </div>
@@ -295,6 +296,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="./assets/js/dist/jquery-ui.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/dist/lightbox.js"></script>
     <script src="./assets/js/app.js"></script>
 
 </body>

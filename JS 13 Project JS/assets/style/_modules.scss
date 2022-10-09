@@ -101,6 +101,7 @@ html {
 //  NAVIGATION
 
 .navigation{
+    position: relative;
     padding-top: 53px;
     display: flex;
     margin-bottom: 223px;
@@ -272,6 +273,7 @@ html {
 
 .btn{
     @include text_btn;
+    display: inline-block;
     padding: 16px 41px;
     border: 1px solid vars.$color_grey;
     transition: 0.5s;
@@ -442,39 +444,31 @@ html {
     box-sizing: border-box;
 }
 
-
 // MAP
 
 .map_section{
     position: absolute;
-    min-width: 4000px;
+    max-width: 1000px;
     max-height: 1280px;
     z-index: 2;
 }
 
 #map{
     width: 100%;
-    min-width: 4000px;
+    min-width: 800px;
     max-height: 1280px;
 }
-
-// .map_block{
-//     z-index: -1;
-// }
-
 
 // CONTACT 
 
 .contact_section{
     position: relative;
     right: 0;
-    // bottom: 0%;
     top: 10%;
     z-index: 3;
 }
 
 .contact_block{
-    // z-index: 3;
     position: relative;
     background: transparent;
     top: 50%;
@@ -490,7 +484,7 @@ html {
 }
 
 .modal_wrapper{
-    // position: relative;
+    position: relative;
     background-color: #FFFFFF;
     padding: 90px 60px 68px;
 }
