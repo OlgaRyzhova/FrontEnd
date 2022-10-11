@@ -32,11 +32,11 @@ $(function () {
     dots: true
   });
 }); // GALLERY
-
-lightbox.option({
-  'resizeDuration': 200,
-  'wrapAround': true
-}); // MAP 
+// lightbox.option({
+//     'resizeDuration': 200,
+//     'wrapAround': true
+// })
+// MAP 
 
 var map = L.map('map').setView([40.665, -73.798], 13);
 var img = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {

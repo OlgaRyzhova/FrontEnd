@@ -603,14 +603,13 @@ input:focus ~ .bar:before, input:focus ~ .bar:after {
 }
 
 .highlight {
-    // position: absolute;
+    position: absolute;
     height: 60%; 
     width: 100px; 
-    top: 15%; 
+    top: 40%; 
     left: 0;
     pointer-events:none;
     opacity: 0.5;
-    
     @include text_slogan;
 }
 
@@ -635,6 +634,7 @@ input:focus ~ .highlight {
 }
 
 .btn_form{
+    display: inline-block;
     max-width: 72px;
     float: right;
 }
