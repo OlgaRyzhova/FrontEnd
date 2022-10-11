@@ -157,6 +157,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.slick-track .slick-lisy .news_wrapper {
+  width: 1000px;
+}
+
 .navigation {
   position: relative;
   padding-top: 53px;
@@ -601,14 +605,12 @@ html {
 
 .map_section {
   position: absolute;
-  max-width: 1000px;
-  max-height: 1280px;
-  z-index: 2;
+  min-width: 1000px;
+  z-index: 0;
 }
 
 #map {
   width: 100%;
-  min-width: 800px;
   max-height: 1280px;
 }
 
@@ -665,6 +667,12 @@ html {
   gap: 20px;
 }
 
+.icon_contact {
+  width: 9px;
+  height: 17px;
+  margin-right: 10px;
+}
+
 .address .icon-marker {
   color: #7E5AFF;
 }
@@ -677,11 +685,12 @@ html {
 .group {
   width: 310px;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 input {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 20px 0;
+  margin-top: 10px;
   display: block;
   width: 310px;
   border: none;
@@ -700,6 +709,7 @@ label {
   line-height: 27px;
   color: #2C4058;
   text-transform: uppercase;
+  font-size: 18px;
   text-transform: capitalize;
   position: absolute;
   pointer-events: none;
@@ -708,6 +718,12 @@ label {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+  color: #000000;
+}
+
+.lightgrey {
+  color: #4B5562;
+  opacity: 0.5;
 }
 
 input:focus ~ label, input:valid ~ label {
@@ -941,6 +957,7 @@ input:focus ~ .highlight {
   left: 50%;
   transform: translateX(-50%);
   bottom: 80px;
+  background: #FFFFFF;
   border: 1px solid #FFFFFF;
 }
 
@@ -948,7 +965,7 @@ input:focus ~ .highlight {
   transform: scale(0.9);
 }
 
-.contact_block::before {
+.modal_wrapper::before {
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -957,10 +974,11 @@ input:focus ~ .highlight {
   margin: 0 auto;
   content: "";
   position: absolute;
-  top: 200px;
+  top: 280px;
   left: 0;
   bottom: 0;
   right: 0;
+  transform: translate(50%);
   background-image: url(../img/modal_mask.png);
 }
 
@@ -977,5 +995,4 @@ input:focus ~ .highlight {
   left: 0;
   bottom: 0;
   right: 0;
-  background-image: url(../img/footer_mask.png);
 }

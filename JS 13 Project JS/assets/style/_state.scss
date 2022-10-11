@@ -93,6 +93,7 @@
     background-image: url(../img/news_mask.png);
     margin-top: 388px;
 }
+
 .news_section .title_section::before{
     content: "";
     width: 100px;
@@ -109,14 +110,15 @@
         transform: scale(0.9);
     }
 }
-.contact_block::before{
+.modal_wrapper::before{
     @include bg_image;
     content: '';
     position: absolute;
-    top: 200px;
+    top: 280px;
     left: 0;
     bottom: 0;
     right: 0;
+    transform: translate(50%);
     background-image: url(../img/modal_mask.png);
 }
 
@@ -128,5 +130,5 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background-image: url(../img/footer_mask.png);
+    // background-image: url(../img/footer_mask.png);
 }

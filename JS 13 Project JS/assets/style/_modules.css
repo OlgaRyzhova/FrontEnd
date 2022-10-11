@@ -13,6 +13,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.slick-track .slick-lisy .news_wrapper {
+  width: 1000px;
+}
+
 .navigation {
   position: relative;
   padding-top: 53px;
@@ -457,14 +461,12 @@ html {
 
 .map_section {
   position: absolute;
-  max-width: 1000px;
-  max-height: 1280px;
-  z-index: 2;
+  min-width: 1000px;
+  z-index: 0;
 }
 
 #map {
   width: 100%;
-  min-width: 800px;
   max-height: 1280px;
 }
 
@@ -521,6 +523,12 @@ html {
   gap: 20px;
 }
 
+.icon_contact {
+  width: 9px;
+  height: 17px;
+  margin-right: 10px;
+}
+
 .address .icon-marker {
   color: #7E5AFF;
 }
@@ -533,11 +541,12 @@ html {
 .group {
   width: 310px;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 23px;
 }
 
 input {
-  padding: 10px 0 10px 0;
+  padding: 10px 0 20px 0;
+  margin-top: 10px;
   display: block;
   width: 310px;
   border: none;
@@ -556,6 +565,7 @@ label {
   line-height: 27px;
   color: #2C4058;
   text-transform: uppercase;
+  font-size: 18px;
   text-transform: capitalize;
   position: absolute;
   pointer-events: none;
@@ -564,6 +574,12 @@ label {
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
+  color: #000000;
+}
+
+.lightgrey {
+  color: #4B5562;
+  opacity: 0.5;
 }
 
 input:focus ~ label, input:valid ~ label {
