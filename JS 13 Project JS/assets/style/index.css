@@ -157,8 +157,10 @@ html {
   scroll-behavior: smooth;
 }
 
-.slick-track .slick-lisy .news_wrapper {
+.slick-track div {
   width: 1000px;
+  margin-right: 0;
+  margin-left: 0;
 }
 
 .navigation {
@@ -434,6 +436,7 @@ html {
 
 .news_section {
   position: relative;
+  width: 100%;
   background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
 }
 
@@ -453,12 +456,12 @@ html {
   max-width: 1370px;
   display: flex;
   padding-bottom: 170px;
-  gap: 60px;
+  gap: 40px;
 }
 
 .card {
   cursor: pointer;
-  max-width: 370px;
+  max-width: 400px;
   background-color: #FFFFFF;
   margin-right: 30px;
   transition: 0.5s;
@@ -467,6 +470,10 @@ html {
 .news_wrapper .slick-list {
   width: 1170px;
   overflow: hidden;
+}
+
+.news_wrapper .slick-list .slick-track {
+  width: 1400px;
 }
 
 .slick-arrow {
@@ -511,7 +518,7 @@ html {
 
 .card_about {
   max-width: 330px;
-  margin: 30px 20px;
+  padding: 30px 20px;
 }
 
 .title_card {
@@ -604,30 +611,34 @@ html {
 }
 
 .map_section {
-  position: absolute;
-  min-width: 1000px;
+  position: relative;
   z-index: 0;
 }
 
 #map {
   width: 100%;
-  max-height: 1280px;
+  height: 700px;
+  z-index: 0;
+}
+
+.leaflet-marker-icon {
+  width: 109px;
+  height: 109px;
 }
 
 .contact_section {
   position: relative;
-  right: 0;
-  top: 10%;
-  z-index: 3;
+  z-index: 1;
 }
 
 .contact_block {
-  position: relative;
+  position: absolute;
   background: transparent;
-  top: 50%;
+  top: -300px;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  width: 770px;
-  height: 360px;
+  max-width: 770px;
   margin: 0 auto;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -640,10 +651,6 @@ html {
   color: #000000;
   letter-spacing: 0;
   text-transform: capitalize;
-}
-
-.modal_wrapper {
-  position: relative;
   background-color: #FFFFFF;
   padding: 90px 60px 68px;
 }
@@ -664,16 +671,16 @@ html {
   width: 50%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 25px;
 }
 
 .icon_contact {
-  width: 9px;
   height: 17px;
   margin-right: 10px;
 }
 
 .address .icon-marker {
+  margin-right: 16px;
   color: #7E5AFF;
 }
 
@@ -685,7 +692,7 @@ html {
 .group {
   width: 310px;
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
 }
 
 input {
@@ -819,31 +826,26 @@ input:focus ~ .highlight {
   display: inline-block;
   max-width: 72px;
   float: right;
+  margin-top: 20px;
 }
 
 .footer {
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin: 0 auto;
   position: relative;
-  z-index: 2;
   background: linear-gradient(251.06deg, #7E5AFF -2.19%, #55B7FF 103.21%);
 }
 
 .nav_footer {
-  position: relative;
   max-width: 770px;
   padding-top: 203px;
   padding-bottom: 234px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .logo_footer {
+  position: relative;
   max-width: 241px;
 }
 
@@ -965,6 +967,18 @@ input:focus ~ .highlight {
   transform: scale(0.9);
 }
 
+.img_grid:hover::before {
+  content: "";
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  position: absolute;
+  background-image: url(../img/zoom.svg);
+}
+
 .modal_wrapper::before {
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
@@ -978,7 +992,6 @@ input:focus ~ .highlight {
   left: 0;
   bottom: 0;
   right: 0;
-  transform: translate(50%);
   background-image: url(../img/modal_mask.png);
 }
 
@@ -995,4 +1008,5 @@ input:focus ~ .highlight {
   left: 0;
   bottom: 0;
   right: 0;
+  background-image: url(../img/footer_mask.png);
 }
