@@ -453,6 +453,8 @@ html {
 }
 
 .news_wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
   max-width: 1370px;
   display: flex;
   padding-bottom: 170px;
@@ -470,10 +472,8 @@ html {
 .news_wrapper .slick-list {
   width: 1170px;
   overflow: hidden;
-}
-
-.news_wrapper .slick-list .slick-track {
-  width: 1400px;
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .slick-arrow {
@@ -950,6 +950,7 @@ input:focus ~ .highlight {
   right: 0;
   background-image: url(../img/news_mask.png);
   margin-top: 388px;
+  overflow: hidden;
 }
 
 .news_section .title_section::before {
@@ -965,18 +966,6 @@ input:focus ~ .highlight {
 
 .card:hover {
   transform: scale(0.9);
-}
-
-.img_grid:hover::before {
-  content: "";
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100% auto;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  position: absolute;
-  background-image: url(../img/zoom.svg);
 }
 
 .modal_wrapper::before {

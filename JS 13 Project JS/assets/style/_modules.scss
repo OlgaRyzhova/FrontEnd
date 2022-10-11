@@ -337,7 +337,7 @@ html {
 }
 
 .news_wrapper{
-    max-width: 1370px
+    max-width: 1370px;
     display: flex;
     padding-bottom: 170px;
     gap: 40px;
@@ -354,10 +354,6 @@ html {
 .news_wrapper .slick-list {
     width: 1170px;
     overflow: hidden;
-}
-
-.news_wrapper .slick-list .slick-track {
-    width: 1400px;
 }
 
 .slick-arrow{

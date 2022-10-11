@@ -47,9 +47,8 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-const circleIcon= L.icon({
-    iconUrl: '/ap_marker.png',
-
+const circleIcon = L.icon({
+    iconUrl: 'map_marker.png',
     iconSize:     [109, 109], // size of the icon
     shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [22, 50], // point of the icon which will correspond to marker's location

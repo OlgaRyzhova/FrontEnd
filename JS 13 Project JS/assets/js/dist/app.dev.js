@@ -38,7 +38,7 @@ L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 var circleIcon = L.icon({
-  iconUrl: '/ap_marker.png',
+  iconUrl: 'map_marker.png',
   iconSize: [109, 109],
   // size of the icon
   shadowSize: [50, 64],
