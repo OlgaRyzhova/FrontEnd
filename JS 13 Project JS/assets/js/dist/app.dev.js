@@ -33,23 +33,23 @@ $(function () {
   });
 }); // MAP 
 
-var map = L.map('map').setView([40.761, -73.821], 12);
+var map = L.map('map').setView([40.761, -73.871], 12);
 L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 var circleIcon = L.icon({
-  iconUrl: 'map_marker.png',
+  iconUrl: 'assets/img/map_marker.png',
   iconSize: [109, 109],
   // size of the icon
   shadowSize: [50, 64],
   // size of the shadow
-  iconAnchor: [22, 50],
+  iconAnchor: [58, 120],
   // point of the icon which will correspond to marker's location
   shadowAnchor: [4, 62],
   // the same for the shadow
   popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
 
 });
-L.marker([40.761, -73.821], {
+L.marker([40.761, -73.81], {
   icon: circleIcon
 }).addTo(map).bindPopup('Hello my dear tourist').openPopup();

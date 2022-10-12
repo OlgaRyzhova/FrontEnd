@@ -430,7 +430,7 @@ html {
   width: 585px;
   height: 470px;
   z-index: -1;
-  transform: translate(260px, -57px);
+  transform: translate(200px, -57px);
 }
 
 .news_section {
@@ -729,7 +729,7 @@ label {
 }
 
 input:focus ~ label, input:valid ~ label {
-  top: -20px;
+  top: -10px;
   font-size: 14px;
   color: #2C4058;
 }
