@@ -298,7 +298,6 @@ html {
 
 .project_section {
   height: auto;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
@@ -453,8 +452,6 @@ html {
 }
 
 .news_wrapper {
-  overflow-x: scroll;
-  overflow-y: hidden;
   max-width: 1370px;
   display: flex;
   padding-bottom: 170px;
@@ -472,8 +469,6 @@ html {
 .news_wrapper .slick-list {
   width: 1170px;
   overflow: hidden;
-  overflow-x: scroll;
-  overflow-y: hidden;
 }
 
 .slick-arrow {

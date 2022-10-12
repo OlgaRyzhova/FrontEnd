@@ -154,7 +154,6 @@ html {
 
 .project_section {
   height: auto;
-  overflow-y: scroll;
   scroll-behavior: smooth;
 }
 
