@@ -10,7 +10,15 @@
 // метод, що обчислює довжину кола.
 // Продемонструй роботу властивостей і методів.
 
-
+class Figure {
+    constructor(figureName, figureRadius) {
+        this.name = figureName;
+        this.radius = figureRadius;
+    }
+    showCircleRadius() {
+        console.log(this.radius);
+    }
+}
 
 // TASK 2
 
