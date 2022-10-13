@@ -10,19 +10,46 @@
 // метод, що обчислює довжину кола.
 // Продемонструй роботу властивостей і методів.
 
-class Figure {
-    constructor(figureName, figureRadius) {
-        this.name = figureName;
-        this.radius = figureRadius;
+
+class Circle {
+    constructor(radius) {
+    this.radius = radius;
     }
-    showCircleRadius() {
-        console.log(this.radius);
+
+    get getRadiusCircle() {
+        return this.radius;
+    }
+    /**
+     * @param {string} newRadiusCircle
+     */
+    set setRadiusCircle(newRadiusCircle) {
+        this.radius = newRadiusCircle;
+    }
+    get getDiametr() {
+        return this.radius *2;
+    }
+    get getPerimeter() {
+        return this.radius * this.radius * Math.PI;
+    }
+    get getLengthCircle() {
+        return this.radius * 2 * Math.PI;
     }
 }
+
+const obj = new Circle(4);
+
+console.log(obj.getRadiusCircle);
+obj.setRadiusCircle = '8';
+console.log(obj.getRadiusCircle);
+console.log(obj.getDiametr);
+console.log(obj.getPerimeter);
+console.log(obj.getLengthCircle);
+
 
 // TASK 2
 
 // Реалізуй клас, що описує канцелярський маркер. У класі повинні бути такі компоненти: 
+
 // поле, яке зберігає колір маркера;
 // поле, яке зберігає кількість чорнил у маркері (у відсотках);
 // метод для вводу (приймає рядок і виводить текст відповідним кольором; текст виводиться до тих пір, поки в маркері є чорнило; один не пробільний символ — це 0,5% чорнил у маркері).
@@ -30,6 +57,29 @@ class Figure {
 
 // Продемонструй роботу написаних методів.
 
+class Marker {
+    constructor(color, inkPercent) {
+        this.color = color;
+        this.inkPercent = 44;
+    }
+
+    get getMyMarker() {
+        return this.inkPercent -str.length *.5;
+    }
+}
+
+const str = 'Never give UP!';
+console.log(str.replaceAll(' ', ''));
+
+
+console.log(str.length*.5);
+
+const splits = str.split ('', 14);
+console.log(splits);
+
+// const counts = (this.inkPercent - str.length) *.5;
+// console.log(counts);
+console.log(Marker.getMyMarker);
 
 // TASK 3
 
