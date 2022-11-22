@@ -1,0 +1,57 @@
+.nav_link{
+    &:hover{
+        background-color: #F16A50;
+        color: #FFFFFF;
+        transform: scale(1.1);
+    }
+}
+
+.search:hover{
+    transform: scale(1.1);
+}
+.profile:hover{
+    transform: scale(1.1);
+}
+
+.icon-prev, .icon-next{
+    color: #000000;
+    &:hover{
+        color: #F16A50;
+    }
+}
+
+.guitar:hover{
+    border: 1px solid #F16A50;
+    .stock{
+        color: #000000;
+        background: #F8F1EA;
+    }
+}
+
+.partner_title:hover{
+    transform: scale(1.2);
+}
+
+.footer_link{
+    &:hover{
+        color: #F16A50;
+    }
+}
+
+.btn_main{
+    &:hover{
+        display: inline-block;
+        box-sizing: border-box;
+        background: #F16A50;
+        border-color: transparent;
+        transform: scale(1.1);
+    }
+}
+
+.btn_dark:hover{
+    transform: scale(1.1);
+}
+
+.icon_social:hover{
+    color: #F16A50;
+}

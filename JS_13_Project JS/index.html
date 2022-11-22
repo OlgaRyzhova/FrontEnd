@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/img/flag_favicon.png"/>
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+    <!-- fonts Open Sans italic -->
+    <!-- <style> @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');</style> -->
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./assets/style/lightbox.css">
+    <link rel="stylesheet" href="./assets/style/index.css">
+    <title>Monticello</title>
+</head>
+<body>
+    <header class="header main_bg">
+        <div class="navigation container flex_row">
+            <a class="logo" href="#">
+                <img src="./assets/img/Logo.svg">
+            </a>
+            <nav class="navbar flex_row">
+                <ul class="nav_list">
+                    <li >
+                        <a class="nav_link" href="#about_us">
+                            <span class="dot"></span>about us
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#project">
+                            <span class="dot"></span>projects
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#news">
+                            <span class="dot"></span>news
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav_link" href="#contact">
+                            <span class="dot"></span>contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social_links">
+                <a href="#contact">
+                    <i class="icon icon-facebook"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-twitter"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-instagram"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="heading_slider" id="about_us">
+            <div class="heading_wrapper">
+                <h2 class="title">simple & modern</h2>
+                <p class="slogan">we make the world beautiful everyday</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">simple</h2>
+                <p class="slogan">we make the world different</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">modern & simple</h2>
+                <p class="slogan">we make the world incredible</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">modern</h2>
+                <p class="slogan">we make the world beutiful everyday</p>
+            </div>
+            <div class="heading_wrapper">
+                <h2 class="title">simple & modern</h2>
+                <p class="slogan">we make the best moments every day</p>
+            </div>
+        </div>
+        <a href="#project"><i class="arrow"></i></a>
+    </header>
+
+    <section class="project_section" id="project">
+        <h3 class="title_section">what we do</h3>
+        <div class="trade_block container flex_row">
+            <div class="image_project">
+                <p class="bg_blue"></p>
+                <img class="img_trade" src="./assets/img/img_trade.jpg" alt="">
+            </div>
+            <div class="text_project">
+                <p class="text_article">one world</p>
+                <h4 class="title_project">trade center</h4>
+                <p class="description">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.</p>
+                <a class="btn" href="#gallery">more details</a>
+                <a class="destination" href="#">
+                    <i class="icon-marker"></i>
+                    <p class="city">New York City, United States - 1776 feet</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="commerce_block container flex_row" id="">
+            <div class="text_project">
+                <p class="text_article">international</p>
+                <h4 class="title_project">commerce center</h4>
+                <p class="description">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
+                <a class="btn" href="#gallery">more details</a>
+                <a class="destination" href="#">
+                    <i class="icon-marker"></i>
+                    <p class="city">Hong Kong - 1588 feet</p>
+                </a>
+            </div>
+            <div class="image_project">
+                <p class="bg_violet"></p>
+                <img src="./assets/img/img_commerce.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="news_section" id="news">
+        <h3 class="title_section">latest news</h3>
+        <div class="news_wrapper flex_row">
+            <a class="card card_1" href="#">
+                <img class="img_news" src="./assets/img/img_news1.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">SEE THE UNMATCHED BEAUTY OF THE GREAT.</h5>
+                    <p class="text_card">Free directories: directories are perfect for customers that are searching for...</p>
+                    <div class="person_block">
+                        <img class="avatar" src="./assets/img/avatar_1.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">ALJA BRUN</h6>
+                            <p class="date">20 Jan 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="card card_2" href="#">
+                <img class="img_news" src="./assets/img/img_news2.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">EFFECTIVE ADVERTISING POINTERS.</h5>
+                    <p class="text_card">Having a home based business is a wonderful asset to your life...</p>
+                    <div class="person_block flex_row">
+                        <img class="avatar" src="./assets/img/avatar_2.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">DOMINIC FREEMAN</h6>
+                            <p class="date">13 Dec 2019</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </a>
+            <a class="card card_3" href="#">
+                <img class="img_news" src="./assets/img/img_news3.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">HYPNOTIZE YOURSELF INTO THE GHOST.</h5>
+                    <p class="text_card">There are many things that are important to catalog design...</p>
+                    <div class="person_block">
+                        <img class="avatar" src="./assets/img/avatar_3.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">ALICE WARD</h6>
+                            <p class="date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="card card_2" href="#">
+                <img class="img_news" src="./assets/img/img_news2.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">EFFECTIVE ADVERTISING POINTERS.</h5>
+                    <p class="text_card">Having a home based business is a wonderful asset to your life...</p>
+                    <div class="person_block flex_row">
+                        <img class="avatar" src="./assets/img/avatar_2.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">DOMINIC FREEMAN</h6>
+                            <p class="date">13 Dec 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="card card_3" href="#">
+                <img class="img_news" src="./assets/img/img_news3.jpg" alt="">
+                <div class="card_about">
+                    <h5 class="title_card">HYPNOTIZE YOURSELF INTO THE GHOST.</h5>
+                    <p class="text_card">There are many things that are important to catalog design...</p>
+                    <div class="person_block">
+                        <img class="avatar" src="./assets/img/avatar_3.png" alt="">
+                        <div class="name_block">
+                            <h6 class="name">ALICE WARD</h6>
+                            <p class="date">30 Nov 2019</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="gallery_section" id="gallery">
+        <div class="gallery_wrapper container">
+            <h3 class="title_section">gallery</h3>
+            <div class="img_gallery container">
+                <a class="img_grid" href="./assets/img/gallery1.jpg" data-lightbox="roadtrip" data-title="My caption"><img src="./assets/img/gallery1.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery2.jpg" data-lightbox="roadtrip" data-title="My caption"><img src="./assets/img/gallery2.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery3.jpg" data-lightbox="roadtrip" data-title="My caption"><img src="./assets/img/gallery3.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery4.jpg" data-lightbox="roadtrip" data-title="My caption"><img src="./assets/img/gallery4.jpg" alt=""></a>
+                <a class="img_grid" href="./assets/img/gallery5.jpg" data-lightbox="roadtrip" data-title="My caption"><img src="./assets/img/gallery5.jpg" alt=""></a>
+            </div>
+            <a class="btn btn_gallery" href="#">see more</a>
+        </div>
+    </section>
+
+    <section class="map_section">
+        <div class="map_wrapper">
+            <div id="map">
+                <iframe src="" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="contact_block flex_row">
+            <!-- <div class="modal_wrapper"> -->
+                <h3 class="title_section">get in touch</h3>
+                <div class="modal_window flex_row">
+                    <div class="contact_wrapper">
+                        <a class="address" href="#">
+                            <i class="icon_contact icon-marker"></i>
+                            <span class="address_input">91 Nolan Extensions Suite 670</span>
+                        </a>
+                        <a class="phone" href="tel:+001 356-868-2454">
+                            <i class=" icon_contact icon-phone"></i>
+                            <span class="phone_input">+001 356-868-2454</span>
+                        </a>
+                        <a class="e_mail" href="mailto:montichello@service.com">
+                            <i class=" icon_contact icon-drawer2"></i>
+                            <span class="e_mail_input">montichello@service.com</span>
+                        </a>
+                        <a class="worktime" href="#">
+                            <i class="icon_contact icon-clock"></i>
+                            <span class="worktime_input">From 07:05AM to 19:30PM</span>
+                        </a>
+                    </div>
+                    <form class="form">
+                        <div class="group">      
+                            <input class="input" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label>Mollie Medina</label>
+                        </div>
+                        
+                        <div class="group">      
+                            <input class="input" type="text" required>
+                            <span class="highlight"></span>
+                            <span class="bar"></span>
+                            <label class="light">Email</label>
+                            </div>
+                        <input class="btn btn_form" value="submit">
+                    </form>
+            </div>
+        </div>
+        <div class="nav_footer flex_row">
+            <div class="logo_footer">
+                <a href="#">
+                    <img class="logo" src="./assets/img/Logo.svg">
+                </a>
+                <p class="copyright">Copyrights © 2020 Montichello</p>
+            </div>
+            <div class="social_links">
+                <a href="#contact">
+                    <i class="icon icon-facebook"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-twitter"></i>
+                </a>
+                <a href="#contact">
+                    <i class="icon icon-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- lightbox2 -->
+    <script src="./assets/js/dist/lightbox-plus-jquery.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <!-- <script src="./assets/js/dist/jquery-ui.min.js"></script> -->
+    <!-- slick-slider -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="./assets/js/dist/lightbox.js"></script> -->
+    
+    <script src="./assets/js/app.js"></script>
+
+</body>
+</html>

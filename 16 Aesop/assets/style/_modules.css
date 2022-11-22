@@ -1,0 +1,270 @@
+.light {
+  color: #FFFEF2;
+}
+
+.dark {
+  color: #333333;
+}
+
+.notice {
+  display: flex;
+  gap: 10px;
+  background: #A6672B;
+  padding: 10px 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.delivery {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  padding: 12px 0 10px;
+  background: #252525;
+}
+
+.container_bg {
+  background-image: url(../img/bg_main.jpg);
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.container_header {
+  width: 100%;
+  max-width: 1350px;
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0 14px;
+  margin: 0 auto;
+}
+
+.logo {
+  max-width: 100px;
+  max-height: 32px;
+  justify-content: flex-start;
+}
+
+.nav_list {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  gap: 25px;
+  margin-left: 40px;
+  justify-content: flex-start;
+}
+
+.buttons_header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.container_main {
+  width: 100%;
+  max-width: 400px;
+  padding: 120px 0;
+  margin-left: 240px;
+}
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.hair_product {
+  display: flex;
+}
+
+.hair_img_block {
+  width: 50%;
+}
+
+.hair_description_block {
+  width: 50%;
+  background: #CFC7C0;
+}
+
+.link {
+  max-width: 73px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  border-bottom: 2px solid #333333;
+  margin-bottom: 106px;
+}
+
+.description_block {
+  display: flex;
+  gap: 40px;
+}
+
+.hair_decription_img {
+  width: 100%;
+  padding: 70px 0;
+  max-width: 200px;
+  max-height: 242px;
+}
+
+.hair_description_text {
+  max-width: 400px;
+  color: #333333;
+}
+.hair_description_text .title_hair {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 20px;
+}
+.hair_description_text .slogan {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+.hair_description_text .about {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 26px;
+}
+
+.button_basket {
+  display: inline-block;
+  color: #FFFEF2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 77px 26px;
+  background: #333333;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 0 0 20px;
+}
+
+.button_favorites {
+  display: inline-block;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 20px 77px 26px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  box-sizing: border-box;
+  cursor: pointer;
+  margin-right: 0;
+}
+.button_favorites::after {
+  content: url(../img/arrow.svg);
+  padding-left: 44px;
+  text-align: center;
+}
+
+.bg_light {
+  width: 100%;
+  background: #FFFEF2;
+}
+
+.container_hair_list {
+  max-width: 1280px;
+  display: flex;
+  padding: 100px 0 48px;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+.container_hair_list::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.hair_item {
+  max-width: 427px;
+  position: relative;
+}
+.hair_item:hover::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  bottom: -10%;
+  right: 0;
+}
+
+.title_item {
+  text-align: center;
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+.title_item:nth-child(even) {
+  margin: 10px auto;
+}
+
+.pharmacy_product {
+  display: flex;
+  padding-top: 150px;
+  margin: 0 auto;
+  gap: 120px;
+}
+
+.pharmacy_text {
+  max-width: 400px;
+  color: #333333;
+}
+
+.vitamin {
+  margin-bottom: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.title_pharmacy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+  margin-bottom: 27px;
+}
+
+.description_pharmacy {
+  margin-bottom: 26px;
+}
