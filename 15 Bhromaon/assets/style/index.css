@@ -69,6 +69,7 @@ img {
 }
 
 .header {
+  min-height: 100vh;
   -webkit-background-size: 100%;
   -moz-background-size: 100%;
   -o-background-size: 100%;
@@ -76,6 +77,13 @@ img {
   background-repeat: no-repeat;
   margin: 0 auto;
   background-image: url(../img/bg_main.png);
+}
+.header .parallax_body {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .header .container_header {
   padding-top: 295px;
@@ -117,7 +125,7 @@ img {
 .form .input {
   width: 100%;
   color: #999999;
-  background: #FFFFFF;
+  background: #ffffff;
   padding: 20px 36px;
   border: none;
   margin: 0;
@@ -150,7 +158,7 @@ img {
   border: none;
   padding: 18px 24px 17px;
   margin-right: 2px;
-  background: #5373FD;
+  background: #5373fd;
   box-sizing: border-box;
   transition: 0.5s;
   z-index: 2;
@@ -177,7 +185,8 @@ img {
   position: relative;
 }
 
-.arrow, .arrow:before {
+.arrow,
+.arrow:before {
   position: absolute;
   right: 50%;
 }
@@ -218,9 +227,14 @@ img {
     transform: translate(-5px, -5px);
   }
 }
+.content_parallax {
+  position: relative;
+  z-index: 2;
+}
+
 .navbar {
   width: 100%;
-  background: #5373FD;
+  background: #5373fd;
 }
 
 .navbar_container {
@@ -274,7 +288,7 @@ img {
 .nav_item:hover:after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
   transform: translateX(50%);
   width: 60%;
   right: 50%;
@@ -376,7 +390,7 @@ img {
   color: #FFFFFF;
   cursor: pointer;
   padding: 20px 32px;
-  background: #5373FD;
+  background: #5373fd;
   box-sizing: border-box;
   transition: 0.5s;
 }
@@ -425,7 +439,7 @@ img {
 }
 
 .step_icon_search {
-  fill: #5373FD;
+  fill: #5373fd;
 }
 
 .step_icon_circle {
@@ -566,7 +580,7 @@ img {
 .icon_quote {
   width: 20px;
   height: 20px;
-  fill: #5373FD;
+  fill: #5373fd;
 }
 
 .footer {
@@ -604,7 +618,7 @@ img {
 }
 
 .icon {
-  fill: #FFFFFF;
+  fill: #ffffff;
   max-width: 32px;
   height: 32px;
   margin-right: 32px;
