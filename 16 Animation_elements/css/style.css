@@ -1,0 +1,64 @@
+.frame{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	/* overflow: hidden; */
+	background: #404556;
+}
+
+
+/* Light bulb */
+
+.light_bulb{
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+}
+
+.bulb{
+	position: absolute;
+	top: 96px;
+	left: 158px;
+	fill: #FFF35C;
+	z-index: 1;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.bulb:hover{
+	fill: #8C8F99;
+}
+
+.glow {
+	position: absolute;
+	width: 68px;
+	height: 68px;
+	background: #FFF35C;
+	border-radius: 50px;
+	box-shadow: 0 0 70px 10px #FFF35C;
+	top: 100px;
+	left: 158px;
+	transition: all .3s ease-in-out;
+}
+
+.bulb:hover ~ .glow {
+	opacity: 0;
+}
+
+.base {
+	position: absolute;
+	top: 186px;
+	left: 176px;
+	fill: #E5E5E5;
+}
+
+
+/* Burger menu */
+
+.burger_menu{
+	display: inline-block;
+	width: 400px;
+	height: 400px;
+}
