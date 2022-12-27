@@ -55,6 +55,14 @@
 }
 
 /* Burger menu */
+a,
+ul,
+li {
+  text-decoration: none;
+  color: inherit;
+  list-style-type: none;
+}
+
 .burger_menu {
   display: inline-block;
   position: absolute;
