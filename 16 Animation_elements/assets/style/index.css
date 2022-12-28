@@ -29,7 +29,7 @@ img {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: #bac0d1;
+  background: linear-gradient(45deg, #9ad751, #2196f3);
 }
 
 .container {
