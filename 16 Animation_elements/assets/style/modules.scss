@@ -45,7 +45,7 @@
 /* Burger menu */
 
 .burger_menu {
-  position: absolute;
+  position: relative;
   color: #fff;
   font-family: "Open Sans", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -93,7 +93,7 @@
     }
 
     .line_middle {
-        animation: line_middle_open 1s ease both;
+      animation: line_middle_open 1s ease both;
     }
 
     .line_bottom {
@@ -154,4 +154,9 @@
       }
     }
   }
+}
+
+.share_links {
+  position:absolute;
+
 }

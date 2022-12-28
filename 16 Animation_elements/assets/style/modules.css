@@ -44,7 +44,7 @@
 
 /* Burger menu */
 .burger_menu {
-  position: absolute;
+  position: relative;
   color: #fff;
   font-family: "Open Sans", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -138,4 +138,8 @@
 }
 .menu_navbar ul li:hover {
   opacity: 0.6;
+}
+
+.share_links {
+  position: absolute;
 }
