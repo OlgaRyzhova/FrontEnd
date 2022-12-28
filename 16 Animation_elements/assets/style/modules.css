@@ -1,29 +1,3 @@
-.frame {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #bac0d1;
-}
-
-.container {
-  display: inline-block;
-  width: 400px;
-  height: 400px;
-  margin: 20px;
-  background: #404556;
-  box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-}
-
-a,
-ul,
-li {
-  text-decoration: none;
-  color: inherit;
-  list-style-type: none;
-}
-
 /* Light bulb */
 .light_bulb {
   position: relative;
@@ -97,7 +71,7 @@ li {
   animation: line_top_close 1s ease both;
 }
 .menu_icon .line_middle {
-  top: 12px;
+  top: 13px;
   bottom: 0;
   animation: line_bottom_close 1s ease both;
 }
@@ -112,10 +86,14 @@ li {
 .menu_icon.active .line_top, .menu_icon.active .line_middle, .menu_icon.active .line_bottom {
   animation: line_top_open 1s ease both;
 }
+.menu_icon.active .line_middle {
+  animation: line_middle_open 1s ease both;
+}
 .menu_icon.active .line_bottom {
   animation: line_bottom_open 1s ease both;
 }
-.menu_icon.paused .line_top, .menu_icon.paused .line_middle,
+.menu_icon.paused .line_top,
+.menu_icon.paused .line_middle,
 .menu_icon.paused .line_bottom {
   animation: none;
 }
@@ -160,55 +138,4 @@ li {
 }
 .menu_navbar ul li:hover {
   opacity: 0.6;
-}
-
-@keyframes line_top_open {
-  0% {
-    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-  }
-  20% {
-    transform: translate3d(0, 3px, 0) scaleY(1) scaleX(1);
-  }
-  40% {
-    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(1);
-  }
-  100% {
-    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(6);
-  }
-}
-@keyframes line_bottom_open {
-  0% {
-    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-  }
-  20% {
-    transform: translate3d(0, -3px, 0) scaleY(1) scaleX(1);
-  }
-  40% {
-    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(1);
-  }
-  100% {
-    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(6);
-  }
-}
-@keyframes line_top_close {
-  0% {
-    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(6);
-  }
-  60% {
-    transform: translate3d(0, -20px, 0) scaleY(0.5) scaleX(1);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-  }
-}
-@keyframes line_bottom_close {
-  0% {
-    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(6);
-  }
-  60% {
-    transform: translate3d(0, 20px, 0) scaleY(0.5) scaleX(1);
-  }
-  100% {
-    transform: translate3d(0, 0, 0) scaleY(1) scaleX(1);
-  }
 }
