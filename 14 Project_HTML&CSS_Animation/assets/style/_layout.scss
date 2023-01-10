@@ -1,5 +1,8 @@
 .container {
   width: 100%;
+  max-width: 1330px;
+  margin: 0 auto 100px;
+  position: relative;
 }
 
 .header {
@@ -31,16 +34,4 @@
 .container_footer {
   width: 100%;
   background: #1a1930;
-}
-
-.analytics_section,
-.team_section,
-.questions_section,
-.price_section,
-.feedback_section,
-.contact_section,
-.media_section {
-  max-width: 1330px;
-  margin: 0 auto 100px;
-  position: relative;
 }
