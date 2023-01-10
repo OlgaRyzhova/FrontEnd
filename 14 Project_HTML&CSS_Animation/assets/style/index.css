@@ -1222,7 +1222,7 @@ img {
 
 .media_photos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .media_photo {
@@ -1512,5 +1512,22 @@ img {
 
   .bg_image {
     max-width: 700px;
+  }
+
+  .press_item {
+    max-width: 350px;
+    padding-right: 20px;
+  }
+
+  .press_photo {
+    width: 350px;
+  }
+
+  .press_description {
+    max-width: 350px;
+  }
+
+  .press_text {
+    font-size: 28px;
   }
 }

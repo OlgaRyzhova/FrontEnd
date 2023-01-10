@@ -1052,7 +1052,7 @@
 
 .media_photos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .media_photo {

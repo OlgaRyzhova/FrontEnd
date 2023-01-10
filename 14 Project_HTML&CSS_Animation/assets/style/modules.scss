@@ -1010,7 +1010,8 @@
 
 .media_photos {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+//   visibility: hidden;
 }
 
 .media_photo {
