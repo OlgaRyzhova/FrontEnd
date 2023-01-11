@@ -24,3 +24,10 @@
     font-size: 28px;
   }
 }
+@media screen and (max-width: 1300px) {
+  .title_line::before {
+    width: 90%;
+    top: 50%;
+    left: 100%;
+  }
+}
