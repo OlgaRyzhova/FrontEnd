@@ -208,7 +208,7 @@
 }
 
 .advertisement_block {
-    width: 90%;
+  width: 90%;
   max-width: 1330px;
   margin: 0 auto;
   padding: 72px 0;
@@ -410,7 +410,7 @@
 
 .feature_title {
   @include text_nav;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
   margin-bottom: 23px;
 }
@@ -494,7 +494,7 @@
 .technology_title,
 .reuse_title {
   @include text_nav;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
   margin-top: 50px;
   margin-bottom: 53px;
@@ -721,7 +721,7 @@
 .no_line {
   display: flex;
   @include text_nav;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 38px;
   max-width: 823px;
   // margin-top: 41px;
@@ -731,7 +731,7 @@
 .question_item {
   display: flex;
   @include text_nav;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 38px;
   max-width: 823px;
   // margin-top: 41px;
@@ -813,7 +813,7 @@
 .name_man {
   margin-top: 20px;
   @include text_nav;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
 }
 
@@ -835,7 +835,7 @@
 
 .feedback_message {
   @include text_nav;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 42px;
   color: #2d2b5c;
   margin-bottom: 33px;
@@ -865,6 +865,7 @@
 .press_block {
   max-width: 1440px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 140px;
   margin: 0 auto;
   align-items: center;
@@ -880,25 +881,12 @@
   }
 }
 
-.vertical_line {
-  position: relative;
-  width: 100%;
-  &::before {
-    content: "";
-    height: 100%;
-    border-left: 1px solid #e7e5ff;
-    position: absolute;
-    top: 0%;
-    left: -5%;
-  }
-}
-
 .press_photo {
   width: 430px;
 }
 
 .press_description {
-  width: 430px;
+  width: 418px;
   padding-left: 20px;
 }
 .press_photo3 {
@@ -916,9 +904,10 @@
 }
 
 .press_text {
+  max-width: 385px;
   font-family: "Prompt", sans-serif;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 42px;
   color: #1a1930;
   margin-top: 16px;
@@ -1011,7 +1000,7 @@
 .media_photos {
   display: flex;
   flex-wrap: wrap;
-//   visibility: hidden;
+  //   visibility: hidden;
 }
 
 .media_photo {

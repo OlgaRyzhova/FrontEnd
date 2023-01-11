@@ -574,7 +574,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
   margin-bottom: 23px;
 }
@@ -666,7 +666,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
   margin-top: 50px;
   margin-bottom: 53px;
@@ -915,7 +915,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 38px;
   max-width: 823px;
   align-items: center;
@@ -928,7 +928,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 34px;
+  font-size: 24px;
   line-height: 38px;
   max-width: 823px;
   align-items: center;
@@ -1009,7 +1009,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 34px;
+  font-size: 30px;
   line-height: 38px;
 }
 
@@ -1038,7 +1038,7 @@ img {
   font-size: 18px;
   line-height: 25px;
   color: #1a1930;
-  font-size: 30px;
+  font-size: 24px;
   line-height: 42px;
   color: #2d2b5c;
   margin-bottom: 33px;
@@ -1067,6 +1067,7 @@ img {
 .press_block {
   max-width: 1440px;
   display: flex;
+  justify-content: space-between;
   margin-bottom: 140px;
   margin: 0 auto;
   align-items: center;
@@ -1082,25 +1083,12 @@ img {
   padding-right: 0;
 }
 
-.vertical_line {
-  position: relative;
-  width: 100%;
-}
-.vertical_line::before {
-  content: "";
-  height: 100%;
-  border-left: 1px solid #e7e5ff;
-  position: absolute;
-  top: 0%;
-  left: -5%;
-}
-
 .press_photo {
   width: 430px;
 }
 
 .press_description {
-  width: 430px;
+  width: 418px;
   padding-left: 20px;
 }
 
@@ -1120,9 +1108,10 @@ img {
 }
 
 .press_text {
+  max-width: 385px;
   font-family: "Prompt", sans-serif;
   font-weight: 400;
-  font-size: 35px;
+  font-size: 30px;
   line-height: 42px;
   color: #1a1930;
   margin-top: 16px;
