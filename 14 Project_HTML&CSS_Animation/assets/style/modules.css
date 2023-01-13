@@ -447,12 +447,35 @@
   margin: 0 auto;
 }
 
+.video_header {
+  max-width: 460px;
+  margin-left: 0;
+  padding-right: 77px;
+}
+
+.video {
+  max-width: 465px;
+  font-size: 44px;
+  line-height: 50px;
+  margin-bottom: 75px;
+  position: relative;
+}
+.video::before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  border: 1px solid #e7e5ff;
+  width: 140%;
+  top: 50%;
+  left: 120%;
+}
+
 .title_line {
   max-width: 465px;
   font-size: 44px;
   line-height: 50px;
   padding-right: 77px;
-  margin-bottom: 86px;
+  margin-bottom: 75px;
   position: relative;
 }
 .title_line::before {
@@ -466,7 +489,7 @@
 }
 
 .video_block {
-  margin-bottom: 193px;
+  margin-bottom: 100px;
 }
 
 .technology_section,
@@ -481,7 +504,7 @@
   font-size: 44px;
   line-height: 50px;
   padding-right: 77px;
-  margin-bottom: 86px;
+  margin-bottom: 45px;
   position: relative;
 }
 .technology:before {
@@ -489,9 +512,9 @@
   content: "";
   margin: auto;
   border: 1px solid #e7e5ff;
-  width: 140%;
+  width: 130%;
   top: 50%;
-  left: 110%;
+  left: 90%;
 }
 
 .img_bubles {
@@ -686,9 +709,9 @@
 }
 
 .team_header {
-  padding-top: 39px;
+  padding-top: 40px;
   display: flex;
-  margin-bottom: 91px;
+  margin-bottom: 75px;
 }
 .team_header .button_standard {
   justify-content: flex-end;
@@ -733,7 +756,7 @@
 
 .question_header {
   display: flex;
-  padding-top: 89px;
+  padding-top: 40px;
   position: relative;
 }
 .question_header .question_title {
@@ -743,8 +766,8 @@
 
 .buble_img {
   position: absolute;
-  max-width: 540px;
-  right: -10%;
+  max-width: 510px;
+  right: -8%;
   top: -30%;
   z-index: -1;
 }
@@ -788,7 +811,7 @@
 }
 
 .feedback_section {
-  padding-top: 89px;
+  padding-top: 40px;
 }
 
 .bg_feedback {
@@ -802,8 +825,8 @@
 .bg_feedback_pink {
   position: absolute;
   max-width: 217px;
-  right: 10%;
-  bottom: -5%;
+  right: 20%;
+  bottom: 5%;
 }
 
 .feedback_title {
@@ -818,7 +841,6 @@
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
   border-radius: 10px;
-  margin-bottom: 100px;
 }
 
 .feedback_photo {
@@ -1074,7 +1096,7 @@
 .bg_footer {
   position: absolute;
   max-width: 340px;
-  right: -5%;
+  right: -8%;
   top: -5%;
   z-index: 1;
 }

@@ -2,9 +2,17 @@
   .container {
     max-width: 1200px;
   }
-
+  .title_line {
+    &::before {
+      width: 90%;
+    }
+  }
   .bg_image {
     max-width: 700px;
+  }
+  .buble_img {
+    max-width: 450px;
+    right: -4%;
   }
   .press_item {
     max-width: 350px;
@@ -13,20 +21,52 @@
   .press_photo {
     width: 350px;
   }
-  .press_description{
+  .press_description {
     max-width: 350px;
   }
   .press_text {
     font-size: 28px;
   }
+  .bg_footer {
+    right: 0;
+  }
+  .footer_links {
+    &:after {
+      width: 90%;
+    }
+  }
 }
 
 @media screen and (max-width: 1300px) {
-  .title_line{
+  .title_line {
     &::before {
       width: 90%;
       top: 50%;
       left: 100%;
     }
+  }
+  .analytics_item {
+    max-width: 700px;
+  }
+  .features_header {
+    margin-bottom: 75px;
+  }
+  .bg_features1 {
+    max-width: 210px;
+    top: 35%;
+  }
+  .bg_features2 {
+    max-width: 290px;
+  }
+  .bg_features3 {
+    max-width: 380px;
+    bottom: 20%;
+  }
+  .bg_price {
+    width: 370px;
+  }
+  .bg_price2 {
+    width: 220px;
+    right: -2%;
   }
 }

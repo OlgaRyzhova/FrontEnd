@@ -158,12 +158,6 @@ img {
   z-index: -1;
 }
 
-.container_light {
-  width: 100%;
-  padding-bottom: 100px;
-  z-index: 0;
-}
-
 .container_footer {
   width: 100%;
   background: #1a1930;
@@ -617,12 +611,35 @@ img {
   margin: 0 auto;
 }
 
+.video_header {
+  max-width: 460px;
+  margin-left: 0;
+  padding-right: 77px;
+}
+
+.video {
+  max-width: 465px;
+  font-size: 44px;
+  line-height: 50px;
+  margin-bottom: 75px;
+  position: relative;
+}
+.video::before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  border: 1px solid #e7e5ff;
+  width: 140%;
+  top: 50%;
+  left: 120%;
+}
+
 .title_line {
   max-width: 465px;
   font-size: 44px;
   line-height: 50px;
   padding-right: 77px;
-  margin-bottom: 86px;
+  margin-bottom: 75px;
   position: relative;
 }
 .title_line::before {
@@ -636,7 +653,7 @@ img {
 }
 
 .video_block {
-  margin-bottom: 193px;
+  margin-bottom: 100px;
 }
 
 .technology_section,
@@ -651,7 +668,7 @@ img {
   font-size: 44px;
   line-height: 50px;
   padding-right: 77px;
-  margin-bottom: 86px;
+  margin-bottom: 45px;
   position: relative;
 }
 .technology:before {
@@ -659,9 +676,9 @@ img {
   content: "";
   margin: auto;
   border: 1px solid #e7e5ff;
-  width: 140%;
+  width: 130%;
   top: 50%;
-  left: 110%;
+  left: 90%;
 }
 
 .img_bubles {
@@ -856,9 +873,9 @@ img {
 }
 
 .team_header {
-  padding-top: 39px;
+  padding-top: 40px;
   display: flex;
-  margin-bottom: 91px;
+  margin-bottom: 75px;
 }
 .team_header .button_standard {
   justify-content: flex-end;
@@ -903,7 +920,7 @@ img {
 
 .question_header {
   display: flex;
-  padding-top: 89px;
+  padding-top: 40px;
   position: relative;
 }
 .question_header .question_title {
@@ -913,8 +930,8 @@ img {
 
 .buble_img {
   position: absolute;
-  max-width: 540px;
-  right: -10%;
+  max-width: 510px;
+  right: -8%;
   top: -30%;
   z-index: -1;
 }
@@ -958,7 +975,7 @@ img {
 }
 
 .feedback_section {
-  padding-top: 89px;
+  padding-top: 40px;
 }
 
 .bg_feedback {
@@ -972,8 +989,8 @@ img {
 .bg_feedback_pink {
   position: absolute;
   max-width: 217px;
-  right: 10%;
-  bottom: -5%;
+  right: 20%;
+  bottom: 5%;
 }
 
 .feedback_title {
@@ -988,7 +1005,6 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.4);
   box-shadow: 0px 4px 20px rgba(193, 193, 193, 0.3);
   border-radius: 10px;
-  margin-bottom: 100px;
 }
 
 .feedback_photo {
@@ -1244,7 +1260,7 @@ img {
 .bg_footer {
   position: absolute;
   max-width: 340px;
-  right: -5%;
+  right: -8%;
   top: -5%;
   z-index: 1;
 }
@@ -1515,8 +1531,17 @@ img {
     max-width: 1200px;
   }
 
+  .title_line::before {
+    width: 90%;
+  }
+
   .bg_image {
     max-width: 700px;
+  }
+
+  .buble_img {
+    max-width: 450px;
+    right: -4%;
   }
 
   .press_item {
@@ -1535,11 +1560,50 @@ img {
   .press_text {
     font-size: 28px;
   }
+
+  .bg_footer {
+    right: 0;
+  }
+
+  .footer_links:after {
+    width: 90%;
+  }
 }
 @media screen and (max-width: 1300px) {
   .title_line::before {
     width: 90%;
     top: 50%;
     left: 100%;
+  }
+
+  .analytics_item {
+    max-width: 700px;
+  }
+
+  .features_header {
+    margin-bottom: 75px;
+  }
+
+  .bg_features1 {
+    max-width: 210px;
+    top: 35%;
+  }
+
+  .bg_features2 {
+    max-width: 290px;
+  }
+
+  .bg_features3 {
+    max-width: 380px;
+    bottom: 20%;
+  }
+
+  .bg_price {
+    width: 370px;
+  }
+
+  .bg_price2 {
+    width: 220px;
+    right: -2%;
   }
 }
