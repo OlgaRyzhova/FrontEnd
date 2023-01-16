@@ -3,12 +3,34 @@
     max-width: 1200px;
   }
 
+  .main_title {
+    font-size: 70px;
+    line-height: 75px;
+    max-width: 650px;
+  }
+
+  .analytics_numbers {
+    font-size: 70px;
+  }
+
   .title_line::before {
     width: 90%;
   }
 
   .bg_image {
-    max-width: 700px;
+    max-width: 750px;
+  }
+
+  .main_title {
+    margin-top: 60px;
+  }
+
+  .button_standart_margin {
+    margin-bottom: 60px;
+  }
+
+  .click_block {
+    margin-bottom: 60px;
   }
 
   .buble_img {
@@ -42,8 +64,18 @@
   }
 }
 @media screen and (max-width: 1300px) {
+  .container {
+    max-width: 1100px;
+  }
+
+  .main_title {
+    font-size: 60px;
+    line-height: 75px;
+    max-width: 570px;
+  }
+
   .title_line::before {
-    width: 90%;
+    width: 50%;
     top: 50%;
     left: 100%;
   }
@@ -68,6 +100,21 @@
   .bg_features3 {
     max-width: 380px;
     bottom: 20%;
+    left: 70%;
+  }
+
+  .buble_img {
+    max-width: 450px;
+    right: 0%;
+  }
+
+  .bg_feedback {
+    max-width: 375px;
+    top: -15%;
+  }
+
+  .bg_feedback_pink {
+    bottom: -8%;
   }
 
   .bg_price {
@@ -76,6 +123,18 @@
 
   .bg_price2 {
     width: 220px;
-    right: -2%;
+    right: -1%;
+  }
+
+  .price_item {
+    padding: 35px;
+  }
+
+  .price_item .button_price {
+    margin-left: 100px;
+  }
+
+  .bg_contact2 {
+    right: -1%;
   }
 }
